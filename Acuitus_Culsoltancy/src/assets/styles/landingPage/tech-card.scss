@@ -1,0 +1,32 @@
+.stack-icon {
+  width: 40px;
+}
+
+.tech-card  {
+  &:hover {
+    // background-color: #222020 !important;
+  }
+}
+
+
+@media (min-width: 950px) {
+  #tech--stacks {
+    display: grid;
+    grid-template-columns: repeat(4, 150px);
+    grid-auto-rows: 100px;
+    place-content: center;
+    grid-gap: 15px;
+    margin-bottom: 30px;
+  }  
+}
+
+@media (max-width: 950px) {
+  #tech--stacks {
+    display: grid;
+    grid-template-columns: repeat(2, 150px);
+    grid-auto-rows: 100px;
+    place-content: center;
+    grid-gap: 15px;
+    margin-bottom: 30px;
+  }  
+}

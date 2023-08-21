@@ -1,0 +1,58 @@
+.hero {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 100%;
+    font-size: 1.2em;
+    div {
+        padding: 20px 10px;
+    }
+    .banner-message {
+        margin-top: -50px;
+    }
+    .hero-image {
+        width: 99%;
+        height: 99%;
+        object-fit: contain;
+    }
+    .Btn {
+        margin: 10px auto;
+        display: block;
+        min-width: 200px;
+    }
+}
+
+header {
+    .btn {
+        border: none !important;
+        &:hover {
+            background-color: blue !important;
+            color:  white !important;
+        }
+    }
+}
+
+
+
+@media (max-width:1100px) {
+    .hero {
+        display: grid;
+        grid: 80vh / 100vw;
+        justify-content: center;
+        align-items: center;
+        padding: 0 !important;
+        margin-top: 10px;
+        height: 100vh;
+        background-image: url("../../images/landingPage/hero.jpg");
+        div:has(img) {
+            display: none;
+        }
+        #hero-text {
+            background: rgba(255, 255, 255, 0.6) !important;
+            color: black !important;
+            width: 95% !important;
+            top: 40px;
+            margin-top: 20px;
+        }
+    }
+}
