@@ -1,0 +1,86 @@
+// .hero-image {
+//     width: 100vw;
+//     height: 100%;
+//     object-fit: contain;
+//     background-size: cover;
+//     background-position: center;
+//     background-repeat: no-repeat;
+// }
+
+/* YourComponent.css */
+
+.Hero {
+  position: relative;
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.hero-image {
+  width: 100%;
+  height: auto;
+  transition: opacity 0.5s ease-in-out, transform 1s ease-in-out;
+}
+
+.hero-title {
+  position: absolute; /* Set the title to absolute positioning */
+  top: 50%; /* Position the title 50% from the top of the parent container */
+  left: 50%; /* Position the title 50% from the left of the parent container */
+  transform: translate(-50%, -50%); /* Center the title both horizontally and vertically */
+  background-color: rgba(0, 0, 0, 0.6); /* Add a background color for better readability */
+  padding: 10px 20px;
+  color: white; /* Set text color */
+  font-size: 42px; /* Set font size */
+}
+.prev-button,
+.next-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 30px;
+  font-weight: 400;
+  border: none;
+  cursor: pointer;
+  color: white !important;
+
+}
+
+.hero-explanation{
+  color: black;
+}
+
+.prev-button {
+  left: 10px;
+}
+
+.next-button {
+  right: 10px;
+}
+
+.image-details {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: black;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.image-details h2,
+.image-details p {
+  margin: 0;
+  color:black;
+}
+
+.image-container:hover .image-details {
+  opacity: 1;
+}
+

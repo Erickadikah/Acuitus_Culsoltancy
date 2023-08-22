@@ -1,62 +1,36 @@
 export const servicesCard = [
     {
-        title: "Static, brochure Website and Apps",
-        subTitle: "A simple an eye-catching and cost-effective\
-        solution you can use to promote your business or company’s\
-        services online.\
-        Starting from Ksh 35,000",
+        title: "Project Management",
+        subTitle: "We specialize in comprehensive project management services to ensure the successful execution of your initiatives. From conception to final delivery, we guide your projects through every stage of development. Our services encompass strategic conception and initiation, meticulous project planning, and seamless execution",
         services: [
-            "Responsive Design Samples",
-            "up to 7 Pages",
-            "Content layout",
-            "Content Management System",
-            "Portfolio and services showcase",
-            "Blog",
-            "Assets Optimization i.e Images and Videos",
-            "Client on-boarding and Documentation",
-            
+            "Conception and initiation",
+            "Project planning",
+            "Project execution",
+            "Performance",
+            "monitoring",
+            "Report writing & Presentation",
         ]
     },
     {
-        title: "Dynamic Application",
-        subTitle: "A simple an eye-catching and cost-effective\
-         solution you can use to promote your business or company’s services online.\
-        Starting from Ksh 65,000",
+        title: "Data",
+        subTitle: "we excel in data management solutions tailored to meet your business needs. Our expertise lies in efficiently organizing, securing, and optimizing your data assets for enhanced decision-making. We specialize in data collection, storage, and analysis, ensuring that your valuable information is easily accessible and well-protected",
         services: [
-            "Responsive Design Samples",
-            "up to 12 Pages",
-            "Content layout",
+            "Data Management",
+            "Data Analysis",
+            "Report Writing and Presentation",
             "Content Management System",
-            "Portfolio and services showcase",
-            "Blog",
-            "Assets Optimization i.e Images and Videos",
-            "Client on-boarding and Documentation",
-            ".com domain + deploynment and hosting",
-            ".com domain + deploynment and hosting",
-            "SEO",
-            "Google Analytics",
-            "Google Search Console",
         ]
     },
     {
-        title: "E-commerce Applications",
-        subTitle: "A simple an eye-catching and cost-effective solution you can use to\
-        promote your business or company’s services online.\
-        Starting from Ksh 150,000",
+        title: "Social Media Management",
+        subTitle: "We specialize in enhancing your online presence through strategic social media solutions. Our services encompass a comprehensive range of strategies aimed at boosting your social media engagement and performance.",
         services: [
-            "Responsive Design Samples",
-            "up to 20 Pages",
-            "Content layout",
-            "Content Management System",
-            "Portfolio and services showcase",
-            "Customized Dashboard",
-            "Assets Optimization i.e Images and Videos",
-            "Client on-boarding and Documentation",
-            ".com domain + deploynment and hosting",
-            ".com domain + deploynment and hosting",
-            "Search Engine Optimization(SEO)",
-            "Logistics Intergration i.e Sendy",
-            "Friendly Support and much more",
+            "strategies to increase followers, leads, clicks, shares and comments",
+            "Creating and overseeing social campaigns",
+            "Content Production",
+            "Creating and overseeing social campaigns",
+            "Reviewing analytics",
+            "Communicating with key stakeholders",
         ]
     }
 ];

@@ -48,7 +48,7 @@ export default function ServicesAccordion({ servicesCard }) {
                   <li key={i}>{item}</li>
                 ))}
               </ul>
-              <button className="btn btn-primary d-block" style={{margin: "10px auto"}}>Get Started</button>
+              <button className="btn btn-primary d-block" style={{margin: "10px auto"}}>Read More</button>
             </div>
           </div>
         </div>

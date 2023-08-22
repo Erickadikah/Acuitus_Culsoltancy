@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from "./components/landingPage/nav";
-import Hero from "./components/landingPage/hero";
+import Hero from "./components/landingPage/Hero";
 import TechStacks from "./components/landingPage/tech-stacks";
 import OurServices from "./components/landingPage/service";
 import "bootstrap/dist/css/bootstrap.css"

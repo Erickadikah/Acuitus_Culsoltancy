@@ -38,44 +38,17 @@ export default function LandingNavBar() {
                 aria-haspopup="true"
                 aria-expanded="false"
               >
-                Web Development
+                Our Services
               </a>
               <div className="dropdown-menu shadow-lg border-0" aria-labelledby="webDevelopmentDropdown" >
                 <a className="dropdown-item" href="#">
-                  Web Design
+                  Project Management
                 </a>
                 <a className="dropdown-item" href="#">
-                  Front-end Development
+                  Data
                 </a>
                 <a className="dropdown-item" href="#">
-                  Back-end Development
-                </a>
-                <a className="dropdown-item" href="#">
-                  E-commerce Solutions
-                </a>
-              </div>
-            </li>
-            <li className="nav-item dropdown">
-              <a
-                className="nav-link dropdown-toggle"
-                href="#"
-                id="mobileDevelopmentDropdown"
-                role="button"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-              >
-                Mobile Development
-              </a>
-              <div className="dropdown-menu shadow-lg border-0" aria-labelledby="mobileDevelopmentDropdown">
-                <a className="dropdown-item" href="#">
-                  iOS App Development
-                </a>
-                <a className="dropdown-item" href="#">
-                  Android App Development
-                </a>
-                <a className="dropdown-item" href="#">
-                  Cross-Platform App Development
+                  Social Media Management
                 </a>
               </div>
             </li>
@@ -117,7 +90,7 @@ export default function LandingNavBar() {
               <div className="btn-group" style={{ position: "fixed", right: "30px" }}>
                 <button className="btn btn-primary btn-sm">
                   <a rel="noopener" href="#" className="text-decoration-none text-light">
-                    Get a Quote
+                    Talk to Us
                   </a>
                 </button>
               </div>
