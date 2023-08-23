@@ -10,7 +10,7 @@ export default function NewsLetterSection() {
     backgroundRepeat: "no-repeat",
     display: "flex",
     placeContent: "center",
-    height: "80%",
+    height: "70%",
     alignItems: "center",
     justifyContent: "center",
     flexDirection: "row",
@@ -19,7 +19,6 @@ export default function NewsLetterSection() {
   const buttonStyles = {
     height: "50px",
     width: "150px",
-    borderRadius: "40px",
     border: "none",
     fontSize: "16px",
     fontWeight: "bolder",
@@ -38,7 +37,7 @@ export default function NewsLetterSection() {
   };
 
   return (
-    <section style={styles} className="form">
+    <section className="form">
     <div className="newsletter">
     <div className="first-cont">
       <h1
@@ -60,9 +59,10 @@ export default function NewsLetterSection() {
       </h1>
       <br></br>
       <p
-        className="text-white"
+        className="text-white c-explainer"
         style={{
           fontSize: "18px",
+          padding: "0 10px",
         }}
       >
         We pride ourselves in providing training and coaching that aims to
@@ -102,14 +102,15 @@ export default function NewsLetterSection() {
     <div
       style={{
         marginLeft: "50px",
-        marginTop: "10rem",
+        marginTop: "8rem",
 
       }}
+      className="card-1"
     >
         <div
           style={{
-            display: "block"}}
-            className="card-content"
+            display: "block",
+          }}
             >
           <img
             src={heroImage4}

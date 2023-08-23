@@ -12,11 +12,10 @@
 }
 
 .form {
-  padding: 100px !important;
+  padding: 150px !important;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-
+  background: rgba(35, 35, 35, 0.9);
   @media screen and (max-width: 768px) {
     display: block;
 
@@ -24,35 +23,34 @@
 
 .newsletter {
   display: flex;
-  gap: 40px !important;
   @media screen and (max-width: 768px) {
     display: block;
-    gap: 10;
   }
     
   }
 }
 
 .first-cont {
-  padding: 150px;
+  // padding: 150px;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   font-size: 18px;
-  @media screen and (max-width: 1080px) {
-    display: block;
+  @media screen and (max-width: 868px) {
+    // display: block;
     font-size: 12px;
-    height: auto;
-    width: fit-content;
   }
 }
 
-.card-content {
-  @media screen and (max-width: 768px) {
-    .card-text {
-    font-size: 14px;
-    padding: 15px;
-    }
-
-  }
+.card-1{
+  align-items: center;
+  justify-content: center;
+  // display: flex;
+  flex-direction: column;
+  padding-right: 100px;
 }
+
+
+// .c-explainer{
+//   // padding: 100px;
+// }
