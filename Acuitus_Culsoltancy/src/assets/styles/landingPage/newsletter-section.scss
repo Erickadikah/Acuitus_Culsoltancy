@@ -7,6 +7,52 @@
 }
 
 .arrow-icon {
-  color: #145038; /* Customize the color of the arrow icon */
+  color: #145038;
   margin-right: 10px;
+}
+
+.form {
+  padding: 100px !important;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  @media screen and (max-width: 768px) {
+    display: block;
+
+  }
+
+.newsletter {
+  display: flex;
+  gap: 40px !important;
+  @media screen and (max-width: 768px) {
+    display: block;
+    gap: 10;
+  }
+    
+  }
+}
+
+.first-cont {
+  padding: 150px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 18px;
+  @media screen and (max-width: 1080px) {
+    display: block;
+    font-size: 12px;
+    height: auto;
+    width: fit-content;
+  }
+}
+
+.card-content {
+  @media screen and (max-width: 768px) {
+    .card-text {
+    font-size: 14px;
+    padding: 15px;
+    }
+
+  }
 }
