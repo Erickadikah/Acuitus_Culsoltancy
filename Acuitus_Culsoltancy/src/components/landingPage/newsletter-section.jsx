@@ -5,7 +5,7 @@ import "../../assets/styles/landingPage/newsletter-section.scss";
 
 export default function NewsLetterSection() {
   const styles = {
-    background: `rgba(35, 35, 35, 0.9)`,
+    background: `rgba(0, 0, 0, 0.8);`,
     backgroundSize: "cover",
     backgroundRepeat: "no-repeat",
     display: "flex",
@@ -22,7 +22,7 @@ export default function NewsLetterSection() {
     border: "none",
     fontSize: "16px",
     fontWeight: "bolder",
-    color: 'white',
+    color: "white",
     transition: "background 0.3s, color 0.3s", // Smooth transition for both background and color
   };
 
@@ -38,68 +38,67 @@ export default function NewsLetterSection() {
 
   return (
     <section className="form">
-    <div className="newsletter">
-    <div className="first-cont">
-      <h1
-        className="text-white"
-        style={{
-          fontSize: "50px",
-          fontWeight: "bolder",
-        }}
-      >
-        Our solutions for your
-        <span
-          style={{
-            color: "#145038",
-          }}
-        >
-          {" "}
-          business growth
-        </span>
-      </h1>
-      <br></br>
-      <p
-        className="text-white c-explainer"
-        style={{
-          fontSize: "18px",
-          padding: "0 10px",
-        }}
-      >
-        We pride ourselves in providing training and coaching that aims to
-        improve food security while providing sustainable livelihood options
-        for farmers especially the women and the youth in agribusiness. We,
-        therefore, establish sustainable partnerships that promote and share
-        our vision for the agribusiness sector. Our Agricultural Financial
-        Inclusion programs aim to provide small-holder farmers and MSMEs with
-        access to affordable financing through linkage to financial
-        institutions and also the adoption of the VSLA model.
-      </p>
-      <br></br>
-      <p
-        style={{
-          fontSize: "18px",
-        }}
-        className="text-white"
-      >
-        This has helped to establish community-based financing thus promoting
-        sustainable rural financial models and financial literacy, especially
-        for rural farmers.
-      </p>
-      <button
-        style={buttonStyles}
-        onMouseEnter={handleMouseEnter}
-        onMouseLeave={handleMouseLeave}
-      >
-        <a
-          style={{
-            textDecoration: "none",
-          }}
-        >
-          Read More
-        </a>
-      </button>
-    </div>
-    <div
+      <div className="newsletter">
+        <div className="first-cont">
+        <h6 className="text-white">WE HAVE A SOLID BACKGROUND</h6>
+         <h1
+            className="text-white"
+            style={{
+              fontSize: "55px",
+              fontWeight: "800"
+            }}
+          >
+            Our solutions for your
+            <br />
+            <span
+              style={{
+                color: "#145038",
+              }}>
+              {" "}
+              business growth
+            </span>
+          </h1>
+          <br />
+          <p className=" text-white" style={{
+            fontSize: "16px",
+            color: 'white',
+            justifyContent: 'center',
+            alignItems: 'center',
+          }}>
+            We pride ourselves in providing training and coaching that aims to
+            improve food security while providing sustainable livelihood options
+            for farmers especially the women and the youth in agribusiness. We,
+            therefore, establish sustainable partnerships that promote and share
+            our vision for the agribusiness sector.
+            Our Agricultural Financial Inclusion programs aim to provide
+            small-holder farmers and MSMEs with access to affordable financing
+            through linkage to financial institutions and also the adoption of
+            the VSLA model. 
+          </p>
+          <br />
+          <p className="text-white" style={{
+            fontSize: "16px",
+          }}>
+            This has helped to establish community-based
+            financing thus promoting sustainable rural financial models and
+            financial literacy, especially for rural farmers.
+          </p>
+
+          <button
+            style={buttonStyles}
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
+          >
+            <a
+              style={{
+                textDecoration: "none",
+              }}
+            >
+              Read More
+            </a>
+          </button>
+        </div>
+        {/*<div
       style={{
         marginLeft: "50px",
         marginTop: "8rem",
@@ -148,8 +147,54 @@ export default function NewsLetterSection() {
             </ul>
           </p>
         </div>
+          </div>*/}
+          <div className="counter" style={{
+            color: "#145038",
+            fontSize: "50px",
+            fontWeight: "bolder",
+            fontFamily: "poppins",
+    
+          }}>
+            <div className="counter-item">
+              <h1>700</h1>
+              <p style={{
+                fontSize: '18px',
+                whiteSpace: 'nowrap',
+                color: 'white'
+              }}>Work Hours</p>
+            </div>
+            <div className="counter-item">
+              <h1>1080</h1>
+              <p
+              style={{
+                fontSize: '18px',
+                whiteSpace: 'nowrap',
+                color: 'white'
+              }}
+              >Great Reviews</p>
+            </div>
+            <div className="counter-item">
+              <h1>340</h1>
+              <p
+              style={{
+                fontSize: '18px',
+                whiteSpace: 'nowrap',
+                color: 'white'
+              }}
+              >Projects Done</p>
+            </div>
+            <div className="counter-item">
+              <h1>400</h1>
+              <p
+              style={{
+                fontSize: '18px',
+                whiteSpace: 'nowrap',
+                color: 'white'
+              }}
+              >Awards Won</p>
+            </div>
+          </div>
       </div>
-    </div>
     </section>
   );
 }

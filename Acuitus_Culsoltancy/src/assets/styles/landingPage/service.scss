@@ -1,8 +1,14 @@
+.service-cont {
+  height: 100%;
+  @media (min-width: 640px) {
+      height: 145vh;
+    
+  }
+}
 .section-one {
   display: flex;
   justify-content: center;
   align-items: center;
-  // padding: 150px;
   padding-right: 100px; 
   padding-left: 100px;
   @media screen and (max-width: 968px) {
@@ -55,7 +61,7 @@
 }
 
 .btn-r {
-  width: 180px;
+  width: 150px;
   height: 60px;
   background: #145038;
   border: none;
@@ -272,3 +278,22 @@
     }
   }
 }
+
+.line {
+      width: 90px;
+      height: 2px;
+      background-color: brown;
+      margin: 10px auto;
+    }
+    
+    .long-line {
+      width: 140px;
+}
+
+.one {
+  @media screen and (max-width: 640px) {
+    width: 100%;
+    height: 120vh;
+  }
+    
+  }

@@ -8,11 +8,7 @@ import heroImage2 from "../../assets/images/landingPage/ex1.jpg";
 export default function OurServices() {
   return (
     <div
-      className="bg-white"
-      style={{
-        height: "300vh",
-        width: "100%",
-      }}
+      className="bg-white service-cont"
     >
       <div className="company">
         <div
@@ -47,6 +43,11 @@ export default function OurServices() {
                 marginTop: "20px",
               }}
             >
+          <div>
+          <h3 style={{ fontWeight: "600", color: "#145038", fontSize: '26px'}}>About Us</h3>
+          <div class="line long-line"></div>
+          <div class="line"></div>
+          </div>
               <h1
                 className="about-company__title text-center"
                 style={{
@@ -66,7 +67,6 @@ export default function OurServices() {
                   Acuitus Duo Consultancy.{" "}
                 </span>
               </h1>
-              <h3 style={{ fontWeight: "600", color: "#145038" }}>About Us</h3>
               <p
                 style={{
                   fontSize: "16px",
@@ -121,7 +121,7 @@ export default function OurServices() {
               <button
                 className="btn-r"
                 style={{
-                  marginTop: "30px",
+                  marginTop: "",
                 fontSize: "1.0rem",
                 }}
               >
@@ -129,7 +129,8 @@ export default function OurServices() {
               </button>
             </div>
           </div>
-          <div className="our-about">
+          <serviceCard />
+          {/*<div className="our-about">
             <div className="mission">
               <div className="mission-icon"></div>
               <h3 className="text-center mission-title text-white">Mission</h3>
@@ -222,7 +223,7 @@ export default function OurServices() {
             </div>
           </div>
         </div>
-      </div>
+              </div>*/}
       {/*<div className='container' style={{
         padding: "20px 10px",
         marginTop: '12rem',
@@ -235,6 +236,8 @@ export default function OurServices() {
         }}>Our Services</h1>
         <ServicesAccordion servicesCard={servicesCard} />
       </div>*/}
+    </div>
+    </div>
     </div>
   );
 }

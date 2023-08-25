@@ -7,9 +7,8 @@ import "bootstrap/dist/css/bootstrap.css"
 import "./assets/styles/landingPage/landing.scss";
 import PageFooter from "./components/landingPage/pagefooter";
 import NewsLetterSection from "./components/landingPage/newsletter-section";
-
-
-
+import Article from "./components/landingPage/article"
+import Business from "./components/landingPage/business"
 
 
 
@@ -18,9 +17,10 @@ function App() {
     <div>
       <Navbar />
       <Hero />
-      <OurServices />
-      {/*<TechStacks />*/}
+      {/*<OurServices />*/}
+      <Business />
       <NewsLetterSection />
+      <Article />
       <PageFooter />
     </div>
   )

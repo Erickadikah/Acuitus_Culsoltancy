@@ -9,25 +9,6 @@ import { GrLinkPrevious, GrLinkNext } from 'react-icons/gr'
 
 const imageUrls = [heroImage1, heroImage2];
 
-const imageDetails = [
-  {
-    title: "Business Development Services",
-    explanation: "Explanation for image 1."
-  },
-  {
-    title: "Financial Inclusion",
-    explanation: "Explanation for image 2."
-  },
-  {
-    title: "Agribusiness Development.",
-    explanation: "Explanation for image 3."
-  },
-  {
-    title: "Title 4",
-    explanation: "Explanation for image 4."
-  }
-];
-
 const Hero = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
@@ -52,9 +33,16 @@ const Hero = () => {
       <img src={imageUrls[currentImageIndex]} alt='image' className='hero-image' />
       <GrLinkPrevious onClick={goToPreviousImage} className='prev-button'/>
       <GrLinkNext className='next-button' onClick={goToNextImage}/>
-      <div className='hero-details'>
-        <h1 className='hero-title'>{imageDetails[currentImageIndex].title}</h1>
-        {/*<p className='hero-explanation'>{imageDetails[currentImageIndex].explanation}</p>*/}
+      <div className='below'>
+      <div>
+      <h3 className='text-white'>Want to reach Out ? Request A call Now</h3>
+      <p style={{
+        color: 'white'
+      }}>Get us to do all the work and make everything easier for you.</p>
+      </div>
+      <button className='btn-b'>
+        Contact Us
+      </button>
       </div>
     </div>
   );
