@@ -31,8 +31,8 @@ const Hero = () => {
   return (
     <div className='Hero'>
       <img src={imageUrls[currentImageIndex]} alt='image' className='hero-image' />
-      <GrLinkPrevious onClick={goToPreviousImage} className='prev-button'/>
-      <GrLinkNext className='next-button' onClick={goToNextImage}/>
+{/*      <GrLinkPrevious onClick={goToPreviousImage} className='prev-button'/>
+  <GrLinkNext className='next-button' onClick={goToNextImage}/>*/}
       <div className='below'>
       <div>
       <h3 className='text-white art'>Want to reach Out ? Request A call Now</h3>
