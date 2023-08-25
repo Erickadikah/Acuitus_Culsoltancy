@@ -40,16 +40,14 @@
   border: none;
   font-weight: 500;
   color: white;
-  cursor: pointer; /* Add a cursor pointer for better interaction */
+  cursor: pointer;
   transition: background 0.3s ease;
-
 }
 
 .btn-t:hover {
   background: greenyellow;
-  opacity: 1;
+  opacity: 0.8; /* Adjust the opacity value as desired */
 }
-
 // .sec-image {
 //  height: 200px;
 //  width: 400px;

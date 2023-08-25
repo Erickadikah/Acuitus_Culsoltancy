@@ -1,6 +1,7 @@
 import React from 'react';
 import "../../assets/styles/landingPage/article.scss";
 import heroImage4 from "../../assets/images/landingPage/geet.jpg";
+import { BsFillBuildingsFill } from 'react-icons/bs';
 
 export default function Article () {
   return (

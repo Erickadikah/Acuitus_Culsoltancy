@@ -42,10 +42,11 @@ export default function NewsLetterSection() {
         <div className="first-cont">
         <h6 className="text-white">WE HAVE A SOLID BACKGROUND</h6>
          <h1
-            className="text-white"
+            className="my-t"
             style={{
-              fontSize: "55px",
-              fontWeight: "800"
+              // fontSize: "55px",
+              fontWeight: "900",
+              color: "white",
             }}
           >
             Our solutions for your
@@ -88,6 +89,7 @@ export default function NewsLetterSection() {
             style={buttonStyles}
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
+            className="my-btn"
           >
             <a
               style={{

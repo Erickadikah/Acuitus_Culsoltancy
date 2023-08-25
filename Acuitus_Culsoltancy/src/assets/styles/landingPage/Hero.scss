@@ -1,11 +1,10 @@
-// .hero-image {
-//     width: 100vw;
-//     height: 100%;
-//     object-fit: contain;
-//     background-size: cover;
-//     background-position: center;
-//     background-repeat: no-repeat;
-// }
+.art {
+  color: white;
+  @media screen and (max-width: 940px) {
+    font-size: 16;
+  }
+    
+  }
 
 /* YourComponent.css */
 
@@ -47,6 +46,11 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  @media screen and (max-width: 940px) {
+    gap: 20px;
+    padding: 20px;
+    height: 25vh;
+  }
 }
 
 .hero-title {
@@ -115,9 +119,28 @@
   font-size: 15px;
   border: 2px solid white;
   color: white;
-  cursor: pointer; /* Add a cursor pointer for better interaction */
+  cursor: pointer;
   transition: background 0.3s ease;
   border-radius: 50px;
   font-weight: 900;
+}
+
+.btn-b:hover {
+  background: white;
+  color: #145038;
+}
+
+@media screen and (max-width: 940px) {
+  .btn-b {
+    width: 120px;
+    height: 35px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .btn-b {
+    width: 120px;
+    height: 35px;
+  }
 }
 

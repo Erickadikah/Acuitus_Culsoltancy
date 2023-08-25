@@ -85,7 +85,7 @@ export default function Business() {
         </ul>
         <button className="btn-s">Read More</button>
       </div>
-      <div className="bis-card">
+      {/*<div className="bis-card">
        <img src={heroImage2} className="image-1" />
         <h4
           style={{
@@ -114,7 +114,7 @@ export default function Business() {
           <li>Affiliate Marketing</li>
         </ul>
         <button className="btn-s">Read More</button>
-        </div>
+        </div>*/}
     </div>
       </div>
     </div>
