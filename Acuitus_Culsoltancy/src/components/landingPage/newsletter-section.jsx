@@ -94,7 +94,9 @@ export default function NewsLetterSection() {
             <a
               style={{
                 textDecoration: "none",
+                color: 'white'
               }}
+              href="/about"
             >
               Read More
             </a>

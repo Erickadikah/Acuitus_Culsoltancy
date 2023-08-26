@@ -1,52 +1,99 @@
-import React, { useState, useEffect } from 'react';
-import heroImage1 from "../../assets/images/landingPage/capacity.jpg";
-import heroImage2 from "../../assets/images/landingPage/search .jpg";
-import heroImage3 from "../../assets/images/landingPage/d.jpg";
-// import heroImage4 from "../../assets/images/landingPage/geet.jpg";
-import "../../assets/styles/landingPage/Hero.scss";
-import { GrCaretNext, GrCaretPrevious } from 'react-icons/gr'
-import { GrLinkPrevious, GrLinkNext } from 'react-icons/gr'
+import React from 'react';
+import { createStyles, Overlay, Container, Title, Button, Text, rem } from '@mantine/core';
+import masaaiImage from '../../assets/images/landingPage/masaai.jpg'; // Import the image using ES modules
 
-const imageUrls = [heroImage1, heroImage2, heroImage3];
+const useStyles = createStyles((theme) => ({
+  hero: {
+    position: 'relative',
+    backgroundImage: `url(${masaaiImage})`,
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    height: rem(900),
+  },
 
-const Hero = () => {
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  container: {
+    height: rem(700),
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'flex-end',
+    alignItems: 'flex-start',
+    paddingBottom: `calc(${theme.spacing.xl} * 6)`,
+    zIndex: 1,
+    position: 'relative',
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % imageUrls.length);
-    }, 10000);
+    [theme.fn.smallerThan('sm')]: {
+      height: rem(500),
+      paddingBottom: `calc(${theme.spacing.xl} * 3)`,
+    },
+  },
 
-    return () => clearInterval(interval);
-  }, []);
+  title: {
+    color: theme.white,
+    fontSize: rem(60),
+    fontWeight: 900,
+    lineHeight: 1.1,
 
-  const goToPreviousImage = () => {
-    setCurrentImageIndex((prevIndex) => (prevIndex - 1 + imageUrls.length) % imageUrls.length);
-  };
+    [theme.fn.smallerThan('sm')]: {
+      fontSize: rem(40),
+      lineHeight: 1.2,
+    },
 
-  const goToNextImage = () => {
-    setCurrentImageIndex((prevIndex) => (prevIndex + 1) % imageUrls.length);
-  };
+    [theme.fn.smallerThan('xs')]: {
+      fontSize: rem(28),
+      lineHeight: 1.3,
+    },
+  },
+
+  description: {
+    color: theme.white,
+    maxWidth: 600,
+
+    [theme.fn.smallerThan('sm')]: {
+      maxWidth: '100%',
+      fontSize: theme.fontSizes.sm,
+    },
+  },
+
+  customButton: {
+    backgroundColor: 'red', // Change this to your desired background color
+    color: 'white', // Change this to the desired text color
+    marginTop: `calc(${theme.spacing.xl} * 1.5)`,
+    width: 200,
+  },
+
+  control: {
+    marginTop: `calc(${theme.spacing.xl} * 1.5)`,
+    width: 200,
+
+    [theme.fn.smallerThan('sm')]: {
+      width: '100%',
+    },
+  },
+}));
+
+export default function Hero() {
+  const { classes } = useStyles();
 
   return (
-    <div className='Hero'>
-      <img src={imageUrls[currentImageIndex]} alt='image' className='hero-image' />
-{/*      <GrLinkPrevious onClick={goToPreviousImage} className='prev-button'/>
-  <GrLinkNext className='next-button' onClick={goToNextImage}/>*/}
-      <div className='below'>
-      <div>
-      <h3 className='text-white art'>Want to reach Out ? Request A call Now</h3>
-      <p style={{
-        color: 'white'
-      }}>Get us to do all the work and make everything easier for you.</p>
-      </div>
-      <button className='btn-b'>
-        Contact Us
-      </button>
-      </div>
+    <div className={classes.hero}>
+      <Overlay
+        gradient="linear-gradient(180deg, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, .65) 40%)"
+        opacity={1}
+        zIndex={0}
+      />
+      <Container className={classes.container}>
+        <Title className={classes.title}>Welcome to Acuitus Duo Consultancy Firm</Title>
+        <Text className={classes.description} size="xl" mt="xl">
+          We Provide the best consultancy services in the Country
+          Build fully functional accessible web applications faster than ever – Mantine includes
+          more than 120 customizable components and hooks to cover you in any situation
+        </Text>
+
+        <Button size="xl" className={classes.customButton} style={{ backgroundColor: 'rgb(20, 80, 56)', color: 'white' }}>
+          Read More
+        </Button>
+      </Container>
     </div>
   );
 }
-
-export default Hero;
 

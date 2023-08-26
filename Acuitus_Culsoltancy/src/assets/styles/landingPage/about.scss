@@ -41,7 +41,7 @@
 }
 
 .div-1 img {
-  max-width: 100%;
+  width: 40rem;
   height: auto; /* Maintain aspect ratio */
 }
 
@@ -51,7 +51,8 @@
   }
 
   .div-1 img {
-    max-width: 75%;
+    // max-width: 75%;
+    width: 400px;
     height: auto;
     margin-bottom: 1rem; /* Add some spacing between image and text on small screens */
   }
@@ -75,7 +76,8 @@
 .text {
   font-size: 1.1rem;
   line-height: 1.6;
-  margin-top: 20px;
+  margin-top: 10px;
+//   padding-top: 20px;
   @media screen and (max-width: 960px) {
     font-size: 0.9rem;
 }

@@ -16,14 +16,6 @@ function App() {
   return (
     <div>
     <FirmPages />
-      {/*<Navbar />*/}
-      {/*<Hero />*/}
-      {/*<OurServices />*/}
-      {/*<Business />*/}
-      {/*<NewsLetterSection />*/}
-      {/*<Article />*/}
-      {/*<Request />*/}
-      {/*<PageFooter />*/}
     </div>
   )
 }

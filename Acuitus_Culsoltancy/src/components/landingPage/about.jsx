@@ -9,19 +9,19 @@ const About = () => {
   return (
     <div className="about">
     <div className="header">
-      <h1 className="header-text">About Us</h1>
+      <h1 className="header-text">About 
+      <br />
+      Acuitus Consultancy Firm</h1>
       <p>
-      GROWING YOUR BUSINESS IN AFRICA
+      GROWING YOUR BUSINESS
       </p>
       </div>
       <div className="holder-2">
       <div className="div-1">
       <img src={heroImage2} className="about-image" />
       </div>
-      <div className="content">
+      <div className="container">
     <h6 className="text-center" style={{
-        marginTop: '50px',
-        fontWeight: 'bolder'
       }}>OUR SOLID BACKGROUND ON AGRIBUSINESS</h6>
       <h1 className="text-center heading">
       Get to know about <span style={{

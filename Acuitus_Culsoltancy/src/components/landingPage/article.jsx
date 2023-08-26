@@ -12,13 +12,12 @@ export default function Article () {
         color: "black",
     }}>Get to know about <span
     style={{
-        color: '#145038',
+        color: `rgb(0, 208, 132)`,
     }}
     >
     our 
     <br />
     company</span></h1>
-    {/*<img src={heroImage4} className='sec-image' alt='greetImage'/>*/}
     <p className='text'>
     Intelli-Wealth Limited is an Agribusiness Consultancy Company established in 2016 to provide advisory services to the agricultural sector in Africa.
     Our mission is to transform the agricultural sector into a profitable venture through capacity building of small-holder farmers and related Micro,
@@ -32,7 +31,7 @@ export default function Article () {
         background: '#145038',
         fontSize: '16px',
         fontWeight: 'bold',
-        borderRadius: '50px'
+        // borderRadius: '50px'
     }}>
     Read MOre
     </button>
