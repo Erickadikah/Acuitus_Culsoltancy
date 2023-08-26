@@ -90,6 +90,10 @@
   font-size: 24px;
   color: white;
   margin: 0;
+  @media screen and (max-width: 640px) {
+    font-size: 20px;
+    font-weight: 900;
+  }
 }
 
 .my-top {
@@ -109,4 +113,26 @@
     width: 148px !important;
   }
     
+}
+
+.news-letter {
+  @media screen and (max-width: 340px) {
+    font-size: 12px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    // height: 48px !important;
+    // width: 148px !important;
+  }
+    
+}
+
+.news-letter h6 {
+  font-size: 24px;
+  color: white;
+  margin: 0;
+  @media screen and (max-width: 340px) {
+    font-size: 18px;
+    font-weight: 700;
+    white-space: nowrap;
+  } 
 }

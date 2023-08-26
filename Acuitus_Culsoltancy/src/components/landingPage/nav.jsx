@@ -77,7 +77,7 @@ export default function LandingNavBar() {
               </div>
             </li>
             <li className="nav-item">
-              <a className="nav-link" rel="noopener" href="#">
+              <a className="nav-link" rel="noopener" href="/about">
                 About Us
               </a>
             </li>

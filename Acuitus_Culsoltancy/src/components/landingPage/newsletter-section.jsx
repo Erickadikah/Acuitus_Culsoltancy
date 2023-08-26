@@ -40,7 +40,7 @@ export default function NewsLetterSection() {
     <section className="form">
       <div className="newsletter">
         <div className="first-cont">
-        <h6 className="text-white">WE HAVE A SOLID BACKGROUND</h6>
+        <h6 className="text-white h6">WE HAVE A SOLID BACKGROUND</h6>
          <h1
             className="my-t"
             style={{
@@ -60,7 +60,7 @@ export default function NewsLetterSection() {
             </span>
           </h1>
           <br />
-          <p className=" text-white" style={{
+          <p className=" text-white news-letter" style={{
             fontSize: "16px",
             color: 'white',
             justifyContent: 'center',
