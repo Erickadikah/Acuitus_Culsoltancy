@@ -58,12 +58,13 @@ const useStyles = createStyles((theme) => ({
     backgroundColor: 'red', // Change this to your desired background color
     color: 'white', // Change this to the desired text color
     marginTop: `calc(${theme.spacing.xl} * 1.5)`,
-    width: 200,
+    fontSize: rem(14),
+    fontWeight: 500,
   },
 
   control: {
     marginTop: `calc(${theme.spacing.xl} * 1.5)`,
-    width: 200,
+    // width: 200,
 
     [theme.fn.smallerThan('sm')]: {
       width: '100%',
@@ -89,7 +90,7 @@ export default function Hero() {
           more than 120 customizable components and hooks to cover you in any situation
         </Text>
 
-        <Button size="xl" className={classes.customButton} style={{ backgroundColor: 'rgb(20, 80, 56)', color: 'white' }}>
+        <Button size="lg" className={classes.customButton} style={{ backgroundColor: 'rgb(20, 80, 56)', color: 'white' }}>
           Read More
         </Button>
       </Container>
