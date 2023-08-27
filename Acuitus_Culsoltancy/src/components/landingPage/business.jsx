@@ -23,9 +23,7 @@ export default function Business() {
         </h4>
         <ul className="list">
           <li>
-            Enhancing sustainable livelihood (Agriculture, Business &
-            Enterprise development, Investment program, job creation, value
-            addition in production)
+            Enhancing sustainable livelihoods through capacity building
           </li>
           <li>
             Groups savings and loans methodology (Village Savings & Loans
@@ -37,13 +35,12 @@ export default function Business() {
           <li>Gender equality and women empowerment program</li>
           <li>Oral Health Education</li>
           <li>Resource mobilization</li>
-          <li>Healthcare education</li>
-          <li>Disaster management</li>
+            <li>Healthcare education</li>
+{/*          <li>Disaster management</li>
           <li>Climate Change & Management</li>
-          <li>Governance & advocacy</li>
+            <li>Governance & advocacy</li>*/}
           <li>
-            Youth Training & mentorship (career development, drug abuse,
-            leadership skills, innovation, entrepreneurship)
+            Youth Training & mentorship
           </li>
         </ul>
         <button className="btn-s">Read More</button>
