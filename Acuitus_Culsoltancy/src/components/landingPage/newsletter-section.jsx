@@ -18,6 +18,7 @@ export default function NewsLetterSection() {
 
   const buttonStyles = {
     height: "50px",
+    background: `rgb(0,208,132)` /* fallback color */,
     width: "150px",
     border: "none",
     fontSize: "16px",
@@ -53,7 +54,7 @@ export default function NewsLetterSection() {
             <br />
             <span
               style={{
-                color: "#145038",
+                color: `rgb(0,208,132)` /* fallback color */,
               }}>
               {" "}
               business growth
@@ -94,7 +95,7 @@ export default function NewsLetterSection() {
             <a
               style={{
                 textDecoration: "none",
-                color: 'white'
+                color: 'white',
               }}
               href="/about"
             >
@@ -153,7 +154,8 @@ export default function NewsLetterSection() {
         </div>
           </div>*/}
           <div className="counter" style={{
-            color: "#145038",
+            color: `rgb(0,208,132)` /* fallback color */,
+            // background: ,
             fontSize: "50px",
             fontWeight: "bolder",
             fontFamily: "poppins",

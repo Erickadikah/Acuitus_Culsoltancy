@@ -90,7 +90,7 @@ export default function Hero() {
           offer an array of services to government institutions, private sector, and non-governmental organizations  
         </Text>
 
-        <Button size="lg"  className={classes.customButton} style={{ backgroundColor: 'rgb(20, 80, 56)', color: 'white' }}>
+        <Button size="lg"  className={classes.customButton} style={{ backgroundColor: 'rgb(0,208,132)', color: 'white' }}>
           Read More
         </Button>
       </Container>

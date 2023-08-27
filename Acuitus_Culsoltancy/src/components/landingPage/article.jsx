@@ -28,7 +28,7 @@ export default function Article () {
     We partner with other organizations to make this dream possible    </p>
     <button className='btn-t' style={{
         marginTop: '0.9rem',
-        background: '#145038',
+        background: `rgb(0,208,132)`,
         fontSize: '16px',
         fontWeight: 'bold',
         // borderRadius: '50px'
