@@ -10,7 +10,7 @@ const imagesData = [
     image: masaaiImage,
     title: 'Welcome to Acuitus Duo Consultancy Firm.',
     description: 'We Provide the best consultancy services in the Country Acuitus Duo Co. Ltd is a global institutional capacity building, technical, and management consultancy firm. We offer an array of services to government institutions, private sector, and non-governmental organizations',
-    buttonLabel: 'Read More',
+    buttonLabel: 'Learn More',
   },
   {
     image: secondImage,
@@ -19,7 +19,7 @@ const imagesData = [
      capacity building projects among other facilitations\
       We have a team of experts in the field of data management and analytics, customer care relationship, sales and marketing, capacity building projects among other facilitations.\
      ',
-    buttonLabel: 'Learn More',
+    buttonLabel: 'Our Sevices',
   },
   {
     image: thirdImage,
@@ -27,7 +27,7 @@ const imagesData = [
     description: ' We promote Colgate as a brand hence enhancing  market expansion\
     Boost Product sales Gather Market insights\
     Promoting Oral Health care Product sample research',
-    buttonLabel: 'Explore',
+    buttonLabel: 'Contact Us',
   },
 ];
 
