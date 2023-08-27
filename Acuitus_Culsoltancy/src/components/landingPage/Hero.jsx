@@ -95,7 +95,7 @@ const useStyles = createStyles((theme) => ({
     marginTop: `calc(${theme.spacing.xl} * 1.5)`,
     fontSize: rem(15),
     fontWeight: 600,
-    width: 180,
+    width: 150,
   },
 
   control: {
