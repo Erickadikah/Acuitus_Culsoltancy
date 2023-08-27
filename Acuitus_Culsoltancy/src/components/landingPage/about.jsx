@@ -1,6 +1,6 @@
 import React from "react";
 import "../../assets/styles/landingPage/about.scss";
-import heroImage2 from "../../assets/images/landingPage/masaai.jpg";
+import heroImage2 from "../../assets/images/landingPage/image1.jpg";
 import PageFooter from "./pagefooter";
 import Missions from "./missions"
 import AboutFooter from "./aboutFooter"
