@@ -26,10 +26,10 @@
         width: 380px;
         height: 100%;
     }
-    @media screen and (min-width: 968px) and (max-width: 1024px) {
-        width: 750px;
-        height: 250px;
-    }
+    // @media screen and (min-width: 968px) and (max-width: 1024px) {
+    //     width: 750px;
+    //     height: 250px;
+    // }
         
 }
 
@@ -54,7 +54,7 @@
   width: 150px;
   height: 50px;
   border: none;
-  background: #145038;
+  background: rgb(0,208,132);
   font-weight: 500;
   color: white;
   cursor: pointer; /* Add a cursor pointer for better interaction */
@@ -62,9 +62,10 @@
   border-radius: 50px;
   font-weight: 900;
   @media screen and (max-width: 640px) {
-    width: 100px;
-    height: 30px;
-    font-size: 10px;
+    width: 150px;
+    height: 50px;
+    font-size: 16px;
+    font-weight: 900;
   }
     
 }
@@ -85,9 +86,10 @@
     font-size: 13px;
     font-weight: 900;
     font-family: sans-serif;
+    color: rgb(102,102,102);
     @media screen and (max-width: 640px) {
-        font-size: 12px;
-        font-weight: bold;
+        font-size: 15px;
+        // font-weight: bold;
     }
         
 }

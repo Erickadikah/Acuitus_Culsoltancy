@@ -16,7 +16,7 @@ export default function Business() {
             color: "black",
             textAlign: "center",
             marginTop: "2rem",
-            fontWeight: "bold",
+            // fontWeight: "bold",
           }}
           className="heading"
         >
@@ -58,6 +58,7 @@ export default function Business() {
             marginTop: "2rem",
             fontWeight: "bold",
           }}
+          className="heading"
         >
           Research
         </h4>

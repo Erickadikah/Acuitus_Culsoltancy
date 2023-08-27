@@ -83,14 +83,14 @@ export default function Hero() {
         zIndex={0}
       />
       <Container className={classes.container}>
-        <Title className={classes.title}>Welcome to Acuitus Duo Consultancy Firm</Title>
+        <Title className={classes.title}>Welcome to Acuitus Duo Consultancy Firm.</Title>
         <Text className={classes.description} size="xl" mt="xl">
           We Provide the best consultancy services in the Country
-          Build fully functional accessible web applications faster than ever – Mantine includes
-          more than 120 customizable components and hooks to cover you in any situation
+          Acuitus Duo Co. Ltd is a global institutional capacity building, technical, and management consultancy firm. We
+          offer an array of services to government institutions, private sector, and non-governmental organizations  
         </Text>
 
-        <Button size="lg" className={classes.customButton} style={{ backgroundColor: 'rgb(20, 80, 56)', color: 'white' }}>
+        <Button size="lg"  className={classes.customButton} style={{ backgroundColor: 'rgb(20, 80, 56)', color: 'white' }}>
           Read More
         </Button>
       </Container>
