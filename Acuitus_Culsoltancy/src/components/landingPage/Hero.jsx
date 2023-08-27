@@ -15,7 +15,7 @@ const imagesData = [
   {
     image: secondImage,
     title: 'Training',
-    description: 'Acuitus team is made up of professionals in Data management and Analytics, customer care relationship, sales and marketing,\
+    description: 'Acuitus team is made up of professionals in data management and analytics, customer care relationship, sales and marketing,\
      capacity building projects among other facilitations\
       We have a team of experts in the field of data management and analytics, customer care relationship, sales and marketing, capacity building projects among other facilitations.\
      ',
@@ -93,8 +93,9 @@ const useStyles = createStyles((theme) => ({
     backgroundColor: 'red',
     color: 'white',
     marginTop: `calc(${theme.spacing.xl} * 1.5)`,
-    fontSize: rem(14),
-    fontWeight: 500,
+    fontSize: rem(15),
+    fontWeight: 600,
+    width: 180,
   },
 
   control: {
@@ -114,7 +115,7 @@ export default function Hero() {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((currentIndex + 1) % imagesData.length); // Cycle through images
-    }, 15000); // Change image every 15 seconds
+    }, 10000); // Change image every 10 seconds
 
     return () => {
       clearInterval(interval); // Clear the interval when component unmounts

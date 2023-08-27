@@ -5,9 +5,13 @@ import "bootstrap/dist/css/bootstrap.css"
 export default function LandingNavBar() {
   return (
     <header>
-    <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-lg" style={{ paddingLeft: "10px" }}>
+    <nav className="navbar navbar-expand-xl navbar-dark bg-dark fixed-top shadow-lg" style={{
+          paddingLeft: "10px",
+          paddingTop: "15px",
+          paddingBottom: "15px",
+        }}>
         <a className="navbar-brand text-info" rel="noopener" href="#">
-          <b>Acuitus Duo Consultancy Firm.</b>
+          <h4>Acuitus Consultancy</h4>
         </a>
         <button
           className="navbar-toggler"
@@ -71,9 +75,9 @@ export default function LandingNavBar() {
                 <a className="dropdown-item" href="#">
                   Enterprise Solutions
                 </a>
-                <a className="dropdown-item" href="#">
+                {/*<a className="dropdown-item" href="#">
                   Cloud Services
-                </a>
+                </a>*/}
               </div>
             </li>
             <li className="nav-item">
