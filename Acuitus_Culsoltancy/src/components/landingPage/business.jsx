@@ -18,7 +18,6 @@ export default function Business() {
             marginTop: "2rem",
             // fontWeight: "bold",
           }}
-          className="heading"
         >
           Capacity Building
         </h4>
@@ -58,7 +57,6 @@ export default function Business() {
             marginTop: "2rem",
             fontWeight: "bold",
           }}
-          className="heading"
         >
           Research
         </h4>
