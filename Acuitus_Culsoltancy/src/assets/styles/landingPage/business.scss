@@ -50,7 +50,7 @@
 }
 
 .btn-s {
-  width: 150px;
+  width: 130px;
   height: 50px;
   border: none;
   background: rgb(0,208,132);
@@ -58,7 +58,7 @@
   color: white;
   cursor: pointer; /* Add a cursor pointer for better interaction */
   transition: background 0.3s ease;
-  border-radius: 50px;
+//   border-radius: 50px;
   font-weight: 900;
   @media screen and (max-width: 640px) {
     width: 150px;
