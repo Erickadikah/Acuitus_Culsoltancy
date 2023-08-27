@@ -1,14 +1,49 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { createStyles, Overlay, Container, Title, Button, Text, rem } from '@mantine/core';
 import masaaiImage from '../../assets/images/landingPage/masaai.jpg'; // Import the image using ES modules
+import secondImage from '../../assets/images/landingPage/image1.jpg'; // Import the second image
+import thirdImage from '../../assets/images/landingPage/digital.jpg'; // Import the third image
+
+
+const imagesData = [
+  {
+    image: masaaiImage,
+    title: 'Welcome to Acuitus Duo Consultancy Firm.',
+    description: 'We Provide the best consultancy services in the Country Acuitus Duo Co. Ltd is a global institutional capacity building, technical, and management consultancy firm. We offer an array of services to government institutions, private sector, and non-governmental organizations',
+    buttonLabel: 'Read More',
+  },
+  {
+    image: secondImage,
+    title: 'Training',
+    description: 'Acuitus team is made up of professionals in Data management and Analytics, customer care relationship, sales and marketing,\
+     capacity building projects among other facilitations\
+      We have a team of experts in the field of data management and analytics, customer care relationship, sales and marketing, capacity building projects among other facilitations.\
+     ',
+    buttonLabel: 'Learn More',
+  },
+  {
+    image: thirdImage,
+    title: 'Chama(Group) Activation',
+    description: ' We promote Colgate as a brand hence enhancing  market expansion\
+    Boost Product sales Gather Market insights\
+    Promoting Oral Health care Product sample research',
+    buttonLabel: 'Explore',
+  },
+];
+
 
 const useStyles = createStyles((theme) => ({
-  hero: {
-    position: 'relative',
-    backgroundImage: `url(${masaaiImage})`,
+  masaaiImage: {
     backgroundSize: 'cover',
     backgroundPosition: 'center',
-    height: rem(900),
+    backgroundRepeat: 'no-repeat',
+    height: rem(840), // Set an initial height
+
+    [theme.fn.smallerThan('sm')]: {
+      width: '100vw', // Full width of the viewport
+      height: '100vh', // Full height of the viewport
+      backgroundSize: 'cover',
+    },
   },
 
   container: {
@@ -55,8 +90,8 @@ const useStyles = createStyles((theme) => ({
   },
 
   customButton: {
-    backgroundColor: 'red', // Change this to your desired background color
-    color: 'white', // Change this to the desired text color
+    backgroundColor: 'red',
+    color: 'white',
     marginTop: `calc(${theme.spacing.xl} * 1.5)`,
     fontSize: rem(14),
     fontWeight: 500,
@@ -74,27 +109,37 @@ const useStyles = createStyles((theme) => ({
 
 export default function Hero() {
   const { classes } = useStyles();
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((currentIndex + 1) % imagesData.length); // Cycle through images
+    }, 15000); // Change image every 15 seconds
+
+    return () => {
+      clearInterval(interval); // Clear the interval when component unmounts
+    };
+  }, [currentIndex]);
+
+  const currentImageData = imagesData[currentIndex];
 
   return (
-    <div className={classes.hero}>
+    <div className={classes.masaaiImage} style={{ backgroundImage: `url(${currentImageData.image})` }}>
       <Overlay
         gradient="linear-gradient(180deg, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, .65) 40%)"
         opacity={1}
         zIndex={0}
       />
       <Container className={classes.container}>
-        <Title className={classes.title}>Welcome to Acuitus Duo Consultancy Firm.</Title>
+        <Title className={classes.title}>{currentImageData.title}</Title>
         <Text className={classes.description} size="xl" mt="xl">
-          We Provide the best consultancy services in the Country
-          Acuitus Duo Co. Ltd is a global institutional capacity building, technical, and management consultancy firm. We
-          offer an array of services to government institutions, private sector, and non-governmental organizations  
+          {currentImageData.description}
         </Text>
 
-        <Button size="lg"  className={classes.customButton} style={{ backgroundColor: 'rgb(0,208,132)', color: 'white' }}>
-          Read More
+        <Button size="lg" className={classes.customButton} style={{ backgroundColor: 'rgb(0,208,132)', color: 'white' }}>
+          {currentImageData.buttonLabel}
         </Button>
       </Container>
     </div>
   );
 }
-
