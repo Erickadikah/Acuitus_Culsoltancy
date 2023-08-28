@@ -130,7 +130,7 @@ export default function Hero() {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((currentIndex + 1) % imagesData.length); // Cycle through images
-    }, 10000); // Change image every 10 seconds
+    }, 15000); // Change image every 10 seconds
 
     return () => {
       clearInterval(interval); // Clear the interval when component unmounts
