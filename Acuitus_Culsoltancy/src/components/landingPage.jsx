@@ -7,7 +7,7 @@ import "bootstrap/dist/css/bootstrap.css"
 import "../assets/styles/landingPage/landing.scss";
 import PageFooter from "./landingPage/pagefooter";
 import NewsLetterSection from "./landingPage/newsletter-section";
-import Article from "./landingPage/article"
+// import Article from "./landingPage/article"
 import Business from "./landingPage/business";
 // import "bootstrap/dist/css/bootstrap.css"
 // import "./assets/styles/landingPage/landing.scss";
@@ -29,7 +29,7 @@ function LandingPage() {
       {/*<OurServices />*/}
       <Business />
       <NewsLetterSection />
-      <Article />
+      {/*<Article />*/}
       <Bestwork />
       {/*<Request />*/}
       <ContactUs categories={categories}/>

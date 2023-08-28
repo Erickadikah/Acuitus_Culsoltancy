@@ -38,7 +38,7 @@ export default function LandingNavBar() {
         <div className="collapse navbar-collapse" id="navbarNav" style={{ marginLeft: '10%' }}>
   <ul className="navbar-nav">
     <li className="nav-item active">
-      <a className="nav-link" rel="noopener" href="#" style={{ color: 'black', fontSize: '16px' }}>
+      <a className="nav-link" rel="noopener" href="/" style={{ color: 'black', fontSize: '16px' }}>
         Home
       </a>
     </li>

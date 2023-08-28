@@ -1,29 +1,123 @@
-import React from "react";
-import "../../assets/styles/landingPage/bestwork.scss";
+import {
+  createStyles,
+  Badge,
+  Group,
+  Title,
+  Text,
+  Card,
+  SimpleGrid,
+  Container,
+  rem,
+} from '@mantine/core';
+import { IconGauge, IconUser, IconCookie } from '@tabler/icons-react';
 
-const Bestwork = () => {
+const mockdata = [
+  {
+    title: 'Best performance',
+    description:
+      'This dust is actually a powerful poison that will even make a pro wrestler sick, Regice cloaks itself with frigid air of -328 degrees Fahrenheit',
+    icon: IconGauge,
+  },
+  {
+    title: 'Individual focused',
+    description:
+      'People say it can run at the same speed as lightning striking, Its icy body is so cold, it will not melt even if it is immersed in magma',
+    icon: IconUser,
+  },
+  {
+    title: 'No third parties',
+    description:
+      'They’re popular, but they’re rare. Trainers who show them off recklessly may be targeted by thieves',
+    icon: IconCookie,
+  },
+];
+
+const useStyles = createStyles((theme) => ({
+  title: {
+    fontSize: rem(34),
+    fontWeight: 900,
+
+    [theme.fn.smallerThan('sm')]: {
+      fontSize: rem(24),
+    },
+  },
+
+  description: {
+    maxWidth: 600,
+    margin: 'auto',
+
+    '&::after': {
+      content: '""',
+      display: 'block',
+      backgroundColor: theme.fn.primaryColor(),
+      width: rem(45),
+      height: rem(2),
+      marginTop: theme.spacing.sm,
+      marginLeft: 'auto',
+      marginRight: 'auto',
+    },
+  },
+
+  card: {
+    border: `${rem(1)} solid ${
+      theme.colorScheme === 'dark' ? theme.colors.dark[5] : theme.colors.gray[1]
+    }`,
+  },
+
+  cardTitle: {
+    '&::after': {
+      content: '""',
+      display: 'block',
+      backgroundColor: theme.fn.primaryColor(),
+      width: rem(45),
+      height: rem(2),
+      marginTop: theme.spacing.sm,
+    },
+  },
+}));
+
+export default function Bestwork() {
+  const { classes, theme } = useStyles();
+  const features = mockdata.map((feature) => (
+    <Card
+      key={feature.title}
+      shadow="md"
+      radius="md"
+      className={classes.card}
+      padding="xl"
+    >
+      {/* Set color prop for the icon component */}
+      <feature.icon size={rem(50)} stroke={2} color="rgb(0, 208, 132)" />
+      <Text fz="lg" fw={500} className={classes.cardTitle} mt="md">
+        {feature.title}
+      </Text>
+      <Text fz="sm" c="dimmed" mt="sm">
+        {feature.description}
+      </Text>
+    </Card>
+));
+
   return (
-    <div className="best-work heading">
-      <h1 style={{
-        marginTop: "20px",
-        fontWeight: "600",
-      }}>Some of our best work</h1>
-      <div className="holder">
-      <div className="card">
-        <h2>Data Managent</h2>
-        <p>Farming Trainings</p>
-      </div>
-      <div className="card">
-        <h2>Business Development</h2>
-        <p>Won Awards in Best Training institutions</p>
-      </div>
-      <div className="card">
-        <h2>Agri Business</h2>
-        <p>Farming Trainings</p>
-      </div>
-      </div>
-    </div>
-  );
-};
+    <Container size="lg" py="xl">
+      <Group position="center">
+        {/*<Badge variant="filled" size="lg">
+          Best company ever
+  </Badge>*/}
+      </Group>
 
-export default Bestwork;
+      <Title order={2} className={classes.title} ta="center" mt="sm">
+        Best work
+      </Title>
+
+      <Text c="dimmed" className={classes.description} ta="center" mt="md">
+        We are a team of highly skilled professionals with a passion for creating
+        innovative  training and solutions for your business.
+      </Text>
+
+      <SimpleGrid cols={3} spacing="xl" mt={50} breakpoints={[{ maxWidth: 'md', cols: 1 }]}>
+        {features}
+      </SimpleGrid>
+    </Container>
+  );
+}
+// Bestwork

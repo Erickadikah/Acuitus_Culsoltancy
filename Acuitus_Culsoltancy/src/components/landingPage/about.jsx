@@ -4,14 +4,17 @@ import heroImage2 from "../../assets/images/landingPage/image1.jpg";
 import PageFooter from "./pagefooter";
 import Missions from "./missions"
 import AboutFooter from "./aboutFooter"
+import Navbar from "./nav";
 
 const About = () => {
   return (
+    <>
+    <Navbar />
     <div className="about">
     <div className="header">
       <h1 className="header-text">About Us</h1>
       <p>
-      GROWING YOUR BUSINESS
+      GROW WITH US
       </p>
       </div>
       <div className="holder-2">
@@ -41,6 +44,7 @@ const About = () => {
     <Missions />
     <AboutFooter />
     </div>
+    </>
   );
 };
 

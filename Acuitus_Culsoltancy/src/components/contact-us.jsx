@@ -9,6 +9,8 @@ import {
   rem,
 } from '@mantine/core';
 import { ContactIconsList } from './ContactIcons/ContactIcons.jsx';
+import eventImage from '../assets/images/landingPage/event.jpg';
+
 
 const useStyles = createStyles((theme) => ({
   wrapper: {
@@ -19,16 +21,13 @@ const useStyles = createStyles((theme) => ({
   header: {
     height: rem(400),
     boxSizing: 'border-box',
-    backgroundImage: `linear-gradient(135deg, ${theme.colors[theme.primaryColor][4]} 0%, ${
-      theme.colors[theme.primaryColor][6]
-    } 100%)`,
+    backgroundImage: `linear-gradient(rgba(51, 51, 51, 0.8), rgba(51, 51, 51, 0.8)), url(${eventImage})`,
     backgroundSize: 'cover',
     display: 'flex',
     alignItems: 'flex-end',
     justifyContent: 'space-between',
     position: 'relative',
     padding: `calc(${theme.spacing.xl} * 1.5) calc(${theme.spacing.xl} * 2)`,
-    // borderRadius: theme.radius.lg,
     marginBottom: theme.spacing.lg,
 
     [theme.fn.smallerThan(1080)]: {
@@ -137,9 +136,8 @@ export default function ContactUs({ categories }) {
   return (
     <Container className={classes.wrapper} size="lg">
       <div className={classes.header}>
-        <Title className={classes.title}>Frequently Asked Questions</Title>
+        <Title className={classes.title}></Title>
         <Title className={classes.titleOverlay} role="presentation">
-          FAQ
         </Title>
 
         <div className={classes.contact}>
