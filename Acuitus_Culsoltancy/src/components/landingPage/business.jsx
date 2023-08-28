@@ -8,10 +8,10 @@ export default function Business() {
   return (
     <div className="bussiness">
     <div className="inner" style={{ marginBottom: '20px' }}>
-  <h1 className="header-text text-center" style={{ color: 'rgb(0, 208, 132)', fontWeight: 'bold', marginTop: '50px' }}>
-    Business <span style={{ color: 'black', fontWeight: 'bold' }}>Services</span>
+  <h1 className="header-text text-center heading" style={{ color: 'rgb(0, 208, 132)', fontWeight: 'bold', marginTop: '50px', fontSize: '38px' }}>
+    Business <span style={{ color: 'black', fontWeight: 'bold', fontSize: '38px' }}>Services</span>
   </h1>
-  <h6 style={{}} className="text-center">WE ARE HERE TO SUPPORT YOU</h6>
+  <h6 style={{ fontSize: '14px', marginTop: '10px'}} className="text-center">WE ARE HERE TO SUPPORT YOU</h6>
     <div className="bis-cont">
       <div className="bis-card">
       <img src={heroImage4} className="image-1" />

@@ -43,20 +43,23 @@ export default function NewsLetterSection() {
         <div className="first-cont">
         <h6 className="text-white h6">WE HAVE A SOLID BACKGROUND</h6>
          <h1
-            className="my-t"
+            className="my-t heading"
             style={{
               fontWeight: "900",
               color: "white",
+              fontSize: "38px",
             }}
           >
-            Our solutions for your
+            Our solutions for
             <br />
+            your
             <span
               style={{
                 color: `rgb(0,208,132)` /* fallback color */,
+                fontSize: "38px",
               }}>
               {" "}
-              business growth
+            business growth
             </span>
           </h1>
           <br />
