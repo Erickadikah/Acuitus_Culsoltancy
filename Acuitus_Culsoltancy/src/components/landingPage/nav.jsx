@@ -41,7 +41,7 @@ export default function LandingNavBar() {
       </a>
     </li>
     <li className="nav-item">
-      <a className="nav-link" rel="noopener" href="#" style={{ color: 'black', fontSize: '16px'}}>
+      <a className="nav-link" rel="noopener" href="/services" style={{ color: 'black', fontSize: '16px'}}>
         Our Services
       </a>
     </li>

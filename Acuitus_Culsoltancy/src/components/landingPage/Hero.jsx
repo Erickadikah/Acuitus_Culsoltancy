@@ -4,6 +4,7 @@ import masaaiImage from '../../assets/images/landingPage/masaai.jpg'; // Import 
 import secondImage from '../../assets/images/landingPage/image1.jpg'; // Import the second image
 import thirdImage from '../../assets/images/landingPage/digital.jpg'; // Import the third image
 import fourthImage from '../../assets/images/landingPage/schoolact.jpg'
+import fifthImage from '../../assets/images/landingPage/ftraning.jpg'
 
 
 const imagesData = [
@@ -35,6 +36,12 @@ const imagesData = [
     title: 'In-School Activation service',
     description: ' we provide \
      Oral health care education: We educate students about the importance of oral health care and proper dental hygiene practices',
+    buttonLabel: 'Our Services',
+  },
+  {
+    image: fifthImage,
+    title: 'Farming Trainings',
+    description: 'We are committed to offering innovative solutions that address a wide range of business challenges. As part of our dedication to sustainability and diversified expertise, we are proud to introduce our specialized farming training program',
     buttonLabel: 'Our Services',
   }
 ];

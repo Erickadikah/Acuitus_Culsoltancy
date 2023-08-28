@@ -4,7 +4,9 @@ import "../../assets/styles/landingPage/bestwork.scss";
 const Bestwork = () => {
   return (
     <div className="best-work">
-      <h1>Some of our best work</h1>
+      <h1 style={{
+        marginTop: "20px",
+      }}>Some of our best work</h1>
       <div className="holder">
       <div className="card">
         <h2>Data Managent</h2>
