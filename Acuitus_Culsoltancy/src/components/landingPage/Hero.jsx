@@ -3,6 +3,7 @@ import { createStyles, Overlay, Container, Title, Button, Text, rem } from '@man
 import masaaiImage from '../../assets/images/landingPage/masaai.jpg'; // Import the image using ES modules
 import secondImage from '../../assets/images/landingPage/image1.jpg'; // Import the second image
 import thirdImage from '../../assets/images/landingPage/digital.jpg'; // Import the third image
+import fourthImage from '../../assets/images/landingPage/schoolact.jpg'
 
 
 const imagesData = [
@@ -29,6 +30,13 @@ const imagesData = [
     Promoting Oral Health care Product sample research',
     buttonLabel: 'Contact Us',
   },
+  {
+    image: fourthImage,
+    title: 'In-School Activation service',
+    description: ' we provide \
+     Oral health care education: We educate students about the importance of oral health care and proper dental hygiene practices',
+    buttonLabel: 'Our Services',
+  }
 ];
 
 
