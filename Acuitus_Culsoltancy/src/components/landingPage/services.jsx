@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import { createStyles, SimpleGrid, Card, Image, Text, Container, AspectRatio } from '@mantine/core';
 import image from '../../assets/images/landingPage/image1.jpg'
-import image2 from '../../assets/images/landingPage/masaai.jpg'
-import image3 from '../../assets/images/landingPage/search .jpg'
+import image2 from '../../assets/images/landingPage/ex1.jpg'
+import image3 from '../../assets/images/landingPage/farming.jpg'
 import image4 from '../../assets/images/landingPage/school2.jpg'
+import image5 from '../../assets/images/landingPage/vsla.jpg'
 import Navbar from "./nav";
 import "../../assets/styles/landingPage/services.scss";
 
@@ -11,15 +12,16 @@ const mockdata = [
   {
     title: 'Training',
     image: image,
-    content: ['Acuitus team is made up of professionals in Data management and Analytics, customer care relationship, sales and marketing, capacity building projects among other facilitations', 'Acuitus team is made up of professionals in Data management and Analytics, customer care relationship, sales and marketing, capacity building projects among other facilitations', 'We conduct our trainings in hospitals, conferences, groups, farms etc. on different training needs specified by clients', 'Acuitus partnered with Arifu and Colgate to conduct training to farmers and groups respectively', 'Also partnered with Siaya Community Based Trainers Organization (SCOBATO) to empower famers, Self help groups, traders, and many more groups '
+    content: ['We conduct our trainings in hospitals, conferences, groups, farms etc. on different training needs specified by clients', 'Acuitus partnered with Arifu and Colgate to conduct training to farmers and groups respectively', 'Also partnered with Siaya Community Based Trainers Organization (SCOBATO) to empower famers, Self help groups, traders, and many more groups '
   ],
-  explanation: `In the "In-School Activation" service, we provide the following services:\n\n- Oral health care education: We educate students about the importance of oral health care and proper dental hygiene practices.\n- Product sample research: We conduct research using product samples to gather insights about student preferences and usage.\n- Create continuous habit in oral health care: We work to instill a regular habit of oral health care among students, promoting a lifetime of healthy habits.\n- Gather market insights: Our activities in schools help us gather valuable insights about the preferences and behaviors of students, contributing to our market research efforts.\n- Promote Colgate as a brand: Through our engagement in schools, we actively promote the Colgate brand, enhancing its visibility among students and educators.`,
+  explanation: `Acuitus team is made up of professionals in Data management and Analytics, customer care relationship, sales and marketing, capacity building projects among other facilitati`,
   },
   {
     title: 'Chama(Group) Activation',
     image: image2,
     content: ['Promote Colgate as a brand hence enhancing  market expansion', 'Boost Product sales', 'Gather Market insights', 'Promoting Oral Health care', 'Product sample research'],
-    explanation: `In the "In-School Activation" service, we provide the following services:\n\n- Oral health care education: We educate students about the importance of oral health care and proper dental hygiene practices.\n- Product sample research: We conduct research using product samples to gather insights about student preferences and usage.\n- Create continuous habit in oral health care: We work to instill a regular habit of oral health care among students, promoting a lifetime of healthy habits.\n- Gather market insights: Our activities in schools help us gather valuable insights about the preferences and behaviors of students, contributing to our market research efforts.\n- Promote Colgate as a brand: Through our engagement in schools, we actively promote the Colgate brand, enhancing its visibility among students and educators.`,
+    explanation: `Some samples of activations we conduct in welfare groups, CBOs, Family Groups, and Business registered Groups through which our teams enhance capacity building through education.
+Children are also included in our programs`,
 
   },
    {
@@ -36,9 +38,15 @@ const mockdata = [
   },
   {
     title: 'Village Savings & Loans Associations (VSLA) Trainings',
-    image:
-      'https://images.unsplash.com/photo-1519681393784-d120267933ba?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=720&q=80',
+    image: image5,
     content: ['Scala Woman group during end cycle sharing out ceremony in Ugenya Sub-county (Siaya County)', 'Ti Matek Self Help group during  VSLA transaction meeting- Siaya county', 'VSLA cluster meeting', 'Ngima Manyien Women group  during transaction Meeting.'],
+    explanation: `In the "In-School Activation" service, we provide the following services:\n\n- Oral health care education: We educate students about the importance of oral health care and proper dental hygiene practices.\n- Product sample research: We conduct research using product samples to gather insights about student preferences and usage.\n- Create continuous habit in oral health care: We work to instill a regular habit of oral health care among students, promoting a lifetime of healthy habits.\n- Gather market insights: Our activities in schools help us gather valuable insights about the preferences and behaviors of students, contributing to our market research efforts.\n- Promote Colgate as a brand: Through our engagement in schools, we actively promote the Colgate brand, enhancing its visibility among students and educators.`,
+
+  },
+  {
+    title: 'Farming Trainings',
+    image: image3,
+    content: ['Livestock farming training in Nyeri County', 'Apiculture farmers training in Machakos County', 'VSLA cluster meeting', 'Together as One group during farming training in Homabay', 'Poultry farming training in Uasin Gishu County'],
     explanation: `In the "In-School Activation" service, we provide the following services:\n\n- Oral health care education: We educate students about the importance of oral health care and proper dental hygiene practices.\n- Product sample research: We conduct research using product samples to gather insights about student preferences and usage.\n- Create continuous habit in oral health care: We work to instill a regular habit of oral health care among students, promoting a lifetime of healthy habits.\n- Gather market insights: Our activities in schools help us gather valuable insights about the preferences and behaviors of students, contributing to our market research efforts.\n- Promote Colgate as a brand: Through our engagement in schools, we actively promote the Colgate brand, enhancing its visibility among students and educators.`,
 
   },
