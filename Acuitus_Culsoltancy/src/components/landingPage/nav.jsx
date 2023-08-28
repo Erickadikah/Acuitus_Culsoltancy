@@ -11,13 +11,14 @@ export default function LandingNavBar() {
           paddingTop: "15px",
           paddingBottom: "15px",
         }}>
-        <a className="navbar-brand text-info" rel="noopener" href="#" style={{ display: 'flex'}}>
+        <a className="navbar-brand text-info" rel="noopener" href="/" style={{ display: 'flex'}}>
         <img src={logo} alt="Acuitus Consultancy Logo" width="40" height="40" class="d-inline-block align-top"/>
         <h6 className="heading" style={{
           fontWeight: "900",
           fontSize: "20px",
           marginTop: "10px",
           marginLeft: "10px",
+          color: `rgb(0,208,132)`
         }}>Acuitus Consultancy</h6>
         </a>
         <button

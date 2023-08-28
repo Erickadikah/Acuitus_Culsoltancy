@@ -1,9 +1,50 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import heroImage4 from "../../assets/images/landingPage/geet.jpg";
 import { FaArrowRight } from "react-icons/fa";
 import "../../assets/styles/landingPage/newsletter-section.scss";
 
 export default function NewsLetterSection() {
+  const [countersVisible, setCountersVisible] = useState(false);
+  const [workHours, setWorkHours] = useState(0);
+  const [greatReviews, setGreatReviews] = useState(0);
+  const [projectsDone, setProjectsDone] = useState(0);
+  const [awardsWon, setAwardsWon] = useState(0);
+
+  useEffect(() => {
+    // Start counting up to the target numbers over a period of time
+    const targetNumbers = {
+      workHours: 700,
+      greatReviews: 1080,
+      projectsDone: 340,
+      awardsWon: 400,
+    };
+  
+  const stepDuration = 10; // Time in milliseconds for each step
+    const steps = Math.ceil(targetNumbers.workHours / stepDuration);
+    let currentStep = 0;
+
+    const countInterval = setInterval(() => {
+      currentStep++;
+      setWorkHours(Math.ceil((targetNumbers.workHours / steps) * currentStep));
+      setGreatReviews(Math.ceil((targetNumbers.greatReviews / steps) * currentStep));
+      setProjectsDone(Math.ceil((targetNumbers.projectsDone / steps) * currentStep));
+      setAwardsWon(Math.ceil((targetNumbers.awardsWon / steps) * currentStep));
+
+      if (currentStep === steps) {
+        clearInterval(countInterval);
+      }
+    }, stepDuration);
+
+    // Delay setting countersVisible to true to trigger animations
+    const animationTimeout = setTimeout(() => {
+      setCountersVisible(true);
+    }, stepDuration * steps + 200); // Delay the counter animations accordingly
+
+    return () => {
+      clearInterval(countInterval);
+      clearTimeout(animationTimeout);
+    };
+  }, []);
   const styles = {
     background: `rgba(0, 0, 0, 0.8);`,
     backgroundSize: "cover",
@@ -163,16 +204,16 @@ export default function NewsLetterSection() {
             fontFamily: "poppins",
     
           }}>
-            <div className="counter-item">
-              <h1>700</h1>
+            <div className={`counter-item ${countersVisible ? "animate" : ""}`}>
+              <h1>{workHours}</h1>
               <p style={{
                 fontSize: '18px',
                 whiteSpace: 'nowrap',
                 color: 'white'
               }}>Work Hours</p>
             </div>
-            <div className="counter-item">
-              <h1>1080</h1>
+            <div className={`counter-item ${countersVisible ? "animate" : ""}`}>
+              <h1>{greatReviews}</h1>
               <p
               style={{
                 fontSize: '18px',
@@ -181,8 +222,8 @@ export default function NewsLetterSection() {
               }}
               >Great Reviews</p>
             </div>
-            <div className="counter-item">
-              <h1>340</h1>
+            <div className={`counter-item ${countersVisible ? "animate" : ""}`}>
+              <h1>{projectsDone}</h1>
               <p
               style={{
                 fontSize: '18px',
@@ -191,8 +232,8 @@ export default function NewsLetterSection() {
               }}
               >Projects Done</p>
             </div>
-            <div className="counter-item">
-              <h1>400</h1>
+            <div className={`counter-item ${countersVisible ? "animate" : ""}`}>
+              <h1>{awardsWon}</h1>
               <p
               style={{
                 fontSize: '18px',
