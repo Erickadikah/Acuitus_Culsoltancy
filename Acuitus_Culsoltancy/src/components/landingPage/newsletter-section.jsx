@@ -79,6 +79,7 @@ export default function NewsLetterSection() {
   };
 
   return (
+    <>
     <section className="form">
       <div className="newsletter">
         <div className="first-cont">
@@ -245,5 +246,6 @@ export default function NewsLetterSection() {
           </div>
       </div>
     </section>
+    </>
   );
 }

@@ -34,13 +34,6 @@ const useStyles = createStyles((theme, { variant }) => ({
   },
 }));
 
-// interface ContactIconProps extends Omit<React.ComponentPropsWithoutRef<'div'>, 'title'> {
-//   icon: React.FC<any>;
-//   title: React.ReactNode;
-//   description: React.ReactNode;
-//   variant?: ContactIconVariant;
-// }
-
 function ContactIcon({
   icon: Icon,
   title,
@@ -72,10 +65,6 @@ function ContactIcon({
   );
 }
 
-// interface ContactIconsListProps {
-//   data?: ContactIconProps[];
-//   variant?: ContactIconVariant;
-// }
 
 const MOCKDATA = [
   { title: 'Email', description: 'hello@mantine.dev', icon: IconAt },
@@ -96,7 +85,7 @@ export function ContactIcons() {
         sx={(theme) => ({
           padding: theme.spacing.xl,
           borderRadius: theme.radius.md,
-          backgroundColor: theme.white,
+          backgroundColor: `rgb(0, 208, 132)`,
         })}
       >
         <ContactIconsList />
