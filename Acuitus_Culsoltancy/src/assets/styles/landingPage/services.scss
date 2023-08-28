@@ -1,0 +1,14 @@
+.card-container {
+  display: flex;
+  flex-direction: row; /* Align Navbar and Card horizontally */
+  align-items: flex-start; /* Align content at the top */
+  margin-top: 5rem;
+  // background-color: red;
+}
+
+.card-content {
+  /* Adjust card styles as needed */
+  flex: 1; /* Allow card to expand and filling available space */
+  margin-left: 20px; /* spacing between Navbar and Card */
+}
+

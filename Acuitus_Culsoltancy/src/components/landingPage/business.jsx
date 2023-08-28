@@ -7,7 +7,7 @@ import heroImage2 from "../../assets/images/landingPage/d.jpg";
 export default function Business() {
   return (
     <div className="bussiness">
-    <div className="inner" style={{ marginTop: '40px', marginBottom: '20px' }}>
+    <div className="inner" style={{ marginBottom: '20px' }}>
   <h1 className="header-text text-center" style={{ color: 'rgb(0, 208, 132)', fontWeight: 'bold' }}>
     Business <span style={{ color: 'black', fontWeight: 'bold' }}>Services</span>
   </h1>

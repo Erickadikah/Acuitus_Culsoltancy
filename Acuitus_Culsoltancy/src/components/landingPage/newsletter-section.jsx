@@ -10,7 +10,7 @@ export default function NewsLetterSection() {
     backgroundRepeat: "no-repeat",
     display: "flex",
     placeContent: "center",
-    height: "70%",
+    height: "100%",
     alignItems: "center",
     justifyContent: "center",
     flexDirection: "row",
@@ -45,7 +45,6 @@ export default function NewsLetterSection() {
          <h1
             className="my-t"
             style={{
-              // fontSize: "55px",
               fontWeight: "900",
               color: "white",
             }}

@@ -9,9 +9,7 @@ const About = () => {
   return (
     <div className="about">
     <div className="header">
-      <h1 className="header-text">About 
-      <br />
-      Acuitus Consultancy Firm</h1>
+      <h1 className="header-text">About Us</h1>
       <p>
       GROWING YOUR BUSINESS
       </p>
