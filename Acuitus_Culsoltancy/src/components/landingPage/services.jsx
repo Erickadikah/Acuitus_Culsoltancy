@@ -81,6 +81,7 @@ export default function Services() {
       component="div"
       className={`${classes.card} card-content`}
       onClick={() => setOpenService(article.title === openService ? null : article.title)}
+      mt={50}
     >
       <AspectRatio ratio={1920 / 1080}>
         <Image src={article.image} alt={article.title} />
