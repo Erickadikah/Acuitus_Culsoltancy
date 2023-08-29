@@ -1,5 +1,8 @@
+
 .about {
   margin-top: 50px;
+  overflow-x: hidden;
+
 }
 
 .header {
@@ -41,8 +44,13 @@
 }
 
 .div-1 img {
-  width: 40rem;
+  width: 38rem;
   height: auto; /* Maintain aspect ratio */
+  @media screen and (max-width: 480px){
+    width: 20rem;
+
+    
+  }
 }
 
 @media screen and (max-width: 960px) {
