@@ -52,12 +52,13 @@ const useStyles = createStyles((theme) => ({
     backgroundSize: 'cover',
     backgroundPosition: 'center',
     backgroundRepeat: 'no-repeat',
-    height: rem(840), // Set an initial height
+    height: rem(838), // Set an initial height
 
     [theme.fn.smallerThan('sm')]: {
       width: '100vw', // Full width of the viewport
       height: '100vh', // Full height of the viewport
       backgroundSize: 'cover',
+      minHeight: rem(500), // Set a minimum height for small screens
     },
   },
 
@@ -72,7 +73,7 @@ const useStyles = createStyles((theme) => ({
     position: 'relative',
 
     [theme.fn.smallerThan('sm')]: {
-      height: rem(600),
+      height: 'auto', // Allow the container to adjust its height based on content
       paddingBottom: `calc(${theme.spacing.xl} * 3)`,
     },
   },
@@ -142,17 +143,26 @@ export default function Hero() {
   return (
     <div className={classes.masaaiImage} style={{ backgroundImage: `url(${currentImageData.image})` }}>
       <Overlay
-        gradient="linear-gradient(180deg, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, .65) 40%)"
+        gradient="linear-gradient(180deg, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, .65) 80%)"
         opacity={1}
         zIndex={0}
       />
       <Container className={classes.container}>
         <Title className={classes.title}>{currentImageData.title}</Title>
-        <Text className={classes.description} size="xl" mt="xl">
+        <Text
+          className={classes.description}
+          size="xl"
+          mt="xl"
+          color="rgb(0, 208, 132)" //text color here
+        >
           {currentImageData.description}
         </Text>
 
-        <Button size="lg" className={classes.customButton} style={{ backgroundColor: 'rgb(0,208,132)', color: 'white' }}>
+        <Button
+          size="lg"
+          className={classes.customButton}
+          style={{ backgroundColor: 'rgb(0, 208, 132)', color: 'white' }}
+        >
           {currentImageData.buttonLabel}
         </Button>
       </Container>

@@ -9,26 +9,36 @@ import {
   Container,
   rem,
 } from '@mantine/core';
-import { IconGauge, IconUser, IconCookie } from '@tabler/icons-react';
+import { IconSearch, IconUser, IconUserCheck, IconArrowRight, IconBell, IconPencil} from '@tabler/icons-react';
 
 const mockdata = [
   {
-    title: 'Best performance',
+    title: 'Product Research',
     description:
-      'This dust is actually a powerful poison that will even make a pro wrestler sick, Regice cloaks itself with frigid air of -328 degrees Fahrenheit',
-    icon: IconGauge,
+      'Market research is a process of gathering, analyzing, and interpreting information about a market, about a product or service to be offered for sale in that market, and about the past, present, and potential customers for the product or service',
+    keyPoints: ['Market Segamentation', 'Brand and Advertisement research', 'New Prouct Testing'],
+    icon: IconSearch,
   },
   {
-    title: 'Individual focused',
+    title: 'Public policy research services',
     description:
-      'People say it can run at the same speed as lightning striking, Its icy body is so cold, it will not melt even if it is immersed in magma',
-    icon: IconUser,
+      'Our public policy research services are designed to help you understand the political and regulatory environment in which you operate. We provide you with the information you need to make informed decisions and develop effective strategies.',
+    keyPoints: ['Qualitative Studies', 'Quantitative data Collection', 'Regestry data request and analysis'],
+    icon: IconBell,
   },
   {
-    title: 'No third parties',
+    title: 'Attitude Research services',
     description:
-      'They’re popular, but they’re rare. Trainers who show them off recklessly may be targeted by thieves',
-    icon: IconCookie,
+      'We provide you with the information you need to make informed decisions and develop effective strategies.',
+    keyPoints: ['Brand awareness and image Studies (group focus , in-depth interviews)', 'segmentation', 'Quantity Survays'],
+    icon: IconUserCheck,
+  },
+  {
+    title: 'In-school activation',
+    description:
+      'we provide our clients with the best in-school activation services. We have a team of highly trained and experienced professionals who are dedicated to providing you with the best in-school activation services.',
+    keyPoints: ['Oral health care education', 'Product sample research', 'Create continuous habit in oral health care', 'Gather market insights', 'promote Colgate as a brand'],
+    icon: IconPencil,
   },
 ];
 
@@ -79,14 +89,7 @@ const useStyles = createStyles((theme) => ({
 export default function Bestwork() {
   const { classes, theme } = useStyles();
   const features = mockdata.map((feature) => (
-    <Card
-      key={feature.title}
-      shadow="md"
-      radius="md"
-      className={classes.card}
-      padding="xl"
-    >
-      {/* Set color prop for the icon component */}
+    <Card key={feature.title} shadow="md" radius="md" className={classes.card} padding="xl">
       <feature.icon size={rem(50)} stroke={2} color="rgb(0, 208, 132)" />
       <Text fz="lg" fw={500} className={classes.cardTitle} mt="md">
         {feature.title}
@@ -94,15 +97,23 @@ export default function Bestwork() {
       <Text fz="sm" c="dimmed" mt="sm">
         {feature.description}
       </Text>
+      <ul style={{ marginTop: '10px', color: 'rgb(0, 208, 132)' }}>
+        {feature.keyPoints.map((point, index) => (
+          <li key={index} style={{ display: 'flex', alignItems: 'center', color: 'inherit' }}>
+            <IconArrowRight size="1rem" style={{ marginRight: '0.5rem', color: 'inherit' }} />
+            {point}
+          </li>
+        ))}
+      </ul>
     </Card>
-));
+  ));
 
   return (
     <Container size="lg" py="xl">
       <Group position="center">
         {/*<Badge variant="filled" size="lg">
           Best company ever
-  </Badge>*/}
+        </Badge>*/}
       </Group>
 
       <Title order={2} className={classes.title} ta="center" mt="sm">
@@ -111,7 +122,7 @@ export default function Bestwork() {
 
       <Text c="dimmed" className={classes.description} ta="center" mt="md">
         We are a team of highly skilled professionals with a passion for creating
-        innovative  training and solutions for your business.
+        innovative training and solutions for your business.
       </Text>
 
       <SimpleGrid cols={3} spacing="xl" mt={50} breakpoints={[{ maxWidth: 'md', cols: 1 }]}>
@@ -120,4 +131,5 @@ export default function Bestwork() {
     </Container>
   );
 }
+
 // Bestwork
