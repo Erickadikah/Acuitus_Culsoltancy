@@ -40,8 +40,10 @@ export default function Business() {
           color: "black",
           textAlign: "center",
           marginTop: "2rem",
+          fontSize: "1.5rem",
           // fontWeight: "bold",
         }}
+        className="heading"
       >
         Capacity Building
       </h4>
@@ -78,7 +80,9 @@ export default function Business() {
             textAlign: "center",
             marginTop: "2rem",
             fontWeight: "bold",
+            fontSize: "1.5rem",
           }}
+          className="heading"
         >
           Research
         </h4>
@@ -114,7 +118,9 @@ export default function Business() {
             textAlign: "center",
             marginTop: "2rem",
             fontWeight: "bold",
+            fontSize: "1.5rem",
           }}
+          className="heading"
         >
           Digital Marketing
         </h4>
