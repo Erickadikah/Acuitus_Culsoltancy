@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "../../assets/styles/landingPage/business.scss";
-import heroImage4 from "../../assets/images/landingPage/greetings.jpg";
+import heroImage4 from "../../assets/images/landingPage/geet.jpg";
 import heroImag3 from "../../assets/images/landingPage/search .jpg";
 import heroImage2 from "../../assets/images/landingPage/d.jpg";
 import { motion, AnimatePresence } from "framer-motion";

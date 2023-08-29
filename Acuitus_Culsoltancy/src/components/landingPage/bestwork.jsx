@@ -106,7 +106,7 @@ export default function Bestwork() {
       </Group>
 
       <Title order={2} className={classes.title} ta="center" mt="sm">
-        Best work
+        Best known for!
       </Title>
 
       <Text c="dimmed" className={classes.description} ta="center" mt="md">
