@@ -61,10 +61,10 @@ export default function Business() {
         <li>Gender equality and women empowerment program</li>
         <li>Oral Health Education</li>
         <li>Resource mobilization</li>
-          <li>Healthcare education</li>
-{/*          <li>Disaster management</li>
+        <li>Healthcare education</li>
+        <li>Disaster management</li>
         <li>Climate Change & Management</li>
-          <li>Governance & advocacy</li>*/}
+          <li>Governance & advocacy</li>
         <li>
           Youth Training & mentorship
         </li>
