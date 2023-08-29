@@ -15,11 +15,11 @@ const ContactUs = () => {
     <div className='contact-us'>
     <h1 className='text-center heading' style={{
         marginTop: '100px',
-        fontSize: '50px',
+        fontSize: '40px',
     }}>
     Contact Us
     </h1>
-    <p className='text-center'>FEEL FREE TO SEND US A MESSAGE</p>
+    <p className='text-center'>FEEL FREE TO SEND US A MESSAGE ANY TIME!</p>
     </div>
     <div className='container holder'>
     <div className='phone' style={{
@@ -35,6 +35,9 @@ const ContactUs = () => {
         marginBottom: '30px'
     }}/>
     <p className='heading'><strong>Phone</strong></p>
+    <p>
+    We call back as soon as possible.
+    </p>
     <p><strong>+234 810 000 0000</strong></p>
     </div>
     <div className='email' style={{
