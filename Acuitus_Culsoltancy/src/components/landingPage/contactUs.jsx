@@ -5,19 +5,23 @@ import { MdEmail } from 'react-icons/md'
 import { FaMapMarkerAlt } from 'react-icons/fa'
 import { color } from 'framer-motion'
 import { MdOutlineMailOutline } from 'react-icons/md'
+import AboutFooter from "./aboutFooter"
+import "../../assets/styles/landingPage/contactUs.scss";
 
 const ContactUs = () => {
   return (
     <div>
     <Navbar />
-    <div>
-    <h1 className='text-center' style={{
-        marginTop: '100px'
+    <div className='contact-us'>
+    <h1 className='text-center heading' style={{
+        marginTop: '100px',
+        fontSize: '50px',
     }}>
     Contact Us
     </h1>
+    <p className='text-center'>FEEL FREE TO SEND US A MESSAGE</p>
     </div>
-    <div className='container'>
+    <div className='container holder'>
     <div className='phone' style={{
     display: 'flex',
     flexDirection: 'column',
@@ -26,13 +30,12 @@ const ContactUs = () => {
     textAlign: 'center'
 }}>
     <BsTelephoneXFill style={{
-        fontSize: '50px',
-        color: `rgb(0,208,132)`
+        fontSize: '45px',
+        color: `rgb(0,208,132)`,
+        marginBottom: '30px'
     }}/>
-    <p><strong>Phone</strong></p>
-    <p><strong>Phone:</strong> +234 810 000 0000</p>
-    <p><strong>Support:</strong></p>
-    <p><strong>Jobs:</strong></p>
+    <p className='heading'><strong>Phone</strong></p>
+    <p><strong>+234 810 000 0000</strong></p>
     </div>
     <div className='email' style={{
     display: 'flex',
@@ -44,13 +47,22 @@ const ContactUs = () => {
 }}>
     <MdOutlineMailOutline style={{
         fontSize: '50px',
-        color: `rgb(0,208,132)`
+        color: `rgb(0,208,132)`,
+        marginBottom: '30px'
     }}/>
-    <p><strong>Email</strong></p>
+    <p className='heading'><strong>Phone</strong></p>
     <p>
-    We relpy within 24 hours
+    We reply to emails
+    withing the hour.
     </p>
-    <p><strong>Acuitusconsoltancy@gmai.com</strong></p>
+    <a href='mailto:erickadikah2030@gmail.com' style={{
+        textDecoration: 'none'
+    }}>
+    <p style={{
+        marginTop: '10px',
+        color: 'rgb(0,208,132)'
+    }}><strong>Acuitusconsoltancy@gmai.com</strong></p>
+    </a>
     </div>
    <div className='address' style={{
     display: 'flex',
@@ -61,12 +73,14 @@ const ContactUs = () => {
 }}>
     <FaMapMarkerAlt style={{
         fontSize: '50px',
-        color: `rgb(0,208,132)`
+        color: `rgb(0,208,132)`,
+        marginBottom: '30px'
     }} />
-    <p><strong>Address:</strong> 1, Oba Akran Avenue, Ikeja, Lagos</p>
-    <p><strong>Address:</strong> 2, Oba Akran Avenue, Ikeja, Lagos</p>
-</div>
+    <p className='heading'><strong>Location</strong></p>
+    <p>Oba Akran Avenue, Ngong, Nairobi</p>
     </div>
+    </div>
+    <AboutFooter />
     </div>
   )
 }
