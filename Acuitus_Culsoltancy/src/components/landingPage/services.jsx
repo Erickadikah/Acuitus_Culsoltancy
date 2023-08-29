@@ -6,7 +6,7 @@ import image3 from '../../assets/images/landingPage/farming.jpg'
 import image4 from '../../assets/images/landingPage/school2.jpg'
 import image5 from '../../assets/images/landingPage/vsla.jpg'
 import Navbar from "./nav";
-import "../../assets/styles/landingPage/services.scss";
+// import "../../assets/styles/landingPage/services.scss";
 
 const mockdata = [
   {
@@ -74,7 +74,7 @@ export default function Services() {
 
   const cards = mockdata.map((article) => (
   <div key={article.title} className="card-container">
-    <Navbar /> {/* Include the Navbar component */}
+    <Navbar />
     <Card
       p="md"
       radius="md"
