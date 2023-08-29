@@ -136,7 +136,7 @@ export default function ContactUs({ categories }) {
   return (
     <Container className={classes.wrapper} size="lg">
       <div className={classes.header}>
-        <Title className={classes.title}></Title>
+        <Title className={classes.title}>Acuitus Consultancy Firm</Title>
         <Title className={classes.titleOverlay} role="presentation">
         </Title>
 
