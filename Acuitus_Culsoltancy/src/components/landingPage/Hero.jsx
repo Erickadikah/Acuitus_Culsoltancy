@@ -63,7 +63,7 @@ const useStyles = createStyles((theme) => ({
   },
 
   container: {
-    height: rem(700),
+    height: rem(800),
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'flex-end',
@@ -73,7 +73,7 @@ const useStyles = createStyles((theme) => ({
     position: 'relative',
 
     [theme.fn.smallerThan('sm')]: {
-      height: 'auto', // Allow the container to adjust its height based on content
+      // height: 'auto', //remove this to make the height of the container to be auto
       paddingBottom: `calc(${theme.spacing.xl} * 3)`,
     },
   },
