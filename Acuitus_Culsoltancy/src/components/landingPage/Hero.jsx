@@ -52,7 +52,7 @@ const useStyles = createStyles((theme) => ({
     backgroundSize: 'cover',
     backgroundPosition: 'center',
     backgroundRepeat: 'no-repeat',
-    height: rem(838), // Set an initial height
+    height: rem(840), // Set an initial height
 
     [theme.fn.smallerThan('sm')]: {
       width: '100vw', // Full width of the viewport
@@ -63,7 +63,7 @@ const useStyles = createStyles((theme) => ({
   },
 
   container: {
-    height: rem(700),
+    height: rem(800),
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'flex-end',
@@ -73,8 +73,8 @@ const useStyles = createStyles((theme) => ({
     position: 'relative',
 
     [theme.fn.smallerThan('sm')]: {
-      height: 'auto', // Allow the container to adjust its height based on content
-      paddingBottom: `calc(${theme.spacing.xl} * 3)`,
+      // height: 'auto', // Allow the container to adjust its height based on content
+      paddingBottom: theme.spacing.xl, // Adjust spacing for small screens
     },
   },
 
@@ -84,24 +84,23 @@ const useStyles = createStyles((theme) => ({
     fontWeight: 900,
     lineHeight: 1.1,
 
-    [theme.fn.smallerThan('sm')]: {
-      fontSize: rem(40),
-      lineHeight: 1.2,
-    },
-
-    [theme.fn.smallerThan('xs')]: {
-      fontSize: rem(28),
-      lineHeight: 1.3,
+     [theme.fn.smallerThan('sm')]: {
+      fontSize: rem(28), // Adjust font size for smaller screens
     },
   },
 
+  //   [theme.fn.smallerThan('xs')]: {
+  //     fontSize: rem(28),
+  //     lineHeight: 1.3,
+  //   },
+  // },
+
   description: {
     color: theme.white,
-    maxWidth: 600,
+    maxWidth: 500,
 
     [theme.fn.smallerThan('sm')]: {
-      maxWidth: '100%',
-      fontSize: theme.fontSizes.sm,
+      fontSize: theme.fontSizes.sm, // Adjust font size for smaller screens
     },
   },
 
@@ -143,7 +142,7 @@ export default function Hero() {
   return (
     <div className={classes.masaaiImage} style={{ backgroundImage: `url(${currentImageData.image})` }}>
       <Overlay
-        gradient="linear-gradient(180deg, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, .65) 80%)"
+        gradient="linear-gradient(180deg, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, .65) 0%)"
         opacity={1}
         zIndex={0}
       />

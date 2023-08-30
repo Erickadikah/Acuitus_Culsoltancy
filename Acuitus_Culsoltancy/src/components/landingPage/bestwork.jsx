@@ -9,7 +9,7 @@ import {
   Container,
   rem,
 } from '@mantine/core';
-import { IconSearch, IconUser, IconUserCheck, IconArrowRight, IconBell, IconPencil} from '@tabler/icons-react';
+import { IconSearch, IconUser, IconUserCheck, IconExternalLink, IconBell, IconPencil} from '@tabler/icons-react';
 
 const mockdata = [
   {
@@ -30,7 +30,7 @@ const mockdata = [
     title: 'Attitude Research services',
     description:
       'We provide you with the information you need to make informed decisions and develop effective strategies.',
-    keyPoints: ['Brand awareness and image Studies (group focus , in-depth interviews)', 'segmentation', 'Quantity Survays'],
+    keyPoints: ['Brand awareness and image Studies', 'segmentation', 'Quantity Survays'],
     icon: IconUserCheck,
   },
   {
@@ -100,7 +100,7 @@ export default function Bestwork() {
       <ul style={{ marginTop: '10px', color: 'rgb(0, 208, 132)' }}>
         {feature.keyPoints.map((point, index) => (
           <li key={index} style={{ display: 'flex', alignItems: 'center', color: 'inherit' }}>
-            <IconArrowRight size="1rem" style={{ marginRight: '0.5rem', color: 'inherit' }} />
+            <IconExternalLink size="1rem" style={{ marginRight: '0.5rem', color: 'inherit' }} />
             {point}
           </li>
         ))}
