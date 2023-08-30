@@ -73,7 +73,7 @@ const useStyles = createStyles((theme) => ({
     position: 'relative',
 
     [theme.fn.smallerThan('sm')]: {
-      height: rem(600),
+      height: rem(500),
       paddingBottom: theme.spacing.xl, // Adjust spacing for small screens
     },
   },
@@ -89,15 +89,10 @@ const useStyles = createStyles((theme) => ({
     },
   },
 
-  //   [theme.fn.smallerThan('xs')]: {
-  //     fontSize: rem(28),
-  //     lineHeight: 1.3,
-  //   },
-  // },
 
   description: {
     color: theme.white,
-    maxWidth: 500,
+    maxWidth: 600,
 
     [theme.fn.smallerThan('sm')]: {
       fontSize: theme.fontSizes.sm, // Adjust font size for smaller screens
@@ -115,7 +110,7 @@ const useStyles = createStyles((theme) => ({
 
   control: {
     marginTop: `calc(${theme.spacing.xl} * 1.5)`,
-    // width: 200,
+    width: '100%',
 
     [theme.fn.smallerThan('sm')]: {
       width: '100%',
@@ -142,7 +137,7 @@ export default function Hero() {
   return (
     <div className={classes.masaaiImage} style={{ backgroundImage: `url(${currentImageData.image})` }}>
       <Overlay
-        gradient="linear-gradient(180deg, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, .65) 0%)"
+        gradient="linear-gradient(180deg, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, .65) 40%)"
         opacity={1}
         zIndex={0}
       />

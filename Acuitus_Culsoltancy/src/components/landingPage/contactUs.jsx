@@ -7,6 +7,8 @@ import { color } from 'framer-motion'
 import { MdOutlineMailOutline } from 'react-icons/md'
 import AboutFooter from "./aboutFooter"
 import "../../assets/styles/landingPage/contactUs.scss";
+import Contactform from "./contactForm";
+// import Contactform from '../../../src/components/landingPage/contactForm'
 
 const ContactUs = () => {
   return (
@@ -82,6 +84,9 @@ const ContactUs = () => {
     <p className='heading'><strong>Location</strong></p>
     <p>Oba Akran Avenue, Ngong, Nairobi</p>
     </div>
+    </div>
+    <div className='form-c'>
+    <Contactform />
     </div>
     <AboutFooter />
     </div>
