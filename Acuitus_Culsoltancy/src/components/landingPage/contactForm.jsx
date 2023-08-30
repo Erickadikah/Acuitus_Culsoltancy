@@ -29,7 +29,6 @@ export default function Contactform() {
             color: `rgb(0,208,132)`,
         }}>message</span>
       </Title>
-
       <SimpleGrid cols={2} mt="xl" breakpoints={[{ maxWidth: 'sm', cols: 1 }]}>
         <TextInput
           label="Name"

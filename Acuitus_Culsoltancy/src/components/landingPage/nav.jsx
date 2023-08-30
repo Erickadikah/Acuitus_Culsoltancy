@@ -7,11 +7,11 @@ export default function LandingNavBar() {
   return (
     <header>
       <nav
-        className="navbar navbar-expand-xl navbar-dark bg-white fixed-top"
+        className="navbar navbar-expand-lg navbar-dark bg-white fixed-top"
         style={{
           paddingLeft: "10px",
-          paddingTop: "15px",
-          paddingBottom: "15px",
+          paddingTop: "10px",
+          paddingBottom: "10px",
         }}
       >
         <a
@@ -23,15 +23,15 @@ export default function LandingNavBar() {
           <img
             src={logo}
             alt="Acuitus Consultancy Logo"
-            width="40"
-            height="40"
+            width="38"
+            height="38"
             class="d-inline-block align-top"
           />
           <h6
             className="heading"
             style={{
               fontWeight: "900",
-              fontSize: "20px",
+              fontSize: "18px",
               marginTop: "10px",
               marginLeft: "10px",
               color: `rgb(0,208,132)`,

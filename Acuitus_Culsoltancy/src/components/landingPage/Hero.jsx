@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { createStyles, Overlay, Container, Title, Button, Text, rem } from '@mantine/core';
 import masaaiImage from '../../assets/images/landingPage/masaai.jpg'; // Import the image using ES modules
-import secondImage from '../../assets/images/landingPage/image1.jpg'; // Import the second image
-import thirdImage from '../../assets/images/landingPage/digital.jpg'; // Import the third image
+import secondImage from '../../assets/images/landingPage/vsla.jpg'; // Import the second image
+import thirdImage from '../../assets/images/landingPage/chamaactv.jpeg'; // Import the third image
 import fourthImage from '../../assets/images/landingPage/schoolact.jpg'
 import fifthImage from '../../assets/images/landingPage/ftraning.jpg'
 
@@ -10,8 +10,8 @@ import fifthImage from '../../assets/images/landingPage/ftraning.jpg'
 const imagesData = [
   {
     image: masaaiImage,
-    title: 'Welcome to Acuitus Duo Consultancy Firm.',
-    description: 'We Provide the best consultancy services in the Country Acuitus Duo Co. Ltd is a global institutional capacity building, technical, and management consultancy firm. We offer an array of services to government institutions, private sector, and non-governmental organizations',
+    title: 'Welcome to Acuitus Duo - your trusted partner in transformation and growth',
+    description: 'At Acuitus , we believe in the power of transformation. We stands as a beacon of innovation, inspiration, and progress. From local roots to global aspirations, we are dedicated to propelling individuals, organizations, and communities toward success.',
     buttonLabel: 'Learn More',
   },
   {
@@ -34,7 +34,7 @@ const imagesData = [
   {
     image: fourthImage,
     title: 'In-School Activation service',
-    description: ' we provide \
+    description: ' we provide\
      Oral health care education: We educate students about the importance of oral health care and proper dental hygiene practices',
     buttonLabel: 'Our Services',
   },
@@ -125,7 +125,7 @@ export default function Hero() {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((currentIndex + 1) % imagesData.length); // Cycle through images
-    }, 15000); // Change image every 10 seconds
+    }, 15000); // Change image every 15 seconds
 
     return () => {
       clearInterval(interval); // Clear the interval when component unmounts

@@ -15,7 +15,7 @@ const mockdata = [
   {
     title: 'Product Research',
     description:
-      'Market research is a process of gathering, analyzing, and interpreting information about a market, about a product or service to be offered for sale in that market, and about the past, present, and potential customers for the product or service',
+      'We gather, analyzing, and interpreting information about market and product or service to be offered for sale in that market, and about the past, present, and potential customers for the product or service',
     keyPoints: ['Market Segamentation', 'Brand and Advertisement research', 'New Prouct Testing'],
     icon: IconSearch,
   },
@@ -38,7 +38,7 @@ const mockdata = [
     description:
       'we provide our clients with the best in-school activation services. We have a team of highly trained and experienced professionals who are dedicated to providing you with the best in-school activation services.',
     keyPoints: ['Oral health care education', 'Product sample research', 'Create continuous habit in oral health care', 'Gather market insights', 'promote Colgate as a brand'],
-    icon: IconPencil,
+    icon:  IconUser,
   },
 ];
 
@@ -122,7 +122,7 @@ export default function Bestwork() {
 
       <Text c="dimmed" className={classes.description} ta="center" mt="md">
         We are a team of highly skilled professionals with a passion for creating
-        innovative training and solutions for your business.
+        innovative training and solutions for you  and your business.
       </Text>
 
       <SimpleGrid cols={3} spacing="xl" mt={50} breakpoints={[{ maxWidth: 'md', cols: 1 }]}>
