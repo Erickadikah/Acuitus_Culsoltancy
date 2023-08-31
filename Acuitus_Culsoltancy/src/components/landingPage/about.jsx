@@ -17,7 +17,7 @@ const About = () => {
       GROW WITH US
       </p>
       </div>
-      <div className="holder-2">
+      <div>
   {/*<div className="div-1">
     <img src={heroImage2} className="about-image" alt="About us" />
   </div>*/}
@@ -28,7 +28,8 @@ const About = () => {
     </h1>
    <div className="text-container">
   <p className="intro-text">
-    We are a Kenyan Agribusiness Consultancy firm with top-notch Consultancy, Training, and Research. We are renowned Agribusiness experts in financial inclusion, Capacity Building, Business Development Coaching, Enterprise development. Our offices are based in Nairobi. Our mission is to transform the agricultural sector into a profitable venture through capacity building of small-holder farmers and related Micro, small and medium enterprises (MSMEs). We also focus on strengthening rural agricultural finance options suitable and viable for smallholder farmers.
+  Established with a vision to catalyze progress,
+  Acuitus Duo Company brings together a team of seasoned professionals driven by a passion for making a meaningful impact. With a wealth of expertise across diverse sectors, we are dedicated to crafting tailored solutions that resonate with authenticity and creativity
   </p>
   <p className="main-text">
     We offer programs and services that integrate small-holder farmers and agro enterprises into the agricultural value chain that bring empowerment to the youth and women in agribusiness. In collaboration with other stakeholders such as the County and National Government service providers, agricultural organizations, and cooperatives, we work directly with the smallholder farmers and micro enterprises to provide Business Development Agribusiness Development services, rural agricultural finance options (community-managed microfinance) training and linkage of farmers to formal financial institutions and markets for access of farm inputs and produce market.
