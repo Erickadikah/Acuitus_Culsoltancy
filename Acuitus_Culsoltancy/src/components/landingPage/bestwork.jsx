@@ -10,12 +10,13 @@ import {
   rem,
 } from '@mantine/core';
 import { IconSearch, IconUser, IconUserCheck, IconExternalLink, IconBell, IconPencil} from '@tabler/icons-react';
+import React, { useState } from 'react';
 
 const mockdata = [
   {
     title: 'Product Research',
     description:
-      'Market research is a process of gathering, analyzing, and interpreting information about a market, about a product or service to be offered for sale in that market, and about the past, present, and potential customers for the product or service',
+      'We gather, analyzing, and interpreting information about market and product or service to be offered for sale in that market, and about the past, present, and potential customers for the product or service',
     keyPoints: ['Market Segamentation', 'Brand and Advertisement research', 'New Prouct Testing'],
     icon: IconSearch,
   },
@@ -38,7 +39,7 @@ const mockdata = [
     description:
       'we provide our clients with the best in-school activation services. We have a team of highly trained and experienced professionals who are dedicated to providing you with the best in-school activation services.',
     keyPoints: ['Oral health care education', 'Product sample research', 'Create continuous habit in oral health care', 'Gather market insights', 'promote Colgate as a brand'],
-    icon: IconPencil,
+    icon:  IconUser,
   },
 ];
 
@@ -88,8 +89,21 @@ const useStyles = createStyles((theme) => ({
 
 export default function Bestwork() {
   const { classes, theme } = useStyles();
+  const [hoveredCard, setHoveredCard] = useState(null);
   const features = mockdata.map((feature) => (
-    <Card key={feature.title} shadow="md" radius="md" className={classes.card} padding="xl">
+    <Card
+      key={feature.title}
+      shadow={hoveredCard === feature.title ? 'md' : 'none'}
+      radius="md"
+      className={classes.card}
+      padding="xl"
+      onMouseEnter={() => setHoveredCard(feature.title)}
+      onMouseLeave={() => setHoveredCard(null)}
+      style={{
+        borderColor: hoveredCard === feature.title ? 'rgb(0, 208, 132)' : '',
+        transform: hoveredCard === feature.title ? 'translateY(-5px)' : '',
+        boxShadow: hoveredCard === feature.title ? '0 4px 8px rgba(0, 0, 0, 0.1)' : '',
+      }}>
       <feature.icon size={rem(50)} stroke={2} color="rgb(0, 208, 132)" />
       <Text fz="lg" fw={500} className={classes.cardTitle} mt="md">
         {feature.title}
@@ -122,7 +136,7 @@ export default function Bestwork() {
 
       <Text c="dimmed" className={classes.description} ta="center" mt="md">
         We are a team of highly skilled professionals with a passion for creating
-        innovative training and solutions for your business.
+        innovative training and solutions for you  and your business.
       </Text>
 
       <SimpleGrid cols={3} spacing="xl" mt={50} breakpoints={[{ maxWidth: 'md', cols: 1 }]}>

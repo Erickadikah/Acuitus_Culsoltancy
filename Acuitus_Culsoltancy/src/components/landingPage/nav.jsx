@@ -7,11 +7,11 @@ export default function LandingNavBar() {
   return (
     <header>
       <nav
-        className="navbar navbar-expand-xl navbar-dark bg-white fixed-top"
+        className="navbar navbar-expand-lg navbar-dark bg-white fixed-top"
         style={{
           paddingLeft: "10px",
-          paddingTop: "15px",
-          paddingBottom: "15px",
+          paddingTop: "10px",
+          paddingBottom: "10px",
         }}
       >
         <a
@@ -23,15 +23,15 @@ export default function LandingNavBar() {
           <img
             src={logo}
             alt="Acuitus Consultancy Logo"
-            width="40"
-            height="40"
+            width="38"
+            height="38"
             class="d-inline-block align-top"
           />
           <h6
             className="heading"
             style={{
               fontWeight: "900",
-              fontSize: "20px",
+              fontSize: "18px",
               marginTop: "10px",
               marginLeft: "10px",
               color: `rgb(0,208,132)`,
@@ -64,7 +64,7 @@ export default function LandingNavBar() {
           <ul className="navbar-nav">
             <li className="nav-item active">
               <a
-                className="nav-link"
+                className="nav-link text-center"
                 rel="noopener"
                 href="/"
                 style={{ color: "black", fontSize: "16px" }}
@@ -75,7 +75,7 @@ export default function LandingNavBar() {
             {/* ... other navigation items ... */}
             <li className="nav-item">
               <a
-                className="nav-link"
+                className="nav-link "
                 rel="noopener"
                 href="/about"
                 style={{ color: "black", fontSize: "16px" }}
@@ -101,6 +101,16 @@ export default function LandingNavBar() {
                 style={{ color: "black", fontSize: "16px" }}
               >
                 Contact Us
+              </a>
+            </li>
+            <li className="nav-item">
+              <a
+                className="nav-link"
+                rel="noopener"
+                href="/contactUs"
+                style={{ color: "black", fontSize: "16px" }}
+              >
+                Blogs
               </a>
             </li>
             <li className="nav-item">

@@ -7,37 +7,35 @@ const Missions = () => {
       <div className="container">
         <div>
           <h1>Mission</h1>
-          <ul>
-            <li>
-              Develop and strengthen the skills, abilities, and processes
-              required by communities and organizations to adapt, thrive, and
-              survive in the modern world.
-            </li>
-            <li>
-              Offer sustainable solutions to modern-day problems relating to
-              research, data analytics, marketing, social media management,
-              branding, design, and project management.
-            </li>
-          </ul>
+          <p>
+            Enabling Progress, Inspiring Transformation: Our mission is to
+            empower individuals, organizations, and communities with innovative
+            solutions and unwavering support. Through strategic guidance,
+            comprehensive resources, and creative activations, we are committed
+            to fostering growth, catalyzing change, and leaving a positive
+            imprint on the world.
+          </p>
         </div>
         <div>
           <h1>Vision</h1>
           <p>
-            To perpetuate life long skills in a way that expands your creative
-            thinking, skills and stimulates your problem-solving abilities
-            inorder to unlock more opportunities
+            Shaping Possibilities, Igniting Excellence: Our vision is to be the
+            leading catalyst for holistic growth and innovation across diverse
+            sectors. We envision a future where every endeavor thrives through
+            informed decisions, strategic collaborations, and memorable
+            experiences, creating a ripple effect of positive impact.
           </p>
         </div>
         <div>
           <h1>Values</h1>
           <ul>
-            <li>Improvement</li>
-            <li>Quality</li>
-            <li>Integrity</li>
-            <li>Equality</li>
+            <li>Excellence</li>
+            <li>Innovation</li>
+            <li>Empowerment</li>
+            <li>Collaboration</li>
             <li>Reliable</li>
-            <li>Care</li>
-            <li>Top Talent People</li>
+            <li>Impact</li>
+            <li>Adaptability</li>
           </ul>
         </div>
       </div>

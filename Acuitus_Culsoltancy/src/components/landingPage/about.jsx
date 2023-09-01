@@ -1,48 +1,90 @@
 import React from "react";
 import "../../assets/styles/landingPage/about.scss";
-import heroImage2 from "../../assets/images/landingPage/image1.jpg";
+import heroImage2 from "../../assets/images/landingPage/logo.jpeg";
 import PageFooter from "./pagefooter";
-import Missions from "./missions"
-import AboutFooter from "./aboutFooter"
+import Missions from "./missions";
+import AboutFooter from "./aboutFooter";
 import Navbar from "./nav";
 
 const About = () => {
   return (
     <>
-    <Navbar />
-    <div className="about">
-    <div className="header">
-      <h1 className="header-text">About Us</h1>
-      <p>
-      GROW WITH US
-      </p>
+      <Navbar />
+      <div className="about">
+        <div className="header">
+          <h1 className="header-text">About Us</h1>
+          <p>GROW WITH US</p>
+        </div>
+        <div className="logo-about">
+          <div className="div-1">
+            {/*
+          Content to be added here
+        */}
+            <img src={heroImage2} className="about-image" alt="About us" />
+          </div>
+          <div className="content">
+            {/*
+          Second content to be added here
+        */}
+            {/*<h6
+              className="text-center"
+              style={{
+                // marginTop: "2rem",
+                marginBottom: "1rem",
+              }}
+            >
+              OUR SOLID BACKGROUND ON AGRIBUSINESS
+            </h6>*/}
+            <h1
+              className="text-center heading"
+              style={{
+                fontSize: "2.5rem",
+              }}
+            >
+              Get to know about{" "}
+              <span
+                className="highlight"
+                style={{
+                  fontSize: "2.5rem",
+                }}
+              >
+                our
+                <br />
+                company
+              </span>
+            </h1>
+            <div className="text-container">
+              <p className="intro-text">
+                Established with a vision to catalyze progress, Acuitus Duo
+                Company brings together a team of seasoned professionals driven
+                by a passion for making a meaningful impact. With a wealth of
+                expertise across diverse sectors, we are dedicated to crafting
+                tailored solutions that resonate with authenticity and
+                creativity. At the core of our approach lies a deep
+                understanding of your unique needs and aspirations. We believe
+                in the power of collaboration, harnessing our expertise to
+                create strategies, activations, and initiatives that amplify
+                your potential and create enduring value.
+                <br />
+                With a commitment to excellence, integrity, and innovation, we
+                are more than service providers – we are partners in your
+                journey toward growth and transformation. Whether it's capacity
+                building, strategic research, impactful marketing, or resource
+                mobilization, our mission is to empower you to reach new
+                heights. Join us as we embark on a dynamic journey of discovery,
+                progress, and excellence. Our Office is based in Nairobi, Kenya.
+              </p>
+              <a href="/services">
+              <button href="/services" className="btn-s">
+                Our Services
+          </button>
+              </a>
+            </div>
+          </div>
+        </div>
+        <Missions />
+        <AboutFooter />
       </div>
-      <div className="holder-2">
-  {/*<div className="div-1">
-    <img src={heroImage2} className="about-image" alt="About us" />
-  </div>*/}
-  <div className="content">
-    <h6 className="text-center">OUR SOLID BACKGROUND ON AGRIBUSINESS</h6>
-    <h1 className="text-center heading">
-      Get to know about <span className="highlight">our company</span>
-    </h1>
-   <div className="text-container">
-  <p className="intro-text">
-    We are a Kenyan Agribusiness Consultancy firm with top-notch Consultancy, Training, and Research. We are renowned Agribusiness experts in financial inclusion, Capacity Building, Business Development Coaching, Enterprise development. Our offices are based in Nairobi. Our mission is to transform the agricultural sector into a profitable venture through capacity building of small-holder farmers and related Micro, small and medium enterprises (MSMEs). We also focus on strengthening rural agricultural finance options suitable and viable for smallholder farmers.
-  </p>
-  <p className="main-text">
-    We offer programs and services that integrate small-holder farmers and agro enterprises into the agricultural value chain that bring empowerment to the youth and women in agribusiness. In collaboration with other stakeholders such as the County and National Government service providers, agricultural organizations, and cooperatives, we work directly with the smallholder farmers and micro enterprises to provide Business Development Agribusiness Development services, rural agricultural finance options (community-managed microfinance) training and linkage of farmers to formal financial institutions and markets for access of farm inputs and produce market.
-  </p>
-
-  <button href='/services' className="btn-s">
-   View Our Services
-  </button>
-</div>
-  </div>
-</div>
-    <Missions />
-    <AboutFooter />
-    </div>
     </>
   );
 };
