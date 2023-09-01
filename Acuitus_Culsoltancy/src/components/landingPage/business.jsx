@@ -21,8 +21,8 @@ export default function Business() {
   return (
     <div className="bussiness">
     <div className="inner" style={{ marginBottom: '20px' }}>
-  <h1 className="header-text text-center heading" style={{ color: 'rgb(0, 208, 132)', fontWeight: 'bold', marginTop: '50px', fontSize: '38px' }}>
-    Business <span style={{ color: 'black', fontWeight: 'bold', fontSize: '38px' }}>Services</span>
+  <h1 className="header-text text-center" style={{ color: 'rgb(0, 208, 132)', fontWeight: 'bold', marginTop: '50px',}}>
+    Business <span style={{ color: 'black', fontWeight: 'bold'}}>Services</span>
   </h1>
   <h6 style={{ fontSize: '14px', marginTop: '10px'}} className="text-center">WE ARE HERE TO SUPPORT YOU</h6>
     <div className="bis-cont">
@@ -36,14 +36,7 @@ export default function Business() {
     >
     <img src={heroImage4} className="image-1" />
       <h4
-        style={{
-          color: "black",
-          textAlign: "center",
-          marginTop: "2rem",
-          fontSize: "1.5rem",
-          // fontWeight: "bold",
-        }}
-        className="heading"
+        className="bis-Txt"
       >
         Capacity Building
       </h4>
@@ -82,26 +75,26 @@ export default function Business() {
             fontWeight: "bold",
             fontSize: "1.5rem",
           }}
-          className="heading"
+          className="bis-Txt"
         >
           Research
         </h4>
         <ul className="list">
-        <p>
+        <p className="small-header">
         Product Research
         </p>
           <li>
             Collect consumer feedback about either a new product or a new product concept. 
           </li>
           <br />
-          <p>
+          <p className="small-header">
           Attitude Research
           </p>
           <li>
             Gather consumers’ and business clients’ feedback regarding experience with particular brands, products, and services
           </li>
           <br />
-          <p>
+          <p className="small-header">
           Public Policy Research
           </p>
           <li>
@@ -120,7 +113,7 @@ export default function Business() {
             fontWeight: "bold",
             fontSize: "1.5rem",
           }}
-          className="heading"
+          className="bis-Txt"
         >
           Digital Marketing
         </h4>

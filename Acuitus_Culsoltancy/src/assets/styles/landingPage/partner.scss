@@ -1,0 +1,18 @@
+.partner-holder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    background-color: rgb(247,247,247);
+}
+
+.headtext {
+    font-size: 2rem;
+    font-weight: 1000;
+    // margin-bottom: 1rem;
+    color: rgb(0,208,132);
+    text-align: center;
+    @media screen and (max-width: 768px) {
+      font-size: 1.5rem;
+    }
+}

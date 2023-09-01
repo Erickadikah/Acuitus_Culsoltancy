@@ -6,17 +6,15 @@ export const footerItems =
   {
     title: "Services",
     children : [
-      "Web Design",
-      "Front-end Development",
-      "Back-end Development",
-      "Data Analysis",
-      "E-commerce Solutions",
-      "iOS App Development",
-      "Android App Development",
-      "Cross-Platform App Development",
-      "Custom Software Development",
-      "Enterprise Solutions",
-      "Cloud Services",
+      "Activations",
+      "Resource Mobilization",
+      "Project Management",
+      "Capacity Building",
+      "Marketing",
+      "Research",
+      "Branding Services",
+      "Business Development",
+      "Business Consultancy",
     ]
   },
   {
@@ -42,8 +40,8 @@ export const footerItems =
   {
     title: "Industries",
     children: [
-      "Legal",
-      "Health",
+      "Research",
+      "Busisness",
       "Education",
       "Agriculture",
       "Entertainment",

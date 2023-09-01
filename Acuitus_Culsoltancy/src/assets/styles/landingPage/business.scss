@@ -1,9 +1,10 @@
 .bussiness {
     width: 100%;
-    height: 110vh;
+    height: 120vh;
     background: white;
     justify-content: center;
     align-items: center;
+    margin-bottom: 50px;
     @media screen  and (max-width: 968px) {
         height: 100%;
         width: 100%;
@@ -11,7 +12,18 @@
     }
         
     }
-
+.header-text {
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 1000;
+    margin-top: 1rem;
+    @media screen and (max-width: 968px) {
+        font-size: 20px;
+        font-weight: 1000;
+        margin-top: 1rem;
+    }
+        
+}
 
 .bis-card {
     width: 500px;
@@ -21,20 +33,16 @@
     align-items: center;
     padding: 20px;
     display: block;
-    @media screen and (max-width: 368px) {
-        width: 380px;
+    @media screen and (max-width: 968px) {
+        width: 340px;
         height: 100%;
     }
-    // @media screen and (min-width: 968px) and (max-width: 1024px) {
-    //     width: 750px;
-    //     height: 250px;
-    // }
         
 }
 
 .bis-card h1 {
     text-align: center;
-    @media screen and (max-width: 640px) {
+    @media screen and (max-width: 940px) {
         font-size: 20px;
     }
         
@@ -47,6 +55,12 @@
     padding: 50px;
     flex-wrap: wrap;
     gap: 25px;
+    @media screen and (max-width: 1068px) {
+        display: flex;
+        flex-direction: row;
+        padding: 0;
+    }
+      
 }
 
 .btn-s {
@@ -60,7 +74,7 @@
   transition: background 0.3s ease;
 //   border-radius: 50px;
   font-weight: 900;
-  @media screen and (max-width: 640px) {
+  @media screen and (max-width: 968px) {
     width: 150px;
     height: 50px;
     font-size: 16px;
@@ -74,8 +88,8 @@
     height: 250px;
     width: 450px;
     margin-right: 30px;
-    @media screen and (max-width: 360px) {
-        width: 340px;
+    @media screen and (max-width: 968px) {
+        width: 300px;
         height: 225px;
         justify-content: center;
         align-items: center;
@@ -84,11 +98,12 @@
 
 .list {
   font-size: 13px;
-  font-weight: 900;
+  font-weight: 700;
   font-family: sans-serif;
   color: rgb(102, 102, 102);
-  @media screen and (max-width: 640px) {
-    font-size: 14px;
+  @media screen and (max-width: 968px) {
+    font-size: 13px;
+    font: 1em sans-serif;
   }
   list-style: none; /* Remove default bullet points */
   padding-left: 0;
@@ -117,7 +132,24 @@
 
 
 .heading {
-    font-size: 24px;
+    font-size: 12px;
     font-weight: 900;
     font-family: sans-serif;
+}
+
+.bis-Txt {
+  font-size: 2rem;
+  text-align: center;
+  font-weight: 1000;
+  margin-top: 1rem;
+  @media screen and (max-width: 968px) {
+    font-size: 18px;
+    font-weight: 1000;
+    margin-top: 1rem;
+
+  }
+}
+
+.small-header {
+  font-weight: 1000;
 }
