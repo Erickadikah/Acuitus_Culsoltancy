@@ -33,14 +33,12 @@
 }
 
 .div-1 img {
-  // width: 50rem;
-  // max-width: 90%;
-  // height: auto;
   width: 40rem;
   height: 25rem;
 
   @media screen and (max-width: 480px){
     width: 20rem;
+    height: 15rem;
   }
 }
 
