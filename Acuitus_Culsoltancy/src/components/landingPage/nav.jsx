@@ -75,7 +75,7 @@ export default function LandingNavBar() {
             {/* ... other navigation items ... */}
             <li className="nav-item">
               <a
-                className="nav-link text-center"
+                className="nav-link "
                 rel="noopener"
                 href="/about"
                 style={{ color: "black", fontSize: "16px" }}
@@ -85,7 +85,7 @@ export default function LandingNavBar() {
             </li>
             <li className="nav-item">
               <a
-                className="nav-link text-center"
+                className="nav-link"
                 rel="noopener"
                 href="/services"
                 style={{ color: "black", fontSize: "16px" }}
@@ -95,12 +95,22 @@ export default function LandingNavBar() {
             </li>
             <li className="nav-item">
               <a
-                className="nav-link text-center"
+                className="nav-link"
                 rel="noopener"
                 href="/contactUs"
                 style={{ color: "black", fontSize: "16px" }}
               >
                 Contact Us
+              </a>
+            </li>
+            <li className="nav-item">
+              <a
+                className="nav-link"
+                rel="noopener"
+                href="/contactUs"
+                style={{ color: "black", fontSize: "16px" }}
+              >
+                Blogs
               </a>
             </li>
             <li className="nav-item">

@@ -10,6 +10,7 @@ import {
   rem,
 } from '@mantine/core';
 import { IconSearch, IconUser, IconUserCheck, IconExternalLink, IconBell, IconPencil} from '@tabler/icons-react';
+import React, { useState } from 'react';
 
 const mockdata = [
   {
@@ -88,8 +89,21 @@ const useStyles = createStyles((theme) => ({
 
 export default function Bestwork() {
   const { classes, theme } = useStyles();
+  const [hoveredCard, setHoveredCard] = useState(null);
   const features = mockdata.map((feature) => (
-    <Card key={feature.title} shadow="md" radius="md" className={classes.card} padding="xl">
+    <Card
+      key={feature.title}
+      shadow={hoveredCard === feature.title ? 'md' : 'none'}
+      radius="md"
+      className={classes.card}
+      padding="xl"
+      onMouseEnter={() => setHoveredCard(feature.title)}
+      onMouseLeave={() => setHoveredCard(null)}
+      style={{
+        borderColor: hoveredCard === feature.title ? 'rgb(0, 208, 132)' : '',
+        transform: hoveredCard === feature.title ? 'translateY(-5px)' : '',
+        boxShadow: hoveredCard === feature.title ? '0 4px 8px rgba(0, 0, 0, 0.1)' : '',
+      }}>
       <feature.icon size={rem(50)} stroke={2} color="rgb(0, 208, 132)" />
       <Text fz="lg" fw={500} className={classes.cardTitle} mt="md">
         {feature.title}
