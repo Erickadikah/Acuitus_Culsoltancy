@@ -228,7 +228,9 @@ const Services = () => {
             <h1 className="heading headerh1" style={{
               fontSize: "2.5rem",
             }}>Our Services</h1>
-            <p>GROW WITH US</p>
+            <p style={{
+              fontSize: "1rem",
+            }}>GROW WITH US TODAY!</p>
           </div>
         </div>
       </div>
@@ -248,7 +250,7 @@ const Services = () => {
             <div
               key={service.id}
               onClick={() => renderActiveCard(service.id)}
-              className="card-04"
+              className="card-d"
             >
               <h1 className="card-title heading">{service.title}</h1>
             </div>
