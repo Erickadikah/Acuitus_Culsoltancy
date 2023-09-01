@@ -41,6 +41,10 @@
   font-weight: bold; /* Add bold font weight */
   color: rgb(0,208,132);
   text-align: center; /* Center the heading */
+  @media screen and (max-width: 768px) {
+    font-size: 1.5rem;
+    
+  }
 }
 
 .container > div ul,
@@ -49,6 +53,10 @@
   line-height: 1.6;
   margin: 0;
   padding-left: 1.5rem;
+  @media screen and (max-width: 768px) {
+    font-size: 14px;
+    
+  }
 }
 
 .container > div ul {
@@ -67,5 +75,8 @@
   position: absolute;
   left: -1.5rem; /* Position the arrow to the left */
   font-size: 1.2rem; /* Increase the font size of the arrow */
-  color: red; 
+  color: red;
+  @media screen and (max-width: 768px) {
+    font-size: 14px;
+  }
 }

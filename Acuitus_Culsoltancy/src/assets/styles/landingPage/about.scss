@@ -15,16 +15,6 @@
   padding: 100px 0; /* Adjust padding for vertical spacing */
 }
 
-.header-text {
-  font-size: 2.5rem;
-  margin: 0;
-  @media screen and (max-width: 960px) {
-    font-size: 26px;
-    padding: auto;
-    
-  }
-}
-
 .header p {
   font-size: 1.2rem;
   margin-top: 1rem;
@@ -85,8 +75,26 @@
 }
 
 .highlight {
+  font-size: 2.5rem;
+  margin: 0;
+  text-align: center;
   color: rgb(0, 208, 132);
-  font-size: 24px;
+  @media screen and (max-width: 960px) {
+    font-size: 1.8rem;
+    padding: auto;
+}
+
+}
+
+.header-text {
+  font-size: 2.5rem;
+  margin: 0;
+  text-align: center;
+  @media screen and (max-width: 960px) {
+    font-size: 1.8rem;
+    padding: auto;
+    
+  }
 }
 
 .text {

@@ -36,18 +36,11 @@ const About = () => {
               OUR SOLID BACKGROUND ON AGRIBUSINESS
             </h6>*/}
             <h1
-              className="text-center heading"
-              style={{
-                fontSize: "2.5rem",
-              }}
+              className="header-text heading"
             >
               Get to know about{" "}
               <span
-                className="highlight"
-                style={{
-                  fontSize: "2.5rem",
-                }}
-              >
+                className="highlight">
                 our
                 <br />
                 company
