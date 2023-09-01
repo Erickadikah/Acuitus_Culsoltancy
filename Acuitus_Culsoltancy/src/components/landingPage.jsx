@@ -23,7 +23,7 @@ const categories = [
 
 function LandingPage() {
   return (
-    <div>
+    <div className="land">
       <Navbar />
       <Hero />
       {/*<OurServices />*/}
