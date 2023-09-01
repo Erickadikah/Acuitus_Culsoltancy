@@ -16,17 +16,11 @@ const About = () => {
           <p>GROW WITH US</p>
         </div>
         <div className="logo-about">
-          <div className="div-1">
-            {/*
-          Content to be added here
-        */}
-            <img src={heroImage2} className="about-image" alt="About us" />
-          </div>
           <div className="content">
             {/*
           Second content to be added here
         */}
-            {/*<h6
+            <h6
               className="text-center"
               style={{
                 // marginTop: "2rem",
@@ -34,13 +28,10 @@ const About = () => {
               }}
             >
               OUR SOLID BACKGROUND ON AGRIBUSINESS
-            </h6>*/}
-            <h1
-              className="header-text heading"
-            >
+            </h6>
+            <h1 className="header-text heading">
               Get to know about{" "}
-              <span
-                className="highlight">
+              <span className="highlight">
                 our
                 <br />
                 company
@@ -67,12 +58,18 @@ const About = () => {
                 heights. Join us as we embark on a dynamic journey of discovery,
                 progress, and excellence. Our Office is based in Nairobi, Kenya.
               </p>
-              <a href="/services">
-              <button href="/services" className="btn-s">
-                Our Services
-              </button>
-              </a>
+              {/*<a href="/services">
+                <button href="/services" className="btn-s">
+                  Our Services
+                </button>
+            </a>*/}
             </div>
+            </div>
+            <div className="div-1">
+            {/*
+          Content to be added here
+        */}
+            <img src={heroImage2} className="about-image" alt="About us" />
           </div>
         </div>
         <Missions />
