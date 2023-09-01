@@ -10,15 +10,6 @@
   position: relative;
 }
 
-// .headerh1 {
-//   font-size: 5rem;
-//   font-weight: 1000;
-//   margin-bottom: 1rem;
-//   @media screen and (max-width: 768px) {
-//     font-size: 2rem;
-//   }
-// }
-
 .background-layer {
   position: absolute;
   top: 0;
@@ -106,4 +97,19 @@
 .point-item {
   margin: 5px 0;     /* Add spacing between list items */
   white-space: normal;
+}
+
+.frase {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  // margin-top: 2rem;
+  color: black;
+  text-align: center;
+  padding: 5rem;
+  @media screen and (max-width: 768px) {
+    font-size: 14px;
+    padding: 0.2rem;
+    margin-bottom: 2rem;
+  }
 }

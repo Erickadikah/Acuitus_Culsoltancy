@@ -5,6 +5,7 @@ import PageFooter from "./pagefooter";
 import Missions from "./missions";
 import AboutFooter from "./aboutFooter";
 import Navbar from "./nav";
+import Partner from './partner'
 
 const About = () => {
   return (
@@ -23,8 +24,8 @@ const About = () => {
             <h6
               className="text-center"
               style={{
-                // marginTop: "2rem",
                 marginBottom: "1rem",
+                fontSize: "1rem",
               }}
             >
               OUR SOLID BACKGROUND ON AGRIBUSINESS
@@ -66,12 +67,10 @@ const About = () => {
             </div>
             </div>
             <div className="div-1">
-            {/*
-          Content to be added here
-        */}
             <img src={heroImage2} className="about-image" alt="About us" />
           </div>
         </div>
+        <Partner />
         <Missions />
         <AboutFooter />
       </div>
