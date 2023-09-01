@@ -67,9 +67,9 @@ function ContactIcon({
 
 
 const MOCKDATA = [
-  { title: 'Email', description: 'hello@mantine.dev', icon: IconAt },
-  { title: 'Phone', description: '+49 (800) 335 35 35', icon: IconPhone },
-  { title: 'Address', description: '844 Morris Park avenue', icon: IconMapPin },
+  { title: 'Email', description: 'ACUITUSDUO@GMAIL.COM', icon: IconAt },
+  { title: 'Phone', description: '+254 721141938', icon: IconPhone },
+  { title: 'Address', description: 'Ngong, Nairobi', icon: IconMapPin },
   { title: 'Working hours', description: '8 a.m. – 5 p.m.', icon: IconSun },
 ];
 
