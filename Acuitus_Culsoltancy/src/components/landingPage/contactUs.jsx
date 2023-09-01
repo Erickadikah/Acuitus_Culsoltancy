@@ -40,7 +40,8 @@ const ContactUs = () => {
     <p>
     We call back as soon as possible.
     </p>
-    <p><strong>+234 810 000 0000</strong></p>
+    <p><strong>+254 708038818 </strong></p>
+    <p><strong>+254 721141938 </strong></p>
     </div>
     <div className='email' style={{
     display: 'flex',
@@ -60,13 +61,13 @@ const ContactUs = () => {
     We reply to emails
     withing the hour.
     </p>
-    <a href='mailto:erickadikah2030@gmail.com' style={{
+    <a href='mailto:ACUITUSDUO@GMAIL.COM' style={{
         textDecoration: 'none'
     }}>
     <p style={{
         marginTop: '10px',
         color: 'rgb(0,208,132)'
-    }}><strong>Acuitusconsoltancy@gmai.com</strong></p>
+    }}><strong>ACUITUSDUO@GMAIL.COM</strong></p>
     </a>
     </div>
    <div className='address' style={{

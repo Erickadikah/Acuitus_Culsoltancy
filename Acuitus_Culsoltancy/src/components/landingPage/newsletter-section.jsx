@@ -147,59 +147,8 @@ export default function NewsLetterSection() {
             </a>
           </button>
         </div>
-        {/*<div
-      style={{
-        marginLeft: "50px",
-        marginTop: "8rem",
-
-      }}
-      className="card-1"
-    >
-        <div
-          style={{
-            display: "block",
-          }}
-            >
-          <img
-            src={heroImage4}
-            alt="image"
-            style={{ 
-            width: "600px", 
-            height: "400px" }}
-          />
-          <p
-            style={{
-              fontSize: "16px",
-              color: "black",
-              width: "600px",
-              height: "200px",
-              background: "#FFFFFF",
-              padding: "20px 10px",
-            }}
-            className="card-text"
-          >
-            <ul className="arrow-list">
-              <li>
-                <FaArrowRight className="arrow-icon" />
-                Acuitus Duo Company Ltd provides Market research and analysis
-                that offer clients actionable solutions to their problems.
-              </li>
-              <FaArrowRight className="arrow-icon" />
-              The world is rapidly changing therefore the need for reliable
-              information to make confident decisions has never been greater.
-              <li>
-                <FaArrowRight className="arrow-icon" />
-                At Acuitus we believe our clients need more than a data
-                supplier, they need a partner who can produce accurate and
-                relevant information and turn it into actionable truth.
-              </li>
-            </ul>
-          </p>
-        </div>
-          </div>*/}
           <div className="counter" style={{
             color: `rgb(0,208,132)` /* fallback color */,
-            // background: ,
             fontSize: "50px",
             fontWeight: "bolder",
             fontFamily: "poppins",
