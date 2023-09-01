@@ -77,7 +77,7 @@ const About = () => {
               <a href="/services">
               <button href="/services" className="btn-s">
                 Our Services
-          </button>
+              </button>
               </a>
             </div>
           </div>
