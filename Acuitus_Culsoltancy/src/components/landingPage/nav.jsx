@@ -64,7 +64,7 @@ export default function LandingNavBar() {
           <ul className="navbar-nav">
             <li className="nav-item active">
               <a
-                className="nav-link text-center"
+                className="nav-link"
                 rel="noopener"
                 href="/"
                 style={{ color: "black", fontSize: "16px" }}
