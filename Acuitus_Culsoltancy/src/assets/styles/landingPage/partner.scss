@@ -1,18 +1,49 @@
 .partner-holder {
-    display: flex;
     justify-content: center;
     align-items: center;
-    height: 70vh;
+    height: 50vh;
     background-color: rgb(247,247,247);
+    @media screen and (max-width: 768px) {
+      height: 100%;
+      padding: 1rem;
+      margin-bottom: 0;
+    }
 }
 
 .headtext {
     font-size: 2rem;
     font-weight: 1000;
-    // margin-bottom: 1rem;
+    padding: 2rem;
     color: rgb(0,208,132);
     text-align: center;
     @media screen and (max-width: 768px) {
       font-size: 1.5rem;
     }
 }
+
+.headtextp {
+  text-align: center;
+  font-size: 1rem;
+}
+
+.partner-overlay {
+  margin-top: 2rem;
+}
+
+.partner-images-holder {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+  .partner-image {
+  width: 150px;
+  height: auto;
+  margin: 0 12px;
+  @media screen and (max-width: 968px) {
+    width: 110px;
+
+  }
+}
+

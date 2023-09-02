@@ -30,10 +30,9 @@ const About = () => {
             >
               OUR SOLID BACKGROUND ON AGRIBUSINESS
             </h6>
-            <h1 className="header-text heading">
-              Get to know about{" "}
+            <h1 className="header-text">
+              Get to know about our{" "}
               <span className="highlight">
-                our
                 <br />
                 company
               </span>

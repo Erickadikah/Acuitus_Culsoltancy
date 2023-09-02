@@ -62,7 +62,9 @@ export default function Business() {
           Youth Training & mentorship
         </li>
       </ul>
+      <a href="/services" alt='our-servics'>
       <button className="btn-s">Read More</button>
+      </a>
     </motion.div>
      </AnimatePresence>
       <div className="bis-card">
@@ -91,7 +93,7 @@ export default function Business() {
           Attitude Research
           </p>
           <li>
-            Gather consumers’ and business clients’ feedback regarding experience with particular brands, products, and services
+            We gather consumer's and business client's feedback regarding experience with particular brands, products, and services
           </li>
           <br />
           <p className="small-header">
@@ -101,7 +103,9 @@ export default function Business() {
           Measure social change and impact, develop projection tools, run experiments and cost-benefit analysis
           </li>
         </ul>
+        <a href="/services">
         <button className="btn-s">Read More</button>
+        </a>
       </div>
       <div className="bis-card">
        <img src={heroImage2} className="image-1" />
@@ -133,7 +137,9 @@ export default function Business() {
           <li>Marketing Analytics</li>
         <li>Affiliate Marketing</li>
         </ul>
+        <a href="/services">
         <button className="btn-s">Read More</button>
+        </a>
         </div>
     </div>
       </div>
