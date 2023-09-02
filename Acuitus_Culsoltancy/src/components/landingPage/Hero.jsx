@@ -11,7 +11,7 @@ const imagesData = [
   {
     image: masaaiImage,
     title: 'Welcome to Acuitus Duo - your trusted partner in transformation and growth',
-    description: 'At Acuitus , we believe in the power of transformation. We stands as a beacon of innovation, inspiration, and progress. From local roots to global aspirations, we are dedicated to propelling individuals, organizations, and communities toward success.',
+    description: 'At Acuitus, we believe in the power of transformation. We stands as a beacon of innovation, inspiration, and progress.',
     buttonLabel: 'Learn More',
   },
   {
