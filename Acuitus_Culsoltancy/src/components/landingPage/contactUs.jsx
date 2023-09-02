@@ -8,6 +8,7 @@ import { MdOutlineMailOutline } from 'react-icons/md'
 import AboutFooter from "./aboutFooter"
 import "../../assets/styles/landingPage/contactUs.scss";
 import Contactform from "./contactForm";
+import Form from './form'
 // import Contactform from '../../../src/components/landingPage/contactForm'
 
 const ContactUs = () => {
@@ -89,6 +90,7 @@ const ContactUs = () => {
     <div className='form-c'>
     <Contactform />
     </div>
+    <Form />
     <AboutFooter />
     </div>
   )

@@ -1,11 +1,12 @@
 .partner-holder {
     justify-content: center;
     align-items: center;
-    height: 50vh;
+    height: 70vh;
+    padding: 3rem;
     background-color: rgb(247,247,247);
     @media screen and (max-width: 768px) {
       height: 100%;
-      padding: 1rem;
+      padding: 1.5rem;
       margin-bottom: 0;
     }
 }
@@ -23,7 +24,7 @@
 
 .headtextp {
   text-align: center;
-  font-size: 1rem;
+  font-size: 1.4rem;
 }
 
 .partner-overlay {
@@ -38,11 +39,11 @@
   margin-top: 20px;
 }
   .partner-image {
-  width: 150px;
+  width: 180px;
   height: auto;
   margin: 0 12px;
   @media screen and (max-width: 968px) {
-    width: 110px;
+    width: 130px;
 
   }
 }

@@ -14,7 +14,9 @@ const About = () => {
       <div className="about">
         <div className="header">
           <h1 className="header-text">About Us</h1>
-          <p>GROW WITH US</p>
+          <p style={{
+            fontSize: "1rem",
+          }}>GROW WITH US</p>
         </div>
         <div className="logo-about">
           <div className="content">
@@ -28,7 +30,7 @@ const About = () => {
                 fontSize: "1rem",
               }}
             >
-              OUR SOLID BACKGROUND ON AGRIBUSINESS
+              OUR SOLID BACKGROUND
             </h6>
             <h1 className="header-text">
               Get to know about our{" "}

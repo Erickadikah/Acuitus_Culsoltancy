@@ -235,10 +235,10 @@ const Services = () => {
         </div>
       </div>
       <div className="serviced">
-      <p className="text-center frase">
+     {/* <p className="text-center frase">
       "At Acuitus firm, our commitment goes beyond delivering services. We are driven by a passion to see you thrive. With a team of experienced professionals who bring a wealth of knowledge and creativity to the table, we embark on every project with enthusiasm and dedication. Your success story is our ultimate goal.
       Join us on a journey of transformation, growth, and innovation. Together, we'll shape a future that is bright, impactful, and rewarding. Discover the Acuitus  difference today."
-    </p>
+          </p>*/}
         <div className="cards-holder">
           {content.map((service) => (
             <div
@@ -286,7 +286,7 @@ const Services = () => {
                           </li>
                         ))}
                       </ul>
-                      {/*<img src={showData.image} alt="service" width={400} />*/}
+                      <img src={showData.image} alt="service" width={400} />
                     </div>
                   )}
                 </div>
