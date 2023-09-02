@@ -3,6 +3,11 @@
     align-items: center;
     height: 50vh;
     background-color: rgb(247,247,247);
+    @media screen and (max-width: 768px) {
+      height: 100%;
+      padding: 1rem;
+      margin-bottom: 0;
+    }
 }
 
 .headtext {
@@ -33,8 +38,12 @@
   margin-top: 20px;
 }
   .partner-image {
-  width: 100px; /* Set the width of the images */
-  height: auto; /* Maintain the aspect ratio */
-  margin: 0 10px; /* Add margin around each logo */
+  width: 150px;
+  height: auto;
+  margin: 0 12px;
+  @media screen and (max-width: 968px) {
+    width: 110px;
+
+  }
 }
 
