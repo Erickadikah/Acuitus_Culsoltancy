@@ -5,7 +5,7 @@ import secondImage from '../../assets/images/landingPage/vsla.jpg'; // Import th
 import thirdImage from '../../assets/images/landingPage/chamaactv.jpeg'; // Import the third image
 import fourthImage from '../../assets/images/landingPage/schoolact.jpg'
 import fifthImage from '../../assets/images/landingPage/ftraning.jpg'
-
+import { FcNext, FcPrevious } from 'react-icons/fc';
 
 const imagesData = [
   {
@@ -134,6 +134,15 @@ export default function Hero() {
 
   const currentImageData = imagesData[currentIndex];
 
+  const nextImage = () => {
+    setCurrentIndex((currentIndex + 1) % imagesData.length);
+  };
+
+   // Function to move to the previous image
+  const prevImage = () => {
+    setCurrentIndex((currentIndex - 1 + imagesData.length) % imagesData.length);
+  };
+
   return (
     <div className={classes.masaaiImage} style={{ backgroundImage: `url(${currentImageData.image})` }}>
       <Overlay
@@ -159,6 +168,11 @@ export default function Hero() {
         >
           {currentImageData.buttonLabel}
         </Button>
+        {/* Navigation icons with click handlers */}
+        <div className={classes.control}>
+          <span onClick={prevImage} style={{ cursor: 'pointer', marginRight: '10px' }}><FcPrevious size={32} /></span>
+          <span onClick={nextImage} style={{ cursor: 'pointer' }}><FcNext size={32} /></span>
+        </div>
       </Container>
     </div>
   );

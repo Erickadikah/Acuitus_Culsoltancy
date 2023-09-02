@@ -17,8 +17,8 @@ const Partner = () => {
         color: 'black'
     }}>Our</span> partners</h1>
     </div>
-    <p className='headtextp'>
-    We are proud to be associated with the following partners</p>
+    {/*<p className='headtextp'>
+  We are proud to be associated with the following partners</p>*/}
     <div className='partner-images-holder'>
         <img src={partner1} alt='partner1' className='partner-image'/>
         <img src={partner2} alt='partner2' className='partner-image'/>

@@ -1,11 +1,14 @@
-import React from 'react';
-import { FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa';
+import React from "react";
+import { FaFacebook, FaTwitter, FaInstagram } from "react-icons/fa";
 
-export const footerItems = 
-[
+export const footerItems = [
+  {
+    title: "Home",
+    children: ["About Us", "Our Team", "Our Community", "Our Partners"],
+  },
   {
     title: "Services",
-    children : [
+    children: [
       "Activations",
       "Resource Mobilization",
       "Project Management",
@@ -15,14 +18,11 @@ export const footerItems =
       "Branding Services",
       "Business Development",
       "Business Consultancy",
-    ]
+    ],
   },
   {
     title: "Products",
-    children: [
-      "Revenue Calculator",
-      "Book Keeper",
-    ]
+    children: ["Revenue Calculator", "Book Keeper"],
   },
 
   {
@@ -33,8 +33,8 @@ export const footerItems =
       "Our Team",
       "Careeers",
       "Join Us",
-      "Our Commmunity"
-    ]
+      "Our Commmunity",
+    ],
   },
 
   {
@@ -46,16 +46,12 @@ export const footerItems =
       "Agriculture",
       "Entertainment",
       "Real Estate",
-    ]
+    ],
   },
 
   {
     title: "Resources",
-    children: [
-      "Our learning",
-      "Help Center Support",
-      "FAQs"
-    ]
+    children: ["Our learning", "Help Center Support", "FAQs"],
   },
 
   {
@@ -64,16 +60,16 @@ export const footerItems =
       "Terms of Services",
       "Privacy Notice",
       "Cookie Policy",
-      "Privacy Center"
-    ]
+      "Privacy Center",
+    ],
   },
 
   {
     title: "Social Media Links",
     children: [
-        <FaFacebook fontSize={"18px"} />, 
-        <FaTwitter fontSize={"18px"} />, 
-        <FaInstagram fontSize={"18px"} />, 
-    ]
-  }
-]
+      <FaFacebook fontSize={"18px"} />,
+      <FaTwitter fontSize={"18px"} />,
+      <FaInstagram fontSize={"18px"} />,
+    ],
+  },
+];

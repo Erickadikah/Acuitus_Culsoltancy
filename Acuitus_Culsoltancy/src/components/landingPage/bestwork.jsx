@@ -34,13 +34,6 @@ const mockdata = [
     keyPoints: ['Brand awareness and image Studies', 'segmentation', 'Quantity Survays'],
     icon: IconUserCheck,
   },
-  {
-    title: 'In-school activation',
-    description:
-      'we provide our clients with the best in-school activation services. We have a team of highly trained and experienced professionals who are dedicated to providing you with the best in-school activation services.',
-    keyPoints: ['Oral health care education', 'Product sample research', 'Create continuous habit in oral health care', 'Gather market insights', 'promote Colgate as a brand'],
-    icon:  IconUser,
-  },
 ];
 
 const useStyles = createStyles((theme) => ({
@@ -100,8 +93,8 @@ export default function Bestwork() {
       onMouseEnter={() => setHoveredCard(feature.title)}
       onMouseLeave={() => setHoveredCard(null)}
       style={{
-        borderColor: hoveredCard === feature.title ? 'rgb(0, 208, 132)' : '',
-        transform: hoveredCard === feature.title ? 'translateY(-5px)' : '',
+        borderColor: hoveredCard === feature.title ? 'rgb(0, 208, 132)' : 'rgb(141,42,28)',
+        transform: hoveredCard === feature.title ? 'translateY(-5px)' : 'rgb(141,42,28)',
         boxShadow: hoveredCard === feature.title ? '0 4px 8px rgba(0, 0, 0, 0.1)' : '',
       }}>
       <feature.icon size={rem(50)} stroke={2} color="rgb(0, 208, 132)" />

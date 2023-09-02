@@ -13,6 +13,7 @@ import Business from "./landingPage/business";
 // import "./assets/styles/landingPage/landing.scss";
 import Bestwork from "./landingPage/bestwork"
 import ContactUs from "./contact-us"
+import Partner from "./landingPage/partner"
 
 const categories = [
   { image: 'https://images.pexels.com/photos/6483582/pexels-photo-6483582.jpeg?auto=compress&cs=tinysrgb&w=1600', label: 'Customer Support' },
@@ -33,6 +34,7 @@ function LandingPage() {
       <Bestwork />
       {/*<Request />*/}
       <ContactUs categories={categories}/>
+      <Partner />
       <PageFooter />
     </div>
   )
