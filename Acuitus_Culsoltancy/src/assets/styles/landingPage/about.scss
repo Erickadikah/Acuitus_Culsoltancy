@@ -13,6 +13,10 @@
   color: rgb(247,247,247);
   text-align: center;
   padding: 100px 0; /* Adjust padding for vertical spacing */
+  @media screen and (max-width: 960px) {
+    height: 25vh;  
+  }
+
 }
 
 .header p {
