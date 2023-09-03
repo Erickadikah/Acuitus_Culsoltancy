@@ -1,6 +1,6 @@
 import React from 'react';
 import "../../assets/styles/landingPage/partner.scss";
-import { motion } from 'framer-motion'; // Import motion from framer-motion
+import { motion } from 'framer-motion';
 import partner1 from '../../assets/images/landingPage/Colgate-Logo.png';
 import partner2 from '../../assets/images/landingPage/Arifu-Logo.png';
 import partner3 from '../../assets/images/landingPage/intelliwealth logo 2.png';

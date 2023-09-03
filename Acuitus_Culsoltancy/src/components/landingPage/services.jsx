@@ -7,6 +7,8 @@ import { useState } from "react";
 // import Footer from "./footer";
 // import Contactform from "./contactForm";
 import AboutFooter from "./aboutFooter";
+import { motion } from 'framer-motion';
+import ServCards from "./test";
 
 const Services = () => {
   const [activeCard, setActiveCard] = useState(null);
@@ -235,68 +237,61 @@ const Services = () => {
         </div>
       </div>
       <div className="serviced">
-     {/* <p className="text-center frase">
+     {/*<p className="text-center frase">
       "At Acuitus firm, our commitment goes beyond delivering services. We are driven by a passion to see you thrive. With a team of experienced professionals who bring a wealth of knowledge and creativity to the table, we embark on every project with enthusiasm and dedication. Your success story is our ultimate goal.
       Join us on a journey of transformation, growth, and innovation. Together, we'll shape a future that is bright, impactful, and rewarding. Discover the Acuitus  difference today."
           </p>*/}
-        <div className="cards-holder">
-          {content.map((service) => (
-            <div
-              key={service.id}
-              onClick={() => renderActiveCard(service.id)}
-              className="card-d"
-            >
-              <h1 className="card-title heading">{service.title}</h1>
-            </div>
-          ))}
-          <div className="hode">
-            <div className="contents">
-              {showData && (
-                <div>
+      
+      {/*  <div className="cards-holder">
+      <motion.div
+        className="card-d"
+        whileHover={{ scale: 1.1 }}
+      >
+        <h1 className="card-title">
+          Resource Mobilization
+        </h1>
+        <p className="text-white">
+          We provide insights that help you make informed decisions.
+          Our comprehensive research services encompass Product research,
+          Market research, and Needs assessment.
+        </p>
+      </motion.div>
 
-                  <h3 className="heading">{showData.title}</h3>
-                  <p
-                    className=""
-                    style={{
-                      fontSize: "1rem",
-                    }}
-                  >
-                    {showData.body}
-                  </p>
-                  {showData.point && (
-                    <div className={`points ${showPoint ? "expanded" : ""}`}>
-                      <div className="points-header" onClick={togglePoints}>
-                        <span>More About Us</span>
-                        <div
-                          className={`arrow ${showPoint ? "expanded" : ""}`}
-                        ></div>
-                      </div>
-                      <ul className="point-list">
-                        {showData.point.map((point, index) => (
-                          <li key={index} className="point-item">
-                            <strong
-                              style={{
-                                color: "black",
-                                fontWeight: "bold",
-                              }}
-                            >
-                              {point.title}:
-                            </strong>{" "}
-                            {point.description}
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                  )}
-                </div>
-              )}
-            <div>
-            <img src={showData.image} alt="service" width={400} />
-            </div>
-            </div>
+      <motion.div
+        className="card-d"
+        whileHover={{ scale: 1.1 }}
+      >
+        <h1 className="card-title">
+          Marketing
+        </h1>
+        <a href="/home">
+          <p className="text-white text-center">
+            Activations
+          </p>
+        </a>
+        <p className="text-white">
+          We provide insights that help you make informed decisions.
+          Our comprehensive research services encompass Product research,
+          Market research, and Needs assessment.
+        </p>
+      </motion.div>
+
+      <motion.div
+        className="card-d-1"
+        whileHover={{ scale: 1.1 }}
+      >
+        <h1 className="card-title">
+          Project Management
+        </h1>
+        <p className="text-white">
+          We provide insights that help you make informed decisions.
+          Our comprehensive research services encompass Product research,
+          Market research, and Needs assessment.
+        </p>
+      </motion.div>
+          </div>*/}
+          <ServCards />
           </div>
-        </div>
-      </div>
       <AboutFooter />
     </>
   );
