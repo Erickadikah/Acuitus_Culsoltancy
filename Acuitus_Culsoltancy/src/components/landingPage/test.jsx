@@ -11,7 +11,7 @@ import {
 } from '@mantine/core';
 import { IconSearch,IconUserCheck, IconExternalLink, IconBell} from '@tabler/icons-react';
 import React, { useState } from 'react';
-// import { TbArrowNarrowRight } from '@tabler/icons-react';
+import { TbArrowNarrowRight } from 'react-icons/tb';
 
 const mockdata = [
   {
@@ -141,6 +141,10 @@ export default function ServCards() {
           </li>
         ))}
       </ul>
+    <a href="/discover-more" c="white" mt="md" ta="right" style={{ display: 'flex', alignItems: 'center', textDecoration: 'none' }}>
+    Discover More
+    <TbArrowNarrowRight size="1rem" style={{ marginLeft: '0.2rem', color: 'inherit' }} />
+  </a>
     </Card>
   ));
 
