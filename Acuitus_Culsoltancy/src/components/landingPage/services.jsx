@@ -9,6 +9,7 @@ import { useState } from "react";
 import AboutFooter from "./aboutFooter";
 import { motion } from 'framer-motion';
 import ServCards from "./test";
+import Form from './form'
 
 const Services = () => {
   const [activeCard, setActiveCard] = useState(null);
@@ -227,7 +228,7 @@ const Services = () => {
       <div className="service-header">
         <div className="background-layer">
           <div className="content">
-            <h1 className="heading headerh1" style={{
+            <h1 className=" headerh1" style={{
               fontSize: "2.5rem",
             }}>Our Services</h1>
             <p style={{
@@ -292,6 +293,7 @@ const Services = () => {
           </div>*/}
           <ServCards />
           </div>
+          <Form />
       <AboutFooter />
     </>
   );
