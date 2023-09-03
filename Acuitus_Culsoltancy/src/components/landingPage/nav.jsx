@@ -72,16 +72,28 @@ export default function LandingNavBar() {
                 Home
               </a>
             </li>
-            {/* ... other navigation items ... */}
-            <li className="nav-item">
+            <li className="nav-item dropdown">
               <a
-                className="nav-link "
+                className="nav-link dropdown-toggle"
+                id="ChooseUs"
                 rel="noopener"
+                role="button"
                 href="/about"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
                 style={{ color: "black", fontSize: "16px" }}
               >
                 About Us
               </a>
+              <div className="dropdown-menu" aria-labelledby="ChooseUs">
+                <a className="dropdown-item" href="/about">
+                  Who We Are
+                </a>
+                <a className="dropdown-item" href="/about">
+                  What We Do
+                </a>
+              </div>
             </li>
             <li className="nav-item">
               <a
