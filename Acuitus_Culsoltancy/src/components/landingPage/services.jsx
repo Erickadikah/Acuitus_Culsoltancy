@@ -286,11 +286,13 @@ const Services = () => {
                           </li>
                         ))}
                       </ul>
-                      <img src={showData.image} alt="service" width={400} />
                     </div>
                   )}
                 </div>
               )}
+            <div>
+            <img src={showData.image} alt="service" width={400} />
+            </div>
             </div>
           </div>
         </div>
