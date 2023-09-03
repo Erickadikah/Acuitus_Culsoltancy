@@ -22,41 +22,37 @@ const mockdata = [
     icon: IconSearch,
   },
   {
-    title: 'Data Management & Analysis Solutions',
+    title: 'Resource Mobilization',
     description:
-      'In todays data-driven world, having the right data insights can be the key to staying competitive and achieving your goals. Allow us to be your trusted partner in harnessing the power of data.',
+      'In the pursuit of growth, securing the necessary resources is a pivotal step. At Acuitus Duo Company, we excel in crafting resource mobilization strategies that not only facilitate access to vital resources but also lay the groundwork for sustainable development. Our approach to resource mobilization is a carefully orchestrated process that harnesses expertise, connections, and innovation.',
     keyPoints: ['Data Excellence', 'Tailored Solutions', 'Tailored Solutions', 'Cutting-Edge Technology'],
     icon: IconBell,
   },
   {
     title: 'Research',
     description:
-      'Defining Objectives and Understanding Client Needs and Methodology, Observing Timelines and Deliverables, Budget and Resources, Reporting and Communication',
+      'We  provide insights that help you make informed decisions. Our comprehensive research services encompass Product research, Market research, and Needs assessment',
     keyPoints: ['Market Research', 'Product Research and Development', 'Customer Satisfaction and Feedback', 'Social and Public Policy Research'],
     icon: IconSearch,
   },
   {
-    title: 'Reports and Proposal writing',
+    title: 'Marketing',
     description:
-      'Bestowed with specialized expertise exceeding 5 years of experience capable of generating thoughtful, insightful, clear and professional content tailored to a specific audience or context based on the clients’ needs and feedback from the ground',
+      'In a rapidly evolving business landscape, effective marketing is the cornerstone of success. At Acuitus consultancy, we specialize in crafting holistic marketing strategies that not only cater to your unique needs but also create a lasting impact. Our approach is centered on a deep understanding of your brand, audience, and objectives, allowing us to develop strategies that resonate and drive results',
     keyPoints: [],
     icon: IconUserCheck,
   },
   {
-    title: 'Resource Mobilization',
+    title: 'Activations',
     description:
-      'In the pursuit of growth, securing the necessary resources is a pivotal step. At Acuitus Duo Company,\
-      we excel in crafting resource mobilization strategies that not only facilitate access to vital resources but also lay the groundwork for sustainable development.\
-      Our approach to resource mobilization is a carefully orchestrated process that harnesses expertise, connections, and innovation.',
+      'In the world of business and innovation, the Activation service we provide goes beyond mere execution – its about creating experiences that resonate. We understand that bringing an idea to life requires careful orchestration, and thats where our expertise shines. From immersive events to captivating product launches, our Activation service transforms concepts into tangible moments that engage, inspire, and leave a lasting impact',
     keyPoints: [],
     icon: IconUserCheck,
   },
   {
-    title: 'Resource Mobilization',
+    title: 'Capacity Building',
     description:
-      'In the pursuit of growth, securing the necessary resources is a pivotal step. At Acuitus Duo Company,\
-      we excel in crafting resource mobilization strategies that not only facilitate access to vital resources but also lay the groundwork for sustainable development.\
-      Our approach to resource mobilization is a carefully orchestrated process that harnesses expertise, connections, and innovation.',
+      'Our expertise extends to a wide spectrum of training and mentorship programs that cover critical areas such as Agribusiness, Value Addition,  Financial Literacy, Business Development,  Technology integration, Market Analysis, Financial Literacy,Linkages, Climate change and Disaster management,  Leadership and Healthcare Education. We also provide financial and market linkages, facilitating connections between groups and financial institutions as well as markets for their products',
     keyPoints: [],
     icon: IconUserCheck,
   },
@@ -109,7 +105,7 @@ const useStyles = createStyles((theme) => ({
 export default function ServCards() {
   const { classes, theme } = useStyles();
   const [hoveredCard, setHoveredCard] = useState(null);
-  const backgroundColors = ['rgb(255,66,104)', 'rgb(255,187,11)', 'rgb(124,65,251)', 'rgb(30,200,146)', 'rgb(0,208,132)']; 
+  const backgroundColors = ['rgb(248,247,253)']; 
 
   const features = mockdata.map((feature, index) => (
      <Card
@@ -126,14 +122,14 @@ export default function ServCards() {
       boxShadow: hoveredCard === feature.title ? '0 4px 8px rgba(0, 0, 0, 0.1)' : '',
       backgroundColor: backgroundColors[index % backgroundColors.length], // Use a cyclic index to select a background color
     }}>
-      <feature.icon size={rem(50)} stroke={2} color="white" />
+      <feature.icon size={rem(50)} stroke={2} color="black" />
       <Text fz="lg" fw={500} className={classes.cardTitle} mt="md">
         {feature.title}
       </Text>
-      <Text fz="sm" c="white" mt="sm">
+      <Text fz="sm" c="black" mt="sm">
         {feature.description}
       </Text>
-      <ul style={{ marginTop: '10px', color: 'white' }}>
+      <ul style={{ marginTop: '10px', color: 'black' }}>
         {feature.keyPoints.map((point, index) => (
           <li key={index} style={{ display: 'flex', alignItems: 'center', color: 'inherit' }}>
             <IconExternalLink size="1rem" style={{ marginRight: '0.5rem', color: 'inherit' }} />
