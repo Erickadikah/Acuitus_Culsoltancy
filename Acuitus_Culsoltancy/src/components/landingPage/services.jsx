@@ -10,6 +10,7 @@ import AboutFooter from "./aboutFooter";
 import { motion } from 'framer-motion';
 import ServCards from "./test";
 import Form from './form'
+import Contactform from "./contactForm";
 
 const Services = () => {
   const [activeCard, setActiveCard] = useState(null);
@@ -292,7 +293,13 @@ const Services = () => {
       </motion.div>
           </div>*/}
           <ServCards />
+          {/*<button className="btn-s text-center">
+          Contact Us
+        </button>*/}
           </div>
+          <div className='form-c'>
+          <Contactform />
+        </div>
           <Form />
       <AboutFooter />
     </>
