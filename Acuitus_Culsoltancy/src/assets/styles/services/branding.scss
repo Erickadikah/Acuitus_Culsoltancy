@@ -8,16 +8,17 @@
 .spliter {
     // justify-content: center;
     // align-items: center;
-    height: 70vh;
+    height: 115vh;
     display: flex;
     flex-wrap: wrap;
     background: rgb(206, 222, 189);
-    padding: 9rem;
+    padding: 5rem;
     // border-bottom: 1px solid #000;
     @media screen and (max-width: 768px) {
         padding: 2rem;
         display: block;
-        height: auto;
+        height: 100%;
+
     }
         
 }
@@ -32,18 +33,41 @@
     }
   }
 
-.text-cont {
-  flex: 1;
-}
-
 .intro-text {
     font-size: 1rem;
-    font-weight: 600;
     line-height: 1.5;
+    // padding: 5rem;
+    margin-bottom: 4rem;
     color: #000;
     margin-bottom: 1rem;
     @media screen and (max-width: 768px) {
         font-size: 14px;
+        padding: 0;
+        margin-bottom: 13px;
     }
         
+}
+
+ul {
+    list-style: none; /* Remove default list bullet points */
+    padding: 0; /* Remove default padding */
+  }
+
+  li {
+    margin-bottom: 20px; /* Add space between list items */
+    font-weight: 1000;
+    font-size: 1.2rem;
+    @media screen and (max-width: 768px) {
+        font-size: 14px;
+    }
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 10px 0; /* Add space around paragraphs */
+    @media screen and (max-width: 768px) {
+        font-size: 14px;
+    }
+      
 }
