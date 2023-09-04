@@ -71,8 +71,8 @@ const About = () => {
             <img src={heroImage2} className="about-image" alt="About us" />
           </div>
         </div>
-        <Partner />
         <Missions />
+        <Partner />
         <AboutFooter />
       </div>
     </>
