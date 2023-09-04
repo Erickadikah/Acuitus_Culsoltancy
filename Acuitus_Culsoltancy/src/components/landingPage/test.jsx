@@ -152,7 +152,7 @@ export default function ServCards() {
           </li>
         ))}
       </ul>
-    <a href="/discover-more" c="white" mt="md" ta="right" style={{ display: 'flex', alignItems: 'center', textDecoration: 'none', fontSize: '1rem' }}>
+    <a href="/branding" c="white" mt="md" ta="right" style={{ display: 'flex', alignItems: 'center', textDecoration: 'none', fontSize: '1rem' }}>
     Discover More
     <TbArrowNarrowRight size="1rem" style={{ marginLeft: '0.2rem', color: 'inherit', fontSize: '1rem' }} />
   </a>
