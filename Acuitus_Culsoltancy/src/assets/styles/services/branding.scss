@@ -5,19 +5,53 @@
   // background: rgb(206, 222, 189);
   max-width: 100%;
 }
+.branding-header {
+  display: flex;
+  height: 40vh;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  flex-direction: column;
+  position: relative;
+
+}
+
+.branding-background-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(26, 25, 25, 0.8), rgba(21, 21, 21, 0.8)),url(../../images/landingPage/brading.jpg);
+  background-size: cover;
+  z-index: -1;
+}
+
+.branding-content {
+  justify-content: center;
+  align-items: center;
+  margin-top: 10rem;
+}
+
 .spliter {
     justify-content: center;
     align-items: center;
     // height: 115vh;
     display: flex;
     flex-wrap: wrap;
+    margin-right: 12rem;
+    margin-left: 12rem;
     // background: rgb(206, 222, 189);
     padding: 5rem;
     // border-bottom: 1px solid #000;
-    @media screen and (max-width: 768px) {
-        padding: 2rem;
+    @media screen and (max-width: 1068px) {
+        padding: 1rem;
         display: block;
         height: 100%;
+        margin-left: 0;
+        margin-right: 0;
 
     }
         
@@ -34,7 +68,7 @@
   }
 
 .intro-text {
-    font-size: 1rem;
+    font-size: 1.2rem;
     line-height: 1.5;
     // padding: 5rem;
     margin-bottom: 4rem;
@@ -52,18 +86,18 @@
     list-style: none; /* Remove default list bullet points */
     padding: 0; /* Remove default padding */
   }
-
+// brading.jpg
 .my-li {
     margin-bottom: 20px; /* Add space between list items */
     font-weight: 1000;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     @media screen and (max-width: 768px) {
         font-size: 16px;
     }
   }
 
-  p {
-    font-size: 16px;
+.my-p {
+    font-size: 18px;
     line-height: 1.5;
     margin: 10px 0; /* Add space around paragraphs */
     @media screen and (max-width: 768px) {

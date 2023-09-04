@@ -28,16 +28,16 @@ export default function Branding() {
     <>
       <div className="brand-body">
         <Navbar />
-        <div className="service-header">
-          <div className="background-layer">
-            <div className="content">
+        <div className="branding-header">
+          <div className="branding-background-layer">
+            <div className="branding-content">
               <h1
                 className="headerh1"
                 style={{
                   fontSize: "2.5rem",
                 }}
               >
-                Branding Services
+                Branding
               </h1>
               <p
                 style={{
@@ -73,23 +73,23 @@ export default function Branding() {
           </div>
           <ul className="myblist">
             <li className="my-li">Strategic Brand Assessment</li>
-            <p>
+            <p className="my-p">
               Our branding experts initiate the process by conducting a thorough
               assessment of your current brand identity. We analyze your
               messaging, visuals, positioning, and market perception. This
               strategic evaluation serves as the foundation for the brand
               transformation journey.
             </p>
-            <li>Defining Brand Values</li>
-            <p>
+            <li className="my-li">Defining Brand Values</li>
+            <p className="my-p">
               A powerful brand is built on authenticity and consistency. We
               collaborate closely with you to articulate your brand's values,
               mission, and vision. This process not only reinforces internal
               alignment but also ensures that your brand communicates a clear
               and compelling narrative to the outside world.
             </p>
-            <li>Visual Identity Refinement</li>
-            <p>
+            <li className="my-li">Visual Identity Refinement</li>
+            <p className="my-p">
               The visual components of your brand are your visual ambassadors.
               From logo design to color palettes and typography, we refine and
               enhance these elements to align with your brand's personality and
@@ -100,23 +100,23 @@ export default function Branding() {
               This narrative enriches the brand experience, fostering deeper
               connections and loyalty.
             </p>
-            <li>Multichannel Brand Consistency</li>
-            <p>
+            <li className="my-li">Multichannel Brand Consistency</li>
+            <p className="my-p">
               A consistent brand presence across all touchpoints is essential
               for brand recognition. We ensure that your brand identity is
               seamlessly integrated into every aspect of your organization, from
               marketing materials and website design to social media and
               customer interactions.
             </p>
-            <li>Engaging Brand Experiences</li>
-            <p>
+            <li className="my-li">Engaging Brand Experiences</li>
+            <p className="my-p">
               We create strategies that drive meaningful engagement and
               interaction with your audience. These strategies range from
               experiential marketing initiatives to creating memorable brand
               moments that leave a lasting impact.
             </p>
-            <li>Brand Evolution</li>
-            <p>
+            <li className="my-li">Brand Evolution</li>
+            <p className="my-p">
               As your organization evolves, so should your brand. We offer
               ongoing support to adapt your brand identity to changing market
               dynamics, ensuring that your brand remains relevant, innovative,
