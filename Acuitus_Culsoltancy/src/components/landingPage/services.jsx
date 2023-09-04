@@ -330,9 +330,6 @@ const Services = () => {
           ref={container}
         ></div>*/}
         <ServCards />
-        {/*<button className="btn-s text-center">
-          Contact Us
-        </button>*/}
       </div>
       <div className="form-c">
         <Contactform />
