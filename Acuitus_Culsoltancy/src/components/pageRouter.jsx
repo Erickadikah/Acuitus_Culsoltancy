@@ -4,6 +4,7 @@ import LandingPage from './landingPage';
 import About from "./landingPage/about"
 import Services from "./landingPage/services"
 import ContactUs from "./landingPage/contactUs"
+import Branding from "../components/Services/branding"
 
 const FirmPages = () => {
   return (
@@ -13,6 +14,7 @@ const FirmPages = () => {
     <Route path='/about' element={<About />} />
     <Route path='/services' element={<Services />} />
     <Route path='/contactUs' element={<ContactUs />} />
+    <Route path='/branding' element={<Branding />} />
     </Routes>
     </BrowserRouter>
   );
