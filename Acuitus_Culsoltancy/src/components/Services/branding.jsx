@@ -71,8 +71,8 @@ export default function Branding() {
               creativity, strategy, and innovation, aimed at shaping a brand
             </p>
           </div>
-          <ul>
-            <li>Strategic Brand Assessment</li>
+          <ul className="myblist">
+            <li className="my-li">Strategic Brand Assessment</li>
             <p>
               Our branding experts initiate the process by conducting a thorough
               assessment of your current brand identity. We analyze your

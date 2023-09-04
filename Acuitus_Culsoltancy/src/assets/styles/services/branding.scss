@@ -6,9 +6,9 @@
   max-width: 100%;
 }
 .spliter {
-    // justify-content: center;
-    // align-items: center;
-    height: 115vh;
+    justify-content: center;
+    align-items: center;
+    // height: 115vh;
     display: flex;
     flex-wrap: wrap;
     // background: rgb(206, 222, 189);
@@ -48,17 +48,17 @@
         
 }
 
-ul {
+.myblist {
     list-style: none; /* Remove default list bullet points */
     padding: 0; /* Remove default padding */
   }
 
-  li {
+.my-li {
     margin-bottom: 20px; /* Add space between list items */
     font-weight: 1000;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     @media screen and (max-width: 768px) {
-        font-size: 14px;
+        font-size: 16px;
     }
   }
 
