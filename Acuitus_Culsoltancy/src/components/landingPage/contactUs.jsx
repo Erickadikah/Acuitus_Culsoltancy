@@ -9,9 +9,9 @@ import AboutFooter from "./aboutFooter"
 import "../../assets/styles/landingPage/contactUs.scss";
 import Contactform from "./contactForm";
 import Form from './form'
-// import Contactform from '../../../src/components/landingPage/contactForm'
-
 const ContactUs = () => {
+
+
   return (
     <div>
     <Navbar />
@@ -25,6 +25,7 @@ const ContactUs = () => {
     <p className='text-center'>FEEL FREE TO SEND US A MESSAGE ANY TIME!</p>
     </div>
     <div className='container holder'>
+    {/*<Lottie options={defaultOptions} height={400} wdth={}/>*/}
     <div className='phone' style={{
     display: 'flex',
     flexDirection: 'column',

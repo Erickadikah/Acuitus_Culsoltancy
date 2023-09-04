@@ -1,0 +1,42 @@
+.spliter {
+    // justify-content: center;
+    // align-items: center;
+    height: 68vh;
+    display: flex;
+    flex-wrap: wrap;
+    background: rgb(254,212,222);
+    padding: 9rem;
+    // border-bottom: 1px solid #000;
+    @media screen and (max-width: 768px) {
+        padding: 2rem;
+        display: block;
+        height: auto;
+    }
+        
+}
+
+.container {
+  flex: 1;
+  height: 300px;
+  width: 400px;
+  @media screen and (max-width: 768px) {
+    height: 200px;
+    width: 300px;
+    }
+  }
+
+.text-cont {
+  flex: 1;
+}
+
+.intro-text {
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.5;
+    color: #000;
+    margin-bottom: 1rem;
+    @media screen and (max-width: 768px) {
+        font-size: 14px;
+    }
+        
+}

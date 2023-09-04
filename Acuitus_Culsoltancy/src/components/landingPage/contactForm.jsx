@@ -25,7 +25,8 @@ export default function Contactform() {
       sx={(theme) => ({ fontFamily: `Greycliff CF, ${theme.fontFamily}` })}
       weight={900}
       align="center"
-    >
+      color='white'
+      >
       Send us a <span style={{ color: 'rgb(0,208,132)' }}>message</span>
     </Title>
     <SimpleGrid cols={2} mt="xl" breakpoints={[{ maxWidth: 'sm', cols: 1 }]}>

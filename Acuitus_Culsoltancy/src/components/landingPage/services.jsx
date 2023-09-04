@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import Navbar from "./nav";
 import "../../assets/styles/landingPage/services.scss";
 // import Card from "./services-card";
@@ -7,12 +7,31 @@ import { useState } from "react";
 // import Footer from "./footer";
 // import Contactform from "./contactForm";
 import AboutFooter from "./aboutFooter";
-import { motion } from 'framer-motion';
+import { motion } from "framer-motion";
 import ServCards from "./test";
-import Form from './form'
+import Form from "./form";
 import Contactform from "./contactForm";
+import Lottie from "lottie-web";
+import animationData from "../../assets/animation/servicesanim.json";
 
 const Services = () => {
+  const container = useRef(null);
+
+  useEffect(() => {
+    const animation = Lottie.loadAnimation({
+      container: container.current,
+      renderer: "svg",
+      loop: true,
+      autoplay: true,
+      animationData: animationData,
+    });
+
+    // Return a cleanup function to stop the animation when the component unmounts
+    return () => {
+      animation.destroy();
+    };
+  }, []);
+
   const [activeCard, setActiveCard] = useState(null);
   const [content, setContent] = useState([
     {
@@ -229,22 +248,36 @@ const Services = () => {
       <div className="service-header">
         <div className="background-layer">
           <div className="content">
-            <h1 className=" headerh1" style={{
-              fontSize: "2.5rem",
-            }}>Our Services</h1>
-            <p style={{
-              fontSize: "1rem",
-            }}>GROW WITH US TODAY!</p>
+            <h1
+              className=" headerh1"
+              style={{
+                fontSize: "2.5rem",
+              }}
+            >
+              Our Services
+            </h1>
+            <p
+              style={{
+                fontSize: "1rem",
+              }}
+            >
+              GROW WITH US TODAY!
+            </p>
           </div>
         </div>
       </div>
       <div className="serviced">
-     {/*<p className="text-center frase">
-      "At Acuitus firm, our commitment goes beyond delivering services. We are driven by a passion to see you thrive. With a team of experienced professionals who bring a wealth of knowledge and creativity to the table, we embark on every project with enthusiasm and dedication. Your success story is our ultimate goal.
-      Join us on a journey of transformation, growth, and innovation. Together, we'll shape a future that is bright, impactful, and rewarding. Discover the Acuitus  difference today."
-          </p>*/}
-      
-      {/*  <div className="cards-holder">
+        {/*<p className="frase">
+          Our team has strong educational credentials, intellectual curiosity,
+          proven leadership capacity and commitment to values. We are
+          analytically rigorous, delivering fact-based advice to get the job
+          done. In doing so, we provide great value for the money price point,
+          always striving to understand and meet the customer's needs as
+          efficiently as possible, with the least negative impact on the
+          environment
+            </p>*/}
+
+        {/*  <div className="cards-holder">
       <motion.div
         className="card-d"
         whileHover={{ scale: 1.1 }}
@@ -292,15 +325,16 @@ const Services = () => {
         </p>
       </motion.div>
           </div>*/}
-          <ServCards />
-          {/*<button className="btn-s text-center">
-          Contact Us
-        </button>*/}
-          </div>
-          <div className='form-c'>
-          <Contactform />
-        </div>
-          <Form />
+        {/*<div
+          className="container"
+          ref={container}
+        ></div>*/}
+        <ServCards />
+      </div>
+      <div className="form-c">
+        <Contactform />
+      </div>
+      <Form />
       <AboutFooter />
     </>
   );
