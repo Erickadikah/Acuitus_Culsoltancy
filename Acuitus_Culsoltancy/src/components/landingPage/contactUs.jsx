@@ -24,8 +24,7 @@ const ContactUs = () => {
     </h1>
     <p className='text-center'>FEEL FREE TO SEND US A MESSAGE ANY TIME!</p>
     </div>
-    <div className='container holder'>
-    {/*<Lottie options={defaultOptions} height={400} wdth={}/>*/}
+    {/*<div className='container holder'>
     <div className='phone' style={{
     display: 'flex',
     flexDirection: 'column',
@@ -87,7 +86,7 @@ const ContactUs = () => {
     <p className='heading'><strong>Location</strong></p>
     <p>Oba Akran Avenue, Ngong, Nairobi</p>
     </div>
-    </div>
+</div>*/}
     <div className='form-c'>
     <Contactform />
     </div>

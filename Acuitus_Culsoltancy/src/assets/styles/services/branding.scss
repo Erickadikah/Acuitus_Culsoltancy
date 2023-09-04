@@ -1,10 +1,17 @@
+.brand-body {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  box-sizing: border-box;
+  // background: rgb(206, 222, 189);
+  max-width: 100%;
+}
 .spliter {
     // justify-content: center;
     // align-items: center;
-    height: 68vh;
+    height: 70vh;
     display: flex;
     flex-wrap: wrap;
-    background: rgb(254,212,222);
+    background: rgb(206, 222, 189);
     padding: 9rem;
     // border-bottom: 1px solid #000;
     @media screen and (max-width: 768px) {

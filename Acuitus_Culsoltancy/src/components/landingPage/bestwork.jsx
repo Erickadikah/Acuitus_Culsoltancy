@@ -42,7 +42,7 @@ const mockdata = [
     icon: IconUserCheck,
   },
   {
-    title: 'Measurable Results',
+    title: 'Capacity Building',
     description:
       'We’ve have clearly developed Key Performance Indicators (KPIs) for your projects and demonstrate measurable results to clients.',
     keyPoints: [],

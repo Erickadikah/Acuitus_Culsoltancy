@@ -4,7 +4,7 @@ import "../../assets/styles/landingPage/missions.scss";
 const Missions = () => {
   return (
     <div className="our-values">
-      <div className="container">
+     {/* <div className="">
         <div>
           <h1>Mission</h1>
           <p>
@@ -38,7 +38,7 @@ const Missions = () => {
             <li>Adaptability</li>
           </ul>
         </div>
-      </div>
+  </div>*/}
     </div>
   );
 };
