@@ -6,6 +6,8 @@ import partner3 from '../../assets/images/landingPage/intelliwealth logo 2.png';
 import partner4 from '../../assets/images/landingPage/Worldv.png';
 // import partner5 from '../../assets/images/landingPage/wfp.svg';
 import partner6 from '../../assets/images/landingPage/BigBad.webp';
+import partner7 from '../../assets/images/landingPage/habita.png';
+import partner8 from '../../assets/images/landingPage/releif.svg';
 
 const Form = () => {
   return (
@@ -15,6 +17,8 @@ const Form = () => {
         <img src={partner3} alt='partner3' className='partner-imagry'/>
         <img src={partner4} alt='partner4' className='partner-imagry'/>
         <img src={partner6} alt='partner4' className='partner-image'/>
+        <img src={partner7} alt='partner4' className='partner-image'/>
+        <img src={partner8} alt='partner4' className='partner-image'/>
     </div>
   );
 }
