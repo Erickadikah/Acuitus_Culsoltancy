@@ -37,7 +37,7 @@ export default function Capacity() {
                   fontSize: "2.5rem",
                 }}
               >
-                Branding
+                Capacity Building
               </h1>
               <p
                 style={{

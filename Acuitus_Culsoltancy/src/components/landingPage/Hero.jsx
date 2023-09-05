@@ -24,16 +24,8 @@ const imagesData = [
     buttonLabel: 'Our Sevices',
   },
   {
-    image: thirdImage,
-    title: 'Chama(Group) Activation',
-    description: ' We promote Colgate as a brand hence enhancing  market expansion\
-    Boost Product sales Gather Market insights\
-    Promoting Oral Health care Product sample research',
-    buttonLabel: 'Contact Us',
-  },
-  {
     image: fourthImage,
-    title: 'In-School Activation service',
+    title: 'Activation',
     description: ' we provide\
      Oral health care education: We educate students about the importance of oral health care and proper dental hygiene practices',
     buttonLabel: 'Our Services',

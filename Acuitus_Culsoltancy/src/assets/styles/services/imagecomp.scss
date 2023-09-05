@@ -1,6 +1,6 @@
 .big-g {
     height: 110vh;
-    background: rgb(250, 241, 228);
+    background: rgb(255,255,255);
     justify-content: center;
     align-items: center;
     @media screen and (max-width: 768px){
@@ -78,4 +78,14 @@ big-g-h {
 
 .section-2_image {
 
+}
+
+.testyp {
+  position: absolute; /* Set the <p> tag to absolute positioning */
+  top: 0; /* Position it at the top of the parent container */
+  right: 0; /* Position it at the right corner of the parent container */
+  background-color: rgba(0, 0, 0, 0.7); /* Background color for better readability */
+  color: green; /* Text color */
+  padding: 5px 10px; /* Add padding for better presentation */
+  margin: 0; /* Remove default margin */
 }
