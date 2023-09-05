@@ -3,6 +3,7 @@ import { useMediaQuery } from '@mantine/hooks';
 import { createStyles, Paper, Text, Title, Button, useMantineTheme, rem } from '@mantine/core';
 import school from "../../../assets/images/landingPage/school2.jpg"
 import chamaa from  "../../../assets/images/landingPage/chamaactv.jpeg"
+import chamaaT from "../../../assets/images/landingPage/chamaaT.jpeg"
 
 const useStyles = createStyles((theme) => ({
   card: {
@@ -61,18 +62,17 @@ const data = [
   {
     image: school,
     title: 'In school Activations',
-    category: 'nature',
+    category: 'Activation',
   },
   {
     image: chamaa,
     title: 'Chama Group Activations',
-    category: 'beach',
+    category: 'Activation',
   },
   {
-    image:
-      'https://images.unsplash.com/photo-1608481337062-4093bf3ed404?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80',
-    title: 'Mountains at night: 12 best locations to enjoy the view',
-    category: 'nature',
+    image: chamaaT,
+    title: 'Chama Group Activations',
+    category: 'Activation',
   },
   {
     image:
