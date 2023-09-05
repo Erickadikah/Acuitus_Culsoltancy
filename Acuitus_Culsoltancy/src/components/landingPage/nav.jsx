@@ -91,7 +91,7 @@ export default function LandingNavBar() {
                   Who We Are
                 </a>
                 <a className="dropdown-item" href="/about">
-                  What We Do
+                  Passed Projects
                 </a>
               </div>
             </li>

@@ -269,10 +269,10 @@ const Services = () => {
       <div className="serviced">
         <ServCards />
       </div>
+      <Form />
       <div className="form-c">
         <Contactform />
       </div>
-      <Form />
       <AboutFooter />
     </>
   );

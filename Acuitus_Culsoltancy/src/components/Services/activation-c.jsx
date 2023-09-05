@@ -1,9 +1,9 @@
 import React, { useEffect, useRef } from "react";
 import Lottie from "lottie-web";
 import animationData from "../../assets/animation/branding2.json";
-import Navbar from "../../components/landingPage/nav";
+import Navbar from "../landingPage/nav";
 import "../../assets/styles/services/research.scss";
-import AboutFooter from "../../components/landingPage/aboutFooter";
+import AboutFooter from "../landingPage/aboutFooter";
 import ImageComponent from "./imagesRender";
 
 export default function Activations () {
