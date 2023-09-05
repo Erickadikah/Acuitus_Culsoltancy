@@ -29,6 +29,7 @@ const FirmPages = () => {
     <Route path='/capacity-building' element={<Capacity />} />
     </Routes>
     </BrowserRouter>
+    
   );
 }
 
