@@ -2,9 +2,10 @@ import React, { useEffect, useRef } from "react";
 import Lottie from "lottie-web";
 import animationData from "../../assets/animation/branding2.json";
 import Navbar from "../landingPage/nav";
-import "../../assets/styles/services/research.scss";
+import "../../assets/styles/services/activation-c.scss";
 import AboutFooter from "../landingPage/aboutFooter";
 import ImageComponent from "./imagesRender";
+import CarouselCard from "../landingPage/comp/carousel";
 
 export default function Activations () {
   const container = useRef(null);
@@ -134,7 +135,9 @@ export default function Activations () {
             strategic and impactful marketing initiatives.
           </p>
         </div>
-        {/*<ImageComponent />*/}
+        <div className="carousel-card">
+        <CarouselCard />
+        </div>
         <AboutFooter />
       </div>
     </>

@@ -1,101 +1,117 @@
-import { createStyles, Image, Card, Text, Group, Button, getStylesRef, rem } from '@mantine/core';
 import { Carousel } from '@mantine/carousel';
-import { IconStar } from '@tabler/icons-react';
+import { useMediaQuery } from '@mantine/hooks';
+import { createStyles, Paper, Text, Title, Button, useMantineTheme, rem } from '@mantine/core';
+import school from "../../../assets/images/landingPage/school2.jpg"
 
 const useStyles = createStyles((theme) => ({
-  price: {
-    color: theme.colorScheme === 'dark' ? theme.white : theme.black,
+  card: {
+    height: rem(440),
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'space-between',
+    alignItems: 'flex-start',
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
   },
 
-  carousel: {
-    '&:hover': {
-      [`& .${getStylesRef('carouselControls')}`]: {
-        opacity: 1,
-      },
-    },
+  title: {
+    fontFamily: `Greycliff CF, ${theme.fontFamily}`,
+    fontWeight: 900,
+    color: theme.white,
+    lineHeight: 1.2,
+    fontSize: rem(32),
+    marginTop: theme.spacing.xs,
   },
 
-  carouselControls: {
-    ref: getStylesRef('carouselControls'),
-    transition: 'opacity 150ms ease',
-    opacity: 0,
-  },
-
-  carouselIndicator: {
-    width: rem(4),
-    height: rem(4),
-    transition: 'width 250ms ease',
-
-    '&[data-active]': {
-      width: rem(16),
-    },
+  category: {
+    color: theme.white,
+    opacity: 0.7,
+    fontWeight: 700,
+    textTransform: 'uppercase',
   },
 }));
 
-const images = [
-  'https://images.unsplash.com/photo-1598928506311-c55ded91a20c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=720&q=80',
-  'https://images.unsplash.com/photo-1567767292278-a4f21aa2d36e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=720&q=80',
-  'https://images.unsplash.com/photo-1605774337664-7a846e9cdf17?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=720&q=80',
-  'https://images.unsplash.com/photo-1554995207-c18c203602cb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=720&q=80',
-  'https://images.unsplash.com/photo-1616486029423-aaa4789e8c9a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=720&q=80',
-];
-
-export function CarouselCard() {
+function Card({ image, title, category }) {
   const { classes } = useStyles();
 
-  const slides = images.map((image) => (
-    <Carousel.Slide key={image}>
-      <Image src={image} height={220} />
+  return (
+    <Paper
+      shadow="md"
+      p="xl"
+      sx={{ backgroundImage: `url(${image})` }}
+      className={classes.card}
+    >
+      <div>
+        <Text className={classes.category} size="xs">
+          {category}
+        </Text>
+        <Title order={3} className={classes.title}>
+          {title}
+        </Title>
+      </div>
+      <Button variant="white" color="dark">
+        Talk to us
+      </Button>
+    </Paper>
+  );
+}
+
+const data = [
+  {
+    image: school,
+    title: 'Training of community Health Promoters',
+    category: 'nature',
+  },
+  {
+    image:
+      'https://images.unsplash.com/photo-1559494007-9f5847c49d94?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80',
+    title: 'Hawaii beaches review: better than you think',
+    category: 'beach',
+  },
+  {
+    image:
+      'https://images.unsplash.com/photo-1608481337062-4093bf3ed404?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80',
+    title: 'Mountains at night: 12 best locations to enjoy the view',
+    category: 'nature',
+  },
+  {
+    image:
+      'https://images.unsplash.com/photo-1507272931001-fc06c17e4f43?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80',
+    title: 'Aurora in Norway: when to visit for best experience',
+    category: 'nature',
+  },
+  {
+    image:
+      'https://images.unsplash.com/photo-1510798831971-661eb04b3739?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80',
+    title: 'Best places to visit this winter',
+    category: 'tourism',
+  },
+  {
+    image:
+      'https://images.unsplash.com/photo-1582721478779-0ae163c05a60?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80',
+    title: 'Active volcanos reviews: travel at your own risk',
+    category: 'nature',
+  },
+];
+
+export default function CarouselCard() {
+  const theme = useMantineTheme();
+  const mobile = useMediaQuery(`(max-width: ${theme.breakpoints.sm})`);
+  const slides = data.map((item) => (
+    <Carousel.Slide key={item.title}>
+      <Card {...item} />
     </Carousel.Slide>
   ));
 
   return (
-    <Card radius="md" withBorder padding="xl">
-      <Card.Section>
-        <Carousel
-          withIndicators
-          loop
-          classNames={{
-            root: classes.carousel,
-            controls: classes.carouselControls,
-            indicator: classes.carouselIndicator,
-          }}
-        >
-          {slides}
-        </Carousel>
-      </Card.Section>
-
-      <Group position="apart" mt="lg">
-        <Text fw={500} fz="lg">
-          Forde, Norway
-        </Text>
-
-        <Group spacing={5}>
-          <IconStar size="1rem" />
-          <Text fz="xs" fw={500}>
-            4.78
-          </Text>
-        </Group>
-      </Group>
-
-      <Text fz="sm" c="dimmed" mt="sm">
-        Relax, rejuvenate and unplug in this unique contemporary Birdbox. Feel close to nature in
-        ultimate comfort. Enjoy the view of the epic mountain range of Blegja and the Førdefjord.
-      </Text>
-
-      <Group position="apart" mt="md">
-        <div>
-          <Text fz="xl" span fw={500} className={classes.price}>
-            397$
-          </Text>
-          <Text span fz="sm" c="dimmed">
-            {' '}
-            / night
-          </Text>
-        </div>
-
-        <Button radius="md">Book now</Button>
-      </Group>
-    </Card>
+    <Carousel
+      slideSize="50%"
+      breakpoints={[{ maxWidth: 'sm', slideSize: '100%', slideGap: rem(2) }]}
+      slideGap="xl"
+      align="start"
+      slidesToScroll={mobile ? 1 : 2}
+    >
+      {slides}
+    </Carousel>
   );
 }
