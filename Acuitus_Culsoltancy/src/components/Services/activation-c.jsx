@@ -4,7 +4,7 @@ import animationData from "../../assets/animation/branding2.json";
 import Navbar from "../landingPage/nav";
 import "../../assets/styles/services/activation-c.scss";
 import AboutFooter from "../landingPage/aboutFooter";
-import ImageComponent from "./imagesRender";
+// import ImageComponent from "./imagesRender";
 import CarouselCard from "../landingPage/comp/carousel";
 
 export default function Activations () {
@@ -27,11 +27,11 @@ export default function Activations () {
 
   return (
     <>
-      <div className="brand-body">
+      <div className="activation-body">
         <Navbar />
-        <div className="branding-header">
-          <div className="branding-background-layer">
-            <div className="branding-content">
+        <div className="activation-header">
+          <div className="activation-background-layer">
+            <div className="activation-content">
               <h1
                 className="headerh1"
                 style={{
@@ -86,7 +86,7 @@ export default function Activations () {
               fontWeight: "bold",
             }}
           >
-            Marketing areas that we focus on:
+            Activations areas that we focus on:
           </h1>
           <ul className="myblist">
             <li className="my-li">Compelling Narratives</li>
