@@ -5,6 +5,7 @@ import Navbar from "../../components/landingPage/nav";
 import "../../assets/styles/services/branding.scss";
 import AboutFooter from "../../components/landingPage/aboutFooter";
 import ImageComponent from "./imagesRender";
+import Carouselb from "../../components/landingPage/comp/branding-c";
 
 export default function Branding() {
   const container = useRef(null);
@@ -123,7 +124,9 @@ export default function Branding() {
             mark on your industry and audience.
           </p>
         </div>
-        {/*<ImageComponent />*/}
+        <div className="carosel-br">
+        <Carouselb />
+        </div>
         <AboutFooter />
       </div>
     </>
