@@ -1,10 +1,11 @@
 import { Carousel } from '@mantine/carousel';
 import { useMediaQuery } from '@mantine/hooks';
 import { createStyles, Paper, Text, Title, Button, useMantineTheme, rem } from '@mantine/core';
-import school from "../../../assets/images/landingPage/branding.png"
+import school from "../../../assets/images/landingPage/billboard.png"
 import chamaa from  "../../../assets/images/landingPage/flers&b.jpeg"
 import chamaaT from "../../../assets/images/landingPage/burnersg.jpeg"
 import streetp from "../../../assets/images/landingPage/streepoles.png"
+import flyer from "../../../assets/images/landingPage/flyers.png"
 
 const useStyles = createStyles((theme) => ({
   card: {
@@ -81,17 +82,10 @@ const data = [
     category: 'Branding',
   },
   {
-    image:
-      'https://images.unsplash.com/photo-1510798831971-661eb04b3739?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80',
-    title: 'Best places to visit this winter',
-    category: 'tourism',
-  },
-  {
-    image:
-      'https://images.unsplash.com/photo-1582721478779-0ae163c05a60?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80',
-    title: 'Active volcanos reviews: travel at your own risk',
-    category: 'nature',
-  },
+    image: flyer,
+    title: 'Flyers',
+    category: 'Branding',
+  }
 ];
 
 export default function Carouselb() {
