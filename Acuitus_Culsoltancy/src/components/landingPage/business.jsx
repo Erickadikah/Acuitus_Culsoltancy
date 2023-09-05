@@ -4,6 +4,7 @@ import heroImage4 from "../../assets/images/landingPage/geet.jpg";
 import heroImag3 from "../../assets/images/landingPage/search .jpg";
 import heroImage2 from "../../assets/images/landingPage/d.jpg";
 import { motion, AnimatePresence } from "framer-motion";
+import { Link } from "react-router-dom";
 
 
 export default function Business() {
@@ -62,7 +63,7 @@ export default function Business() {
           Youth Training & mentorship
         </li>
       </ul>
-      <a href="/services" alt='our-servics'>
+      <a href="/capacity-building" alt='our-servics'>
       <button className="btn-s">Read More</button>
       </a>
     </motion.div>

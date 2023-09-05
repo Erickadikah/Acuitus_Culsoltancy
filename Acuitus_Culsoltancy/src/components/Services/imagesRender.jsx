@@ -10,13 +10,13 @@ function ImageComponent() {
   return (
 <div className="big-g">
       <div className="texth">
-        <h1 className="big-g-h text-center">Some of our Work</h1>
+        <h1 className="big-g-h text-center heading">Popular Work</h1>
       </div>
       <div className="images-holder">
         <div className="section-1_image">
           <motion.div
             initial={{ opacity: 0, scale: 0.8 }}
-            whileHover={{ scale: 1.03 }}
+            whileHover={{ scale: 1.01 }}
             animate={{ opacity: 1, scale: 1 }}
           >
             <img src={image1} className="image1" alt="Image 1" />
@@ -25,7 +25,7 @@ function ImageComponent() {
             <div>
               <motion.div
                 initial={{ opacity: 0, scale: 0.8 }}
-                whileHover={{ scale: 1.03 }}
+                whileHover={{ scale: 1.01 }}
                 animate={{ opacity: 1, scale: 1 }}
               >
                 <img src={image2} className="image2" alt="Image 2" />
@@ -35,12 +35,14 @@ function ImageComponent() {
             <div>
               <motion.div
                 initial={{ opacity: 0, scale: 0.8 }}
-                whileHover={{ scale: 1.03 }}
+                whileHover={{ scale: 1.01 }}
                 animate={{ opacity: 1, scale: 1 }}
               >
                 <img src={image3} className="image3" alt="Image 3" />
               </motion.div>
-{/*              <p>Training</p>*/}
+             {/*<p className="testyp">Training
+             myblist Myblist
+  </p>*/}
             </div>
           </div>
         </div>

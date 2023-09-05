@@ -16,11 +16,11 @@ const Partner = () => {
     <>
       <div className='partner-holder'>
         <div className='partner-overlay'>
-          {/*<h1 className='headtext heading'>
+          <h1 className='headtext'>
             <span style={{
-              color: 'black'
-            }}>Our</span> partners
-          </h1>*/}
+              color: 'white'
+            }}>Our </span> partners
+          </h1>
         </div>
         <div className='partner-images-holder'>
           <motion.img

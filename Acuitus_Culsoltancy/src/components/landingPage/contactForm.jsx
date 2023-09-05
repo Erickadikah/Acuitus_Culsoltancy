@@ -17,7 +17,7 @@ export default function Contactform() {
   });
 
   return (
-    <div style={{ border: '1px solid #ccc', padding: '20px', borderRadius: '10px' }}>
+    <div style={{ border: '1px solid #ccc', padding: '10px', borderRadius: '10px' }}>
   <form onSubmit={form.onSubmit(() => {})}>
     <Title
       order={2}
@@ -36,6 +36,7 @@ export default function Contactform() {
         name="name"
         variant="filled"
         {...form.getInputProps('name')}
+        labelProps={{ style: { color: 'white' } }}
       />
       <TextInput
         label="Email"
@@ -43,6 +44,7 @@ export default function Contactform() {
         name="email"
         variant="filled"
         {...form.getInputProps('email')}
+        labelProps={{ style: { color: 'white' } }}
       />
     </SimpleGrid>
 
@@ -53,6 +55,7 @@ export default function Contactform() {
       name="subject"
       variant="filled"
       {...form.getInputProps('subject')}
+      labelProps={{ style: { color: 'white' } }}
     />
     <Textarea
       mt="md"
@@ -64,6 +67,7 @@ export default function Contactform() {
       name="message"
       variant="filled"
       {...form.getInputProps('message')}
+      labelProps={{ style: { color: 'white' } }}
     />
 
     <Group position="center" mt="xl">

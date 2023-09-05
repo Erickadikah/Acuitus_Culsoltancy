@@ -31,9 +31,13 @@ function LandingPage() {
       <Business />
       <NewsLetterSection />
       {/*<Article />*/}
+      <div className="best">
       <Bestwork />
+      </div>
       {/*<Request />*/}
+      <div className="our-info">
       <ContactUs categories={categories}/>
+      </div>
       <Partner />
       <PageFooter />
     </div>
