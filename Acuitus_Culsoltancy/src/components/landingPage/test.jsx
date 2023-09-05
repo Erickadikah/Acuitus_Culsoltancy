@@ -123,7 +123,7 @@ export default function ServCards() {
     onMouseEnter={() => setHoveredCard(feature.title)}
     onMouseLeave={() => setHoveredCard(null)}
     style={{
-      borderColor: hoveredCard === feature.title ? 'rgb(0, 208, 132)' : 'rgb(141,42,28)',
+      // borderColor: hoveredCard === feature.title ? 'rgb(0, 208, 132)' : 'rgb(141,42,28)',
     //   transform: hoveredCard === feature.title ? 'translateY(-5px)' : 'rgb(141,42,28)',
       boxShadow: hoveredCard === feature.title ? '0 4px 8px rgba(0, 0, 0, 0.1)' : '',
       backgroundColor: backgroundColors[index % backgroundColors.length], // Use a cyclic index to select a background color
