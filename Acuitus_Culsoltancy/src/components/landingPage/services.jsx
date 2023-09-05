@@ -267,68 +267,6 @@ const Services = () => {
         </div>
       </div>
       <div className="serviced">
-        {/*<p className="frase">
-          Our team has strong educational credentials, intellectual curiosity,
-          proven leadership capacity and commitment to values. We are
-          analytically rigorous, delivering fact-based advice to get the job
-          done. In doing so, we provide great value for the money price point,
-          always striving to understand and meet the customer's needs as
-          efficiently as possible, with the least negative impact on the
-          environment
-            </p>*/}
-
-        {/*  <div className="cards-holder">
-      <motion.div
-        className="card-d"
-        whileHover={{ scale: 1.1 }}
-      >
-        <h1 className="card-title">
-          Resource Mobilization
-        </h1>
-        <p className="text-white">
-          We provide insights that help you make informed decisions.
-          Our comprehensive research services encompass Product research,
-          Market research, and Needs assessment.
-        </p>
-      </motion.div>
-
-      <motion.div
-        className="card-d"
-        whileHover={{ scale: 1.1 }}
-      >
-        <h1 className="card-title">
-          Marketing
-        </h1>
-        <a href="/home">
-          <p className="text-white text-center">
-            Activations
-          </p>
-        </a>
-        <p className="text-white">
-          We provide insights that help you make informed decisions.
-          Our comprehensive research services encompass Product research,
-          Market research, and Needs assessment.
-        </p>
-      </motion.div>
-
-      <motion.div
-        className="card-d-1"
-        whileHover={{ scale: 1.1 }}
-      >
-        <h1 className="card-title">
-          Project Management
-        </h1>
-        <p className="text-white">
-          We provide insights that help you make informed decisions.
-          Our comprehensive research services encompass Product research,
-          Market research, and Needs assessment.
-        </p>
-      </motion.div>
-          </div>*/}
-        {/*<div
-          className="container"
-          ref={container}
-        ></div>*/}
         <ServCards />
       </div>
       <div className="form-c">
