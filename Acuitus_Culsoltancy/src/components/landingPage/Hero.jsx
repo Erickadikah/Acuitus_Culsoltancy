@@ -26,13 +26,12 @@ const imagesData = [
   {
     image: fourthImage,
     title: 'Activation',
-    description: ' we provide\
-     Oral health care education: We educate students about the importance of oral health care and proper dental hygiene practices',
+    description: 'From immersive events to captivating product launches, our Activation service transforms concepts into tangible moments that engage, inspire, and leave a lasting impact',
     buttonLabel: 'Our Services',
   },
   {
     image: fifthImage,
-    title: 'Farming Trainings',
+    title: 'Farm Trainings',
     description: 'We are committed to offering innovative solutions that address a wide range of business challenges. As part of our dedication to sustainability and diversified expertise, we are proud to introduce our specialized farming training program',
     buttonLabel: 'Our Services',
   }
