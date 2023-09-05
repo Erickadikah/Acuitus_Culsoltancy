@@ -59,13 +59,13 @@ function Card({ image, title, category }) {
 const data = [
   {
     image: school,
-    title: 'Training of community Health Promoters',
+    title: 'In school Activations',
     category: 'nature',
   },
   {
     image:
       'https://images.unsplash.com/photo-1559494007-9f5847c49d94?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80',
-    title: 'Hawaii beaches review: better than you think',
+    title: 'Chama Group Activations',
     category: 'beach',
   },
   {
