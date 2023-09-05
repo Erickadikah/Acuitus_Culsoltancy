@@ -53,22 +53,13 @@ export default function Branding() {
           <div className="text-cont">
             <h1 className="heading">Branding Services</h1>
             <p className="intro-text">
-              At Acuitus Duo, we're not just crafting logos – we're building
-              brand legacies. Our branding services are a fusion of creativity,
-              strategy, and innovation, aimed at shaping a brand identity that
-              becomes an enduring symbol of your excellence. Let us join forces
-              to create a brand that not only stands out but also leaves an
-              indelible mark on your industry and audience. With our branding
-              services, we help you create a brand identity that is unique,
-              memorable, and timeless. We help you build a brand that is not
-              only a symbol of your excellence but also a reflection of the
-              values you stand for. Our branding services are a fusion of
-              creativity, strategy, and innovation, aimed at shaping a brand
-              With our branding services, we help you create a brand identity
-              that is unique, memorable, and timeless. We help you build a brand
-              that is not only a symbol of your excellence but also a reflection
-              of the values you stand for. Our branding services are a fusion of
-              creativity, strategy, and innovation, aimed at shaping a brand
+              Your brand is more than just a logo or a name – it's the essence
+              of what you stand for. At Acuitus Duo Company, we understand that
+              a strong brand identity is the cornerstone of building a lasting
+              impression and establishing meaningful connections. Our
+              comprehensive branding services are designed to elevate your brand
+              into a distinctive force that resonates with your audience and
+              embodies your core values.
             </p>
           </div>
           <ul className="myblist">
@@ -123,6 +114,14 @@ export default function Branding() {
               and captivating.
             </p>
           </ul>
+          <p className="my-p">
+            At Acuitus Duo, we're not just crafting logos – we're building brand
+            legacies. Our branding services are a fusion of creativity,
+            strategy, and innovation, aimed at shaping a brand identity that
+            becomes an enduring symbol of your excellence. Let us join forces to
+            create a brand that not only stands out but also leaves an indelible
+            mark on your industry and audience.
+          </p>
         </div>
         {/*<ImageComponent />*/}
         <AboutFooter />

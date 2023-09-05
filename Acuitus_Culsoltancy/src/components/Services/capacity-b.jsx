@@ -4,7 +4,7 @@ import animationData from "../../assets/animation/branding2.json";
 import Navbar from "../../components/landingPage/nav";
 import "../../assets/styles/services/branding.scss";
 import AboutFooter from "../../components/landingPage/aboutFooter";
-import ImageComponent from "./imagesRender";
+// import ImageComponent from "./imagesRender";
 
 export default function Capacity() {
   const container = useRef(null);
@@ -72,7 +72,8 @@ export default function Capacity() {
             </p>
           </div>
           </div>
-        <ImageComponent />
+          {/*<ImageComponent />*/}
+          {/*<div className="container" ref={container} style={{ width: "300px", height: "300px" }}></div>*/}
         <AboutFooter />
       </div>
     </>
