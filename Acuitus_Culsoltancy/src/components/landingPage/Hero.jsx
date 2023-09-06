@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { createStyles, Overlay, Container, Title, Button, Text, rem } from '@mantine/core';
 import masaaiImage from '../../assets/images/landingPage/masaai.jpg'; // Import the image using ES modules
-import secondImage from '../../assets/images/landingPage/vsla.jpg'; // Import the second image
+import secondImage from '../../assets/images/landingPage/healthp.jpeg'; // Import the second image
 import thirdImage from '../../assets/images/landingPage/chamaactv.jpeg'; // Import the third image
 import fourthImage from '../../assets/images/landingPage/schoolact.jpg'
 import fifthImage from '../../assets/images/landingPage/ftraning.jpg'
@@ -31,7 +31,7 @@ const imagesData = [
   },
   {
     image: fifthImage,
-    title: 'Farm Trainings',
+    title: 'Trainings',
     description: 'We are committed to offering innovative solutions that address a wide range of business challenges. As part of our dedication to sustainability and diversified expertise, we are proud to introduce our specialized farming training program',
     buttonLabel: 'Our Services',
   }

@@ -1,9 +1,9 @@
 import { Carousel } from '@mantine/carousel';
 import { useMediaQuery } from '@mantine/hooks';
 import { createStyles, Paper, Text, Title, Button, useMantineTheme, rem } from '@mantine/core';
-import farming from "../../../assets/images/landingPage/farming.jpg"
+import farming from "../../../assets/images/landingPage/framtraining.jpg"
 import healthp from  "../../../assets/images/landingPage/healthp.jpeg"
-import chamaaT from "../../../assets/images/landingPage/vsla.jpg"
+import chamaaT from "../../../assets/images/landingPage/chamaaT.jpeg"
 import streetp from "../../../assets/images/landingPage/streepoles.png"
 import flyer from "../../../assets/images/landingPage/flyers.png"
 
