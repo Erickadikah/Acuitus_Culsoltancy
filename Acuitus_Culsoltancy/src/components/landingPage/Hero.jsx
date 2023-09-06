@@ -140,7 +140,7 @@ export default function Hero() {
         gradient="linear-gradient(180deg, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, .65) 40%)"
         opacity={1}
         zIndex={0}
-      />
+  />
       <Container className={classes.container}>
         <Title className={classes.title}>{currentImageData.title}</Title>
         <Text

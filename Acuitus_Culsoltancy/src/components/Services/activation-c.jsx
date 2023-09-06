@@ -63,7 +63,7 @@ export default function Activations () {
               Activations
             </h1>
             <p className="intro-text">
-              n a rapidly evolving business landscape, effective marketing is
+              In a rapidly evolving business landscape, effective marketing is
               the cornerstone of success. At Acuitus consultancy, we specialize
               in crafting holistic marketing strategies that not only cater to
               your unique needs but also create a lasting impact. Our approach

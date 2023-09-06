@@ -90,8 +90,8 @@ export default function LandingNavBar() {
                 <a className="dropdown-item" href="/about">
                   Who We Are
                 </a>
-                <a className="dropdown-item" href="/about">
-                  Passed Projects
+                <a className="dropdown-item" href="/projects">
+                Projects
                 </a>
               </div>
             </li>
