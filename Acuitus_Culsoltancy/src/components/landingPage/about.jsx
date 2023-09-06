@@ -1,6 +1,6 @@
 import React from "react";
 import "../../assets/styles/landingPage/about.scss";
-import heroImage2 from "../../assets/images/landingPage/logo.jpeg";
+import heroImage2 from "../../assets/images/landingPage/acutuslogo.png";
 import PageFooter from "./pagefooter";
 import Missions from "./missions";
 import AboutFooter from "./aboutFooter";
@@ -19,7 +19,7 @@ const About = () => {
           }}>GROW WITH US</p>
         </div>
         <div className="logo-about">
-          <div className="content">
+          <div className="cont">
             {/*
           Second content to be added here
         */}
@@ -32,7 +32,7 @@ const About = () => {
             >
               OUR SOLID BACKGROUND
             </h6>
-            <h1 className="header-text">
+            <h1 className="header-text heading">
               Get to know about our{" "}
               <span className="highlight">
                 <br />

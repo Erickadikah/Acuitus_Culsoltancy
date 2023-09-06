@@ -6,6 +6,7 @@ import "../../assets/styles/services/capacity-b.scss";
 import AboutFooter from "../../components/landingPage/aboutFooter";
 // import ImageComponent from "./imagesRender";
 import Carouselc from "../../components/landingPage/comp/capacity-c";
+import Form from "../../components/landingPage/form"
 
 export default function Capacity() {
   const container = useRef(null);
@@ -72,6 +73,7 @@ export default function Capacity() {
               navigate complex challenges and seize new opportunities.
             </p>
           </div>
+          </div>
           <div className="capacity-c">
           <p className="intro-text"
           style={{
@@ -86,9 +88,9 @@ export default function Capacity() {
           </p>
           <Carouselc />
           </div>
-          </div>
           {/*<ImageComponent />*/}
           {/*<div className="container" ref={container} style={{ width: "300px", height: "300px" }}></div>*/}
+          <Form />
         <AboutFooter />
       </div>
     </>
