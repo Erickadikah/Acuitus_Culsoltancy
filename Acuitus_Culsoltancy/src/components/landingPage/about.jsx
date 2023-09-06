@@ -81,7 +81,7 @@ const About = () => {
                   you have access to the most accurate and up-to-date data.
                 </p>
               </ul>
-              <h1>OurComprehensive Data Services Include</h1>
+              <h1>Our Comprehensive Data Services Include</h1>
               <ul>
                 <li>Data Collection</li>
                 <li>Data Cleaning</li>
