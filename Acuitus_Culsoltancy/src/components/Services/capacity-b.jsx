@@ -2,9 +2,10 @@ import React, { useEffect, useRef } from "react";
 import Lottie from "lottie-web";
 import animationData from "../../assets/animation/branding2.json";
 import Navbar from "../../components/landingPage/nav";
-import "../../assets/styles/services/branding.scss";
+import "../../assets/styles/services/capacity-b.scss";
 import AboutFooter from "../../components/landingPage/aboutFooter";
 // import ImageComponent from "./imagesRender";
+import Carouselc from "../../components/landingPage/comp/capacity-c";
 
 export default function Capacity() {
   const container = useRef(null);
@@ -26,11 +27,11 @@ export default function Capacity() {
 
   return (
     <>
-      <div className="brand-body">
+      <div className="capacity-body">
         <Navbar />
-        <div className="branding-header">
-          <div className="branding-background-layer">
-            <div className="branding-content">
+        <div className="capacity-header">
+          <div className="capacity-background-layer">
+            <div className="capacity-content">
               <h1
                 className="headerh1"
                 style={{
@@ -70,6 +71,20 @@ export default function Capacity() {
               believe in equipping you with the knowledge and skills needed to
               navigate complex challenges and seize new opportunities.
             </p>
+          </div>
+          <div className="capacity-c">
+          <p className="intro-text"
+          style={{
+            marginBottom: "2rem",
+          }}
+          >
+            We have a team of highly qualified and experienced professionals
+            with a proven track record in capacity building. We have a
+            comprehensive approach to capacity building that includes
+            assessment, training, and mentorship. We also provide financial and
+            market linkages, facilitating connections between groups and banks
+          </p>
+          <Carouselc />
           </div>
           </div>
           {/*<ImageComponent />*/}
