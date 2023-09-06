@@ -5,7 +5,7 @@ import PageFooter from "./pagefooter";
 import Missions from "./missions";
 import AboutFooter from "./aboutFooter";
 import Navbar from "./nav";
-import Partner from './partner'
+import Partner from "./partner";
 
 const About = () => {
   return (
@@ -14,15 +14,16 @@ const About = () => {
       <div className="about">
         <div className="header">
           <h1 className="header-text">About Us</h1>
-          <p style={{
-            fontSize: "1rem",
-          }}>GROW WITH US</p>
+          <p
+            style={{
+              fontSize: "1rem",
+            }}
+          >
+            GROW WITH US
+          </p>
         </div>
         <div className="logo-about">
           <div className="cont">
-            {/*
-          Second content to be added here
-        */}
             <h6
               className="text-center"
               style={{
@@ -39,7 +40,6 @@ const About = () => {
                 company
               </span>
             </h1>
-            <div className="text-container">
               <p className="intro-text">
                 Established with a vision to catalyze progress, Acuitus Duo
                 Company brings together a team of seasoned professionals driven
@@ -58,19 +58,40 @@ const About = () => {
                 building, strategic research, impactful marketing, or resource
                 mobilization, our mission is to empower you to reach new
                 heights. Join us as we embark on a dynamic journey of discovery,
-                progress, and excellence. Our Office is based in Nairobi, Kenya.
+                progress, and excellence. Our Office is based in Westlands Nairobi, Kenya.
               </p>
-              {/*<a href="/services">
-                <button href="/services" className="btn-s">
-                  Our Services
-                </button>
-            </a>*/}
-            </div>
-            </div>
-            <div className="div-1">
-            <img src={heroImage2} className="about-image" alt="About us" />
+              <div className="contained">
+              <h1 className="heading">Why Choose Us?</h1>
+              <ul>
+                <li>Data Excellence</li>
+                <p>
+                  We specialize in data. Our team comprises data scientists,
+                  analysts, and experts who are passionate about transforming
+                  raw data into actionable insights.
+                </p>
+                <li>Tailored Solutions:</li>
+                <p>
+                  We understand that your data needs are unique. We work closely
+                  with you to customize solutions that align with your business
+                  objectives.
+                </p>
+                <li>Cutting-Edge Technology</li>
+                <p>
+                  We leverage the latest tools and technologies to ensure that
+                  you have access to the most accurate and up-to-date data.
+                </p>
+              </ul>
+              <h1>OurComprehensive Data Services Include</h1>
+              <ul>
+                <li>Data Collection</li>
+                <li>Data Cleaning</li>
+                <li>Data Analysis</li>
+                <li>Data Visualization</li>
+                <li>Predictive Analytics</li>
+              </ul>
+              </div>
           </div>
-        </div>
+              </div>
         <Missions />
         <Partner />
         <AboutFooter />
