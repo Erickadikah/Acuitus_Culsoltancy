@@ -11,6 +11,7 @@ import Marketing from "../components/Services/marketing"
 import Resource from "../components/Services/resource"
 import Activations from '../components/Services/activation-c';
 import Capacity from '../components/Services/capacity-b';
+import ProjectsD from "../components/Services/projectsD"
 
 
 const FirmPages = () => {
@@ -27,6 +28,7 @@ const FirmPages = () => {
     <Route path='/marketing' element={<Marketing />} />
     <Route path='/resource-mobilization' element={<Resource />} />
     <Route path='/capacity-building' element={<Capacity />} />
+    <Route path='/projects' element={<ProjectsD />} />
     </Routes>
     </BrowserRouter>
 

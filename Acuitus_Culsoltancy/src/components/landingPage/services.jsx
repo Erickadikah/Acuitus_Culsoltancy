@@ -270,7 +270,13 @@ const Services = () => {
         <ServCards />
       </div>
       <Form />
-      <div className="form-c">
+      <div className="form-2">
+      <h1 className="heading text-white">
+      We bring your ideas to life
+      </h1>
+      <p className="my-tagline">
+      Become our client and get the best services and emotions with us.
+            </p>
         <Contactform />
       </div>
       <AboutFooter />
