@@ -1,6 +1,7 @@
 import React from "react";
 import "../../assets/styles/services/projectsD.scss";
 import Navbar from "../../components/landingPage/nav";
+import Form from "../../components/landingPage/form";
 
 const ProjectsD = () => {
   return (
@@ -110,6 +111,7 @@ const ProjectsD = () => {
           </p>
         </div>
       </div>
+      <Form />
     </>
   );
 };
