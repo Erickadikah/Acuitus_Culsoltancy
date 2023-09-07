@@ -38,9 +38,9 @@ const ProjectsD = () => {
             <br />
             We also provided financial and market linkages to these groups, thus
             promoting access to capital, which is essential for their growth and
-            operations. Farmers were also linked to input providers to acquire
-            quality seeds, fertilizers, and farm machinery, among other
-            essentials.
+            operations.
+            Farmers were also linked to input providers to acquire
+            quality seeds, fertilizers, and farm machinery, among other essentials.
           </p>
         </div>
         <div class="project-body-content">
