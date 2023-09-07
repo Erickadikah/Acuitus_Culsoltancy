@@ -1,7 +1,9 @@
 import { TextInput, Textarea, SimpleGrid, Group, Title, Button } from '@mantine/core';
 import { useForm } from '@mantine/form';
+import React, { useState } from 'react';
 
 export default function Contactform() {
+  const [submissionStatus, setSubmissionStatus] = useState(null);
   const form = useForm({
     initialValues: {
       name: '',
@@ -18,7 +20,35 @@ export default function Contactform() {
 
   return (
     <div style={{ border: '1px solid #ccc', padding: '10px', borderRadius: '10px' }}>
-  <form onSubmit={form.onSubmit(() => {})}>
+  <form
+  onSubmit={async (e) => {
+    e.preventDefault();
+
+    try {
+      const response = await fetch('http://localhost:3000/message', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(form.values),
+      });
+
+      if (response.ok) {
+        setSubmissionStatus('success');
+        form.reset();
+      } else {
+        setSubmissionStatus('error');
+      }
+    } catch (error) {
+      setSubmissionStatus('error');
+    }
+  }}
+>
+{submissionStatus === 'success' ? (
+    <div style={{ color: 'green' }}>Message sent successfully!</div>
+  ) : submissionStatus === 'error' ? (
+    <div style={{ color: 'red' }}>Message could not be sent. Please try again later.</div>
+  ) : null}
     <Title
       order={2}
       size="h1"
