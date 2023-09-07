@@ -55,7 +55,7 @@ const ProjectsD = () => {
          class="project-body-content">
           <h3 class="projects-head">
             <span class="project-span">2.</span>Group (Chama) Activations in
-            Kenya’s local communities VSLAS and FSCs
+            Kenya’s local communities
           </h3>
           <p class="explainer">
             Partnering with Colgate, Acuitus engaged with local communities,

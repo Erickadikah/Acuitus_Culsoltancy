@@ -1,6 +1,7 @@
 import { TextInput, Textarea, SimpleGrid, Group, Title, Button } from '@mantine/core';
 import { useForm } from '@mantine/form';
 import React, { useState } from 'react';
+import "../../assets/styles/landingPage/contactForm.scss";
 
 export default function Contactform() {
   const [submissionStatus, setSubmissionStatus] = useState(null);
@@ -19,7 +20,7 @@ export default function Contactform() {
   });
 
   return (
-    <div style={{ border: '1px solid #ccc', padding: '10px', borderRadius: '10px' }}>
+    <div className='contact-f'>
   <form
   onSubmit={async (e) => {
     e.preventDefault();
