@@ -6,6 +6,7 @@ import thirdImage from '../../assets/images/landingPage/chamaactv.jpeg'; // Impo
 import fourthImage from '../../assets/images/landingPage/schoolact.jpg'
 import fifthImage from '../../assets/images/landingPage/ftraning.jpg'
 import { FcNext, FcPrevious } from 'react-icons/fc';
+import { Link } from 'react-router-dom';
 
 const imagesData = [
   {
@@ -13,21 +14,23 @@ const imagesData = [
     title: 'Welcome to Acuitus Duo - your trusted partner in transformation and growth',
     description: 'At Acuitus, we believe in the power of transformation. We stands as a beacon of innovation, inspiration, and progress.',
     buttonLabel: 'Learn More',
+    linkTo: '/about',
   },
   {
     image: fourthImage,
     title: 'Activation',
     description: 'From immersive events to captivating product launches, our Activation service transforms concepts into tangible moments that engage, inspire, and leave a lasting impact',
     buttonLabel: 'Our Services',
+    linkTo: '/services',
   },
   {
     image: fifthImage,
     title: 'Trainings',
     description: 'We are committed to offering innovative solutions that address a wide range of business challenges. As part of our dedication to sustainability and diversified expertise, we are proud to introduce our specialized farming training program',
     buttonLabel: 'Our Services',
+    linkTo: '/services',
   }
 ];
-
 
 const useStyles = createStyles((theme) => ({
   masaaiImage: {
@@ -143,13 +146,15 @@ export default function Hero() {
           {currentImageData.description}
         </Text>
 
-        <Button
-          size="lg"
-          className={classes.customButton}
-          style={{ backgroundColor: 'rgb(0, 208, 132)', color: 'white' }}
-        >
-          {currentImageData.buttonLabel}
-        </Button>
+        <Link to={currentImageData.linkTo}>
+          <Button
+            size="lg"
+            className={classes.customButton}
+            style={{ backgroundColor: 'rgb(0, 208, 132)', color: 'white' }}
+          >
+            {currentImageData.buttonLabel}
+          </Button>
+        </Link>
         {/* Navigation icons with click handlers */}
         <div className={classes.control}>
           <span onClick={prevImage} style={{ cursor: 'pointer', marginRight: '10px' }}><FcPrevious size={32} /></span>

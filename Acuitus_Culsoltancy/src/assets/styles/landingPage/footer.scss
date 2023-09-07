@@ -1,8 +1,8 @@
 footer {
-    min-height: 80vh;
+    min-height: 70vh;
     display: grid;
     place-content: center;
-    background-color: #080806;
+    background-color: rgb(14,35,50);
     .footer-content {
         display: flex;
         padding-inline: 10px;
@@ -29,7 +29,8 @@ footer {
             text-decoration: none;
             color: rgba(255,255,255,0.4);
             &:hover {
-                color: rgb(146, 186, 247);
+                color: white;
+                // rgb(146, 186, 247);
             }
         }
     }
