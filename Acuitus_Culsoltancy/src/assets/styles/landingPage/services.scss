@@ -27,12 +27,23 @@
   z-index: -1;
   background-attachment: fixed;
   background-repeat: no-repeat;
+  @media screen and (max-width: 768px) {
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+  }
+    
 }
 
 .content {
   justify-content: center;
   align-items: center;
   margin-top: 20rem;
+  @media screen and (max-width: 768px) {
+    margin-top: 10rem;
+    padding: 0;
+    margin-bottom: 0;
+  }
 }
 .hode {
   justify-content: center;
