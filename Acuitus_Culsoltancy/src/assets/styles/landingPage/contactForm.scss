@@ -1,0 +1,9 @@
+.contact-f {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 10px;
+    @media screen and (max-width: 767px) {
+        padding: 25px;
+
+    }
+}

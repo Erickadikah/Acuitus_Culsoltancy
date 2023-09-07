@@ -69,7 +69,7 @@ function ContactIcon({
 const MOCKDATA = [
   { title: 'Email', description: 'ACUITUSDUO@GMAIL.COM', icon: IconAt },
   { title: 'Phone', description: '+254 721141938', icon: IconPhone },
-  { title: 'Address', description: 'Ngong, Nairobi', icon: IconMapPin },
+  { title: 'Address', description: 'Westlands, Nairobi', icon: IconMapPin },
   { title: 'Working hours', description: '8 a.m. – 5 p.m.', icon: IconSun },
 ];
 
