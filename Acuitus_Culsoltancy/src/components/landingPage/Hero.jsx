@@ -15,15 +15,6 @@ const imagesData = [
     buttonLabel: 'Learn More',
   },
   {
-    image: secondImage,
-    title: 'Training',
-    description: 'Acuitus team is made up of professionals in data management and analytics, customer care relationship, sales and marketing,\
-     capacity building projects among other facilitations\
-      We have a team of experts in the field of data management and analytics, customer care relationship, sales and marketing, capacity building projects among other facilitations.\
-     ',
-    buttonLabel: 'Our Sevices',
-  },
-  {
     image: fourthImage,
     title: 'Activation',
     description: 'From immersive events to captivating product launches, our Activation service transforms concepts into tangible moments that engage, inspire, and leave a lasting impact',
