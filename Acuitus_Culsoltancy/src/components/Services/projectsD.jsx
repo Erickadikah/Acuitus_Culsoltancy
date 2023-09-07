@@ -2,6 +2,7 @@ import React from "react";
 import "../../assets/styles/services/projectsD.scss";
 import Navbar from "../../components/landingPage/nav";
 import Form from "../../components/landingPage/form";
+import { motion } from "framer-motion";
 
 const ProjectsD = () => {
   return (
@@ -21,7 +22,11 @@ const ProjectsD = () => {
         </div>
       </div>
       <div class="project-body">
-        <div class="project-body-content">
+        <motion.div 
+        initial={{ y: -10, opacity: 0}}
+        animate={{ y : 0, opacity: 1}}
+        transition={{ duration: 0.1, delay: 0.1}}
+        class="project-body-content">
           <h3 class="projects-head">
             <span class="project-span">1.</span>Training, mentorship program to
             VSLAS and FSCs
@@ -42,8 +47,12 @@ const ProjectsD = () => {
             Farmers were also linked to input providers to acquire
             quality seeds, fertilizers, and farm machinery, among other essentials.
           </p>
-        </div>
-        <div class="project-body-content">
+        </motion.div>
+        <motion.div
+        initial={{ y: -10, opacity: 0}}
+        animate={{ y : 0, opacity: 1}}
+        transition={{ duration: 0.1, delay: 0.4}}
+         class="project-body-content">
           <h3 class="projects-head">
             <span class="project-span">2.</span>Group (Chama) Activations in
             Kenya’s local communities VSLAS and FSCs
@@ -57,8 +66,12 @@ const ProjectsD = () => {
             Siaya, Kisumu, Busia, Bungoma, Kisii, Vihiga, Nyeri, Muranga,
             Nakuru, Kiambu, and Nyandarua.
           </p>
-        </div>
-        <div class="project-body-content">
+        </motion.div>
+        <motion.div
+        initial={{ y: -10, opacity: 0}}
+        animate={{ y : 0, opacity: 1}}
+        transition={{ duration: 0.1, delay: 0.6}}
+         class="project-body-content">
           <h3 class="projects-head">
             <span class="project-span">3.</span>Comparative research on the
             benefits of Value Added Training in Village Savings and Loans
@@ -76,8 +89,12 @@ const ProjectsD = () => {
             development, loan management practices, entrepreneurship engagement,
             and empowerment.
           </p>
-        </div>
-        <div class="project-body-content">
+        </motion.div>
+        <motion.div
+        initial={{ y: -10, opacity: 0}}
+        animate={{ y : 0, opacity: 1}}
+        transition={{ duration: 0.1, delay: 0.8}}
+         class="project-body-content">
           <h3 class="projects-head">
             <span class="project-span">4.</span>Baseline Survey (Need
             assessment) on Newly established groups.
@@ -92,8 +109,12 @@ const ProjectsD = () => {
             activities, sources of income, value chain involvement, and
             identified support requirements.
           </p>
-        </div>
-        <div class="project-body-content">
+        </motion.div>
+        <motion.div
+        initial={{ y: -10, opacity: 0}}
+        animate={{ y : 0, opacity: 1}}
+        transition={{ duration: 0.1, delay: 0.5}}
+         class="project-body-content">
           <h3 class="projects-head">
             <span class="project-span">5.</span>Market research/Study for ARIFU
           </h3>
@@ -109,7 +130,7 @@ const ProjectsD = () => {
             and potential challenges, providing ARIFU with a clear understanding
             of the market landscape.
           </p>
-        </div>
+        </motion.div>
       </div>
       <Form />
     </>
