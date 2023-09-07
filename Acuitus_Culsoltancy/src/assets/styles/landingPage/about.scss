@@ -1,5 +1,4 @@
 .about {
-  // margin-top: 50px;
   overflow-x: hidden;
   overflow-y: hidden;
 
@@ -10,6 +9,7 @@
   background-size: cover;
   background-position: center;
   color: rgb(247,247,247);
+  height: 50vh;
   text-align: center;
   padding: 90px 0; /* Adjust padding for vertical spacing */
   @media screen and (max-width: 960px) {
@@ -87,7 +87,6 @@
 .header-text {
   font-size: 2.5rem;
   margin: 0;
-  // text-align: center;
   @media screen and (max-width: 960px) {
     font-size: 1.8rem;
     padding: 0;

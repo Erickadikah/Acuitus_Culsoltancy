@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { motion, useAnimation } from "framer-motion";
 import Navbar from "../components/landingPage/nav";
 import Hero from "./landingPage/Hero";
 // import TechStacks from "./components/landingPage/tech-stacks";
@@ -23,18 +24,66 @@ const categories = [
 
 
 function LandingPage() {
+  const heroAnimationControls = useAnimation();
+  const businessAnimationControls = useAnimation();
+  const bestworkAnimationControls = useAnimation();
+
+  useEffect(() => {
+    const handleScroll = async () => {
+      const scrollPosition = window.scrollY;
+      const windowHeight = window.innerHeight;
+
+      // Define the trigger points for each animation (adjust as needed)
+      const heroTriggerPoint = windowHeight * 0.5;
+      const businessTriggerPoint = windowHeight * 0.3;
+      const bestworkTriggerPoint = windowHeight * 0.7;
+
+      // Control animations for each section
+      if (scrollPosition >= heroTriggerPoint) {
+        await heroAnimationControls.start({ opacity: 1, y: 0 });
+      } else {
+        await heroAnimationControls.start({ opacity: 0, y: 100 });
+      }
+
+      if (scrollPosition >= businessTriggerPoint) {
+        await businessAnimationControls.start({ opacity: 1, y: 0 });
+      } else {
+        await businessAnimationControls.start({ opacity: 0, y: 100 });
+      }
+
+      if (scrollPosition >= bestworkTriggerPoint) {
+        await bestworkAnimationControls.start({ opacity: 1, y: 0 });
+      } else {
+        await bestworkAnimationControls.start({ opacity: 0, y: 100 });
+      }
+    };
+
+
+  window.addEventListener("scroll", handleScroll);
+  return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [heroAnimationControls, businessAnimationControls, bestworkAnimationControls ]);
+
+
   return (
     <div className="land">
       <Navbar />
       <Hero />
-      {/*<OurServices />*/}
-      <Business />
+      <motion.div
+        className="hero"
+        initial={{ opacity: 2, y: 100 }}
+        animate={heroAnimationControls}>
+        <Business />
+      </motion.div>
       <NewsLetterSection />
-      {/*<Article />*/}
-      <div className="best">
-      <Bestwork />
-      </div>
-      {/*<Request />*/}
+       <motion.div
+        className="best"
+        initial={{ opacity: 1, y: 100 }}
+        animate={bestworkAnimationControls}
+      >
+        <Bestwork />
+      </motion.div>
       <div className="our-info">
       <ContactUs categories={categories}/>
       </div>
