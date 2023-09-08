@@ -4,6 +4,7 @@ import { createStyles, Paper, Text, Title, Button, useMantineTheme, rem } from '
 import farming from "../../../assets/images/landingPage/framtraining.jpg"
 import healthp from  "../../../assets/images/landingPage/healthp.jpeg"
 import chamaaT from "../../../assets/images/landingPage/chamaaT.jpeg"
+import farming2 from "../../../assets/images/landingPage/trainee.jpeg"
 import { Link } from 'react-router-dom';
 
 
@@ -78,6 +79,11 @@ const data = [
     title: 'Training Village Savings and Loan Associations, Farmer Service',
     category: 'Branding',
   },
+  {
+    image: farming2,
+    title: 'Our Training',
+    category: 'Training',
+  }
 ];
 
 export default function Carouselc() {
