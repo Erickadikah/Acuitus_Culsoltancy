@@ -24,6 +24,11 @@
     display: block;
     height: 100%;
     padding: 0;
+    height: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+
 
   }
 
@@ -33,6 +38,8 @@
   align-items: center;
   @media screen and (max-width: 940px) {
     display: block;
+    padding: 0;
+    font-size: 9px;
   }
     
   }
@@ -90,6 +97,12 @@
   text-align: center;
   height: 150px;
   flex-basis: calc(50% - 20px);
+  @media screen and (max-width: 640px) {
+    padding: 20px;
+    height: 100px;
+    flex-basis: calc(100% - 20px);
+  }
+    
 }
 
 .counter-item h2 {
@@ -137,7 +150,7 @@
   color: white;
   margin: 0;
   @media screen and (max-width: 340px) {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 700;
     white-space: nowrap;
   } 
