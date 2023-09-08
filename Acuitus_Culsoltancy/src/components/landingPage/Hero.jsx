@@ -70,7 +70,7 @@ const useStyles = createStyles((theme) => ({
     lineHeight: 1.1,
 
      [theme.fn.smallerThan('sm')]: {
-      fontSize: rem(28), // Adjust font size for smaller screens
+      fontSize: rem(26), // Adjust font size for smaller screens
     },
   },
 

@@ -27,7 +27,7 @@ const About = () => {
             <h6
               className="text-center"
               style={{
-                marginBottom: "1rem",
+                // marginBottom: "1rem",
                 fontSize: "1rem",
               }}
             >
@@ -61,33 +61,39 @@ const About = () => {
                 progress, and excellence. Our Office is based in Westlands, Nairobi, Kenya.
               </p>
               <div className="contained">
-              <h1 className="heading">Why Choose Us?</h1>
-              <ul>
-                <li>Data Excellence</li>
-                <p>
+              <h1 className="heading" style={{
+                color: 'rgb(0,208,132)'
+              }}>Why Choose Us?</h1>
+              <ul className="about-ul">
+                <li className="about-li">Data Excellence</li>
+                <p className="about-p">
                   We specialize in data. Our team comprises data scientists,
                   analysts, and experts who are passionate about transforming
                   raw data into actionable insights.
                 </p>
-                <li>Tailored Solutions:</li>
-                <p>
+                <li className="about-li">Tailored Solutions:</li>
+                <p className="about-p">
                   We understand that your data needs are unique. We work closely
                   with you to customize solutions that align with your business
                   objectives.
                 </p>
-                <li>Cutting-Edge Technology</li>
-                <p>
+                <li className="about-li">Cutting-Edge Technology</li>
+                <p className="about-p">
                   We leverage the latest tools and technologies to ensure that
                   you have access to the most accurate and up-to-date data.
                 </p>
               </ul>
-              <h1>Our Comprehensive Data Services Include</h1>
-              <ul>
-                <li>Data Collection</li>
-                <li>Data Cleaning</li>
-                <li>Data Analysis</li>
-                <li>Data Visualization</li>
-                <li>Predictive Analytics</li>
+              <h1 className='heading'
+               style={{
+                color: 'rgb(0,208,132)'
+              }}
+              >Our Comprehensive Data Services Include</h1>
+              <ul className="about-ul">
+                <li className="about-li">Data Collection</li>
+                <li className="about-li">Data Cleaning</li>
+                <li className="about-li">Data Analysis</li>
+                <li className="about-li">Data Visualization</li>
+                <li className="about-li">Predictive Analytics</li>
               </ul>
               </div>
           </div>
