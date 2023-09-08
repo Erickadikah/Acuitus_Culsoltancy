@@ -9,7 +9,7 @@
   background-size: cover;
   background-position: center;
   color: rgb(247,247,247);
-  height: 50vh;
+  height: 40vh;
   text-align: center;
   padding: 90px 0; /* Adjust padding for vertical spacing */
   @media screen and (max-width: 960px) {
@@ -60,7 +60,7 @@
 }
 
 .cont {
-  margin-top: 4rem;
+  margin-top: 5rem;
   @media screen and (max-width: 960px) {
     // padding: 1rem;
     font-size: 16px;
@@ -94,75 +94,6 @@
   }
 }
 
-// .text {
-//   font-size: 1.1rem;
-//   line-height: 1.6;
-//   margin-top: 30px;
-//   margin-bottom: 40px;
-//   padding: 2rem;
-//   justify-content: center;
-//   @media screen and (max-width: 960px) {
-//     font-size: 0.9rem;
-//   }
-// }
-
-// .text-container {
-//   max-width: 1000px; /* Adjust as needed */
-//   margin: 0 auto;
-//   @media screen and (max-width: 960px) {
-//     padding: 1rem;
-//   }
-// }
-
-// .intro-text {
-//   font-size: 14px;
-//   line-height: 1.5;
-//   white-space: wrap;
-//   padding: 8rem;
-//   @media screen and (max-width: 960px) {
-//     font-size: 16px;
-//     margin-left: 1rem;
-//   }
-    
-//   }
-
-// .main-text {
-//   font-size: 16px;
-//   line-height: 1.6;
-//   margin-bottom: 20px;
-//   @media screen  and (max-width: 960px) {
-//     font-size: 14px;
-//   }
-    
-// }
-
-// .logo-about {
-//   // display: flex;
-//   margin-bottom: 2rem;
-//   margin-top: 0;
-//   @media screen and (max-width: 960px) {
-//     flex-direction: column;
-//     align-items: center;
-//     height: 100%;
-//     margin-bottom: 2rem;
-//   }
-    
-// }
-
-// .contained {
-//   display: block;
-//   justify-content: center;
-//   align-items: center;
-//   margin-top: 0;
-//   margin-bottom: 0;
-//   // margin-bottom: 2rem;
-//   @media screen and (max-width: 960px) {
-//     padding: 1rem;
-//   }
-    
-// }
-
-/* Add this CSS to your stylesheet or inside a style tag in your HTML */
 
 /* Style the container */
 .logo-about {
@@ -194,7 +125,7 @@
 /* Style the introductory text */
 .intro-text {
   padding: 2rem;
-  font-size: 1.2rem;
+  font-size: 2.5rem;
   line-height: 1.5;
   color: #333; /* Change the text color to your preference */
   margin-bottom: 2rem;
@@ -209,7 +140,7 @@
 .contained {
   background-color: #fff;
   padding: 2rem;
-  border-radius: 10px;
+  // border-radius: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   text-align: left;
   @media screen and (max-width: 960px){
@@ -219,28 +150,34 @@
   }
 }
 
-/* Style the headings in the "Why Choose Us?" section */
-.contained h1 {
-  font-size: 1.5rem;
-  margin-top: 1rem;
-  margin-bottom: 0.5rem;
+.about-ul {
+  list-style-type: disc;
+  margin-left: 20px;
+  padding-left: 20px;
+  font-size: 20px;
+  @media screen and (max-width: 960px) {
+    font-size: 16px;
+    margin-left: 1rem;
+  }
 }
 
-/* Style the list items in the "Why Choose Us?" section */
-.contained ul {
-  list-style: none;
-  padding: 0;
-}
-
-.contained ul li {
+.about-li {
   font-weight: bold;
-  margin-top: 1rem;
+  margin-top: 10px;
+  font-size: 18px;
+  @media screen and (max-width: 960px) {
+    font-size: 16px;
+    margin-left: 1rem;
+  }
+    
 }
 
-/* Style the paragraphs in the "Why Choose Us?" section */
-.contained p {
-  font-size: 1rem;
-  line-height: 1.4;
-  margin-bottom: 1rem;
+.about-p {
+  margin-top: 5px;
+  font-size: 18px;
+  @media screen and (max-width: 960px) {
+    font-size: 16px;
+    margin-left: 1rem;
+  }
+    
 }
-
