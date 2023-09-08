@@ -51,7 +51,8 @@ const About = () => {
                 in the power of collaboration, harnessing our expertise to
                 create strategies, activations, and initiatives that amplify
                 your potential and create enduring value.
-                <br />
+                </p>
+                <p>
                 With a commitment to excellence, integrity, and innovation, we
                 are more than service providers – we are partners in your
                 journey toward growth and transformation. Whether it's capacity
