@@ -2,16 +2,11 @@ import React, { useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
 import Navbar from "../components/landingPage/nav";
 import Hero from "./landingPage/Hero";
-// import TechStacks from "./components/landingPage/tech-stacks";
-// import OurServices from "./components/landingPage/service";
 import "bootstrap/dist/css/bootstrap.css"
 import "../assets/styles/landingPage/landing.scss";
 import PageFooter from "./landingPage/pagefooter";
 import NewsLetterSection from "./landingPage/newsletter-section";
-// import Article from "./landingPage/article"
 import Business from "./landingPage/business";
-// import "bootstrap/dist/css/bootstrap.css"
-// import "./assets/styles/landingPage/landing.scss";
 import Bestwork from "./landingPage/bestwork"
 import ContactUs from "./contact-us"
 import Partner from "./landingPage/partner"
