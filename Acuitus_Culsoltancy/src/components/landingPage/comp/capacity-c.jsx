@@ -4,8 +4,8 @@ import { createStyles, Paper, Text, Title, Button, useMantineTheme, rem } from '
 import farming from "../../../assets/images/landingPage/framtraining.jpg"
 import healthp from  "../../../assets/images/landingPage/healthp.jpeg"
 import chamaaT from "../../../assets/images/landingPage/chamaaT.jpeg"
-import streetp from "../../../assets/images/landingPage/streepoles.png"
-import flyer from "../../../assets/images/landingPage/flyers.png"
+import { Link } from 'react-router-dom';
+
 
 const useStyles = createStyles((theme) => ({
   card: {
@@ -21,14 +21,14 @@ const useStyles = createStyles((theme) => ({
   title: {
     fontFamily: `Greycliff CF, ${theme.fontFamily}`,
     fontWeight: 900,
-    color: theme.white,
+    color: 'rgb(0, 208, 132)',
     lineHeight: 1.2,
     fontSize: rem(32),
     marginTop: theme.spacing.xs,
   },
 
   category: {
-    color: theme.white,
+    color: 'rgb(0, 208, 132)',
     opacity: 0.7,
     fontWeight: 700,
     textTransform: 'uppercase',
@@ -53,9 +53,11 @@ function Card({ image, title, category }) {
           {title}
         </Title>
       </div>
+      <Link to='/contactUs'>
       <Button variant="white" color="dark">
         Talk to us
       </Button>
+      </Link>
     </Paper>
   );
 }
