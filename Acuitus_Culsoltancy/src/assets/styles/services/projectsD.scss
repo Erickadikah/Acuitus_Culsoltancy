@@ -53,13 +53,22 @@ position: absolute;
     justify-content: center;
     align-items: center;
     padding: 5rem;
-    background: white;
+    background: rgb(206,222,189);
     border-bottom: 1px solid #ddd;
     @media screen and (max-width: 968px) {
         margin-top: 0;
         height: 100%;
         padding: 1.3rem;
     }
+}
+
+.project-content {
+  margin-top: 10rem;
+  @media screen and (max-width: 968px) {
+    margin-top: 0;
+    padding: 1.3rem;
+  }
+    
 }
 
 /* Base styles for project content */
