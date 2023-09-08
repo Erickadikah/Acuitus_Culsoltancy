@@ -40,32 +40,37 @@ const About = () => {
                 company
               </span>
             </h1>
-              <p className="intro-text">
-                Established with a vision to catalyze progress, Acuitus Duo
-                Company brings together a team of seasoned professionals driven
-                by a passion for making a meaningful impact. With a wealth of
-                expertise across diverse sectors, we are dedicated to crafting
-                tailored solutions that resonate with authenticity and
-                creativity. At the core of our approach lies a deep
-                understanding of your unique needs and aspirations. We believe
-                in the power of collaboration, harnessing our expertise to
-                create strategies, activations, and initiatives that amplify
-                your potential and create enduring value.
-                </p>
-                <p className="intro-text">
-                With a commitment to excellence, integrity, and innovation, we
-                are more than service providers – we are partners in your
-                journey toward growth and transformation. Whether it's capacity
-                building, strategic research, impactful marketing, or resource
-                mobilization, our mission is to empower you to reach new
-                heights. Join us as we embark on a dynamic journey of discovery,
-                progress, and excellence. Our Office is based in Westlands, Nairobi, Kenya.
-              </p>
-              <div className="contained">
-              <h1 className="heading" style={{
-                color: 'rgb(0,208,132)',
-                fontSize: '1.2rem'
-              }}>Why Choose Us?</h1>
+            <p className="intro-text">
+              Established with a vision to catalyze progress, Acuitus Duo
+              Company brings together a team of seasoned professionals driven by
+              a passion for making a meaningful impact. With a wealth of
+              expertise across diverse sectors, we are dedicated to crafting
+              tailored solutions that resonate with authenticity and creativity.
+              At the core of our approach lies a deep understanding of your
+              unique needs and aspirations. We believe in the power of
+              collaboration, harnessing our expertise to create strategies,
+              activations, and initiatives that amplify your potential and
+              create enduring value.
+            </p>
+            <p className="intro-text">
+              With a commitment to excellence, integrity, and innovation, we are
+              more than service providers – we are partners in your journey
+              toward growth and transformation. Whether it's capacity building,
+              strategic research, impactful marketing, or resource mobilization,
+              our mission is to empower you to reach new heights. Join us as we
+              embark on a dynamic journey of discovery, progress, and
+              excellence. Our Office is based in Westlands, Nairobi, Kenya.
+            </p>
+            <div className="contained">
+              <h1
+                className="heading"
+                style={{
+                  color: "rgb(0,208,132)",
+                  fontSize: "1.2rem",
+                }}
+              >
+                Why Choose Us?
+              </h1>
               <ul className="about-ul">
                 <li className="about-li">Data Excellence</li>
                 <p className="about-p">
@@ -85,12 +90,15 @@ const About = () => {
                   you have access to the most accurate and up-to-date data.
                 </p>
               </ul>
-              <h1 className='heading'
-               style={{
-                color: 'rgb(0,208,132)',
-                fontSize: '1.2rem'
-              }}
-              >Our Data Services Include</h1>
+              <h1
+                className="heading"
+                style={{
+                  color: "rgb(0,208,132)",
+                  fontSize: "1.2rem",
+                }}
+              >
+                Our Data Services Include
+              </h1>
               <ul className="about-ul">
                 <li className="about-li">Data Collection</li>
                 <li className="about-li">Data Cleaning</li>
@@ -98,9 +106,9 @@ const About = () => {
                 <li className="about-li">Data Visualization</li>
                 <li className="about-li">Predictive Analytics</li>
               </ul>
-              </div>
+            </div>
           </div>
-              </div>
+        </div>
         <Missions />
         <Partner />
         <AboutFooter />
