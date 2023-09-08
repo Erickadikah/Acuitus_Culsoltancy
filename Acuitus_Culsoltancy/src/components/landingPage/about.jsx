@@ -52,7 +52,7 @@ const About = () => {
                 create strategies, activations, and initiatives that amplify
                 your potential and create enduring value.
                 </p>
-                <p>
+                <p className="intro-text">
                 With a commitment to excellence, integrity, and innovation, we
                 are more than service providers – we are partners in your
                 journey toward growth and transformation. Whether it's capacity
@@ -63,7 +63,8 @@ const About = () => {
               </p>
               <div className="contained">
               <h1 className="heading" style={{
-                color: 'rgb(0,208,132)'
+                color: 'rgb(0,208,132)',
+                fontSize: '1.2rem'
               }}>Why Choose Us?</h1>
               <ul className="about-ul">
                 <li className="about-li">Data Excellence</li>
@@ -86,9 +87,10 @@ const About = () => {
               </ul>
               <h1 className='heading'
                style={{
-                color: 'rgb(0,208,132)'
+                color: 'rgb(0,208,132)',
+                fontSize: '1.2rem'
               }}
-              >Our Comprehensive Data Services Include</h1>
+              >Our Data Services Include</h1>
               <ul className="about-ul">
                 <li className="about-li">Data Collection</li>
                 <li className="about-li">Data Cleaning</li>
