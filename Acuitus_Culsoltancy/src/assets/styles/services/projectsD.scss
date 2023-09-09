@@ -46,11 +46,12 @@ position: absolute;
 
 .project-body {
     display: flex;
-    flex-wrap: wrap;
+    // flex-wrap: wrap;
     gap: 2rem;
     height: 100%;
     width: 100%;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
     padding: 5rem;
     background: rgb(206,222,189);
@@ -118,7 +119,7 @@ position: absolute;
 
   .explainer {
     font-size: 10px;
-    white-space: pre-line;
+    // white-space: pre-line;
   }
 }
 
