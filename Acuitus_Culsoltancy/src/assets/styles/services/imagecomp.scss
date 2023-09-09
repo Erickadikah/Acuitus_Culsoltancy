@@ -1,10 +1,24 @@
 .big-g {
-    height: 110vh;
-    background: rgb(255,255,255);
+    height: 120vh;
+    background: rgb(244,251,255);
     justify-content: center;
     align-items: center;
+    border-bottom: 1px solid #ddd;
     @media screen and (max-width: 768px){
         width: 100%;
+        height: 100%;
+    }
+}
+
+.my-p {
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: 1000;
+    justify-content: center;
+    padding: 2rem;
+    @media screen and (max-width: 768px) {
+        font-size: 14px;
+        padding: 1rem;
     }
 }
 
@@ -13,7 +27,6 @@ big-g-h {
     text-align: center;
     font-weight: 1000;
     justify-content: center;
-    // padding: 2rem;
     @media screen and (max-width: 768px) {
         font-size: 14px;
     }
@@ -31,6 +44,15 @@ big-g-h {
   width: 70%;
   margin: 0 auto;
   padding-top: 4rem;
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    padding-top: 0;
+    gap: 1rem;
+    margin: 0 auto;
+    padding: 2rem;
+    // padding: 3rem;
+    
+  }
 //   margin-top: 4rem;
 }
 
@@ -38,18 +60,33 @@ big-g-h {
   height: 30rem;
   width: 50rem;
   object-fit: cover;
+  @media screen and (max-width: 768px) {
+    height: 10rem;
+    width: 22rem;
+    
+  }
 }
 
 .image2 {
   height: 10rem;
   width: 25rem;
   object-fit: cover;
+  @media screen and (max-width: 768px) {
+    height: 10rem;
+    width: 22rem;
+    
+  }
 }
 
 .image3 {
   height: 10rem;
   width: 24rem;
   object-fit: cover;
+  @media screen and (max-width: 768px) {
+    height: 10rem;
+    width: 22rem;
+    
+  }
 }
 
 .image4 {
@@ -57,13 +94,22 @@ big-g-h {
   width: 30rem;
   object-fit: cover;
 //   margin-bottom: 2rem;
+  @media screen and (max-width: 768px) {
+    height: 10rem;
+    width: 22.1rem;
+    
+  }
 }
 
 .section-1_image {
     display: block;
     gap: 1rem;
-  
-}
+    @media screen and (max-width: 768px) {
+      display: block;
+      gap: 2rem;
+    }
+      
+    }
 
 .section-flex-image {
   display: flex;
@@ -72,12 +118,33 @@ big-g-h {
   gap: 1rem;
   margin-top: 1rem;
   @media screen and (max-width: 768px) {
-    display: block;
+    flex-direction: column;
+    gap: 1rem;
   }
 }
+.image-wrapper {
+  position: relative; /* Make the wrapper a positioning context for the image */
+}
 
-.section-2_image {
+.image2 {
+  max-width: 100%; /* Ensure the image doesn't exceed its container width */
+  @media screen and (max-width: 768px) {
+    // max-width: 100%; /* Ensure the image doesn't exceed its container width */
+    height: 10rem;
+    width: 22rem;
+    margin-top: 10px;
+    
+  }
+    
+}
 
+image-text {
+  position: absolute; /* Position the text absolutely within the wrapper */
+  top: 0; /* Place the text at the top of the wrapper */
+  left: 0; /* Place the text at the left side of the wrapper */
+  background-color: rgba(255, 255, 255, 0.8); /* Add a semi-transparent background for readability */
+  padding: 10px; /* Add padding to the text for spacing */
+  margin: 0;
 }
 
 .testyp {

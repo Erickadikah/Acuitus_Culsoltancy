@@ -1,9 +1,9 @@
 import React from "react";
 import "../../assets/styles/services/imagecomp.scss";
-import image1 from "../../assets/images/landingPage/marketing.jpg";
+import image1 from "../../assets/images/landingPage/trainee.jpeg";
 import image2 from "../../assets/images/landingPage/event.jpg";
-import image3 from "../../assets/images/landingPage/masaai.jpg";
-import image4 from "../../assets/images/landingPage/school2.jpg";
+import image3 from "../../assets/images/landingPage/chamaaT.jpeg";
+import image4 from "../../assets/images/landingPage/chamaactv.jpeg";
 import { motion } from 'framer-motion';
 
 function ImageComponent() {
@@ -11,6 +11,9 @@ function ImageComponent() {
 <div className="big-g">
       <div className="texth">
         <h1 className="big-g-h text-center heading">Popular Work</h1>
+        <p className="my-p">
+        Be part of this amazing community and get to know more about us
+        </p>
       </div>
       <div className="images-holder">
         <div className="section-1_image">
@@ -22,7 +25,7 @@ function ImageComponent() {
             <img src={image1} className="image1" alt="Image 1" />
           </motion.div>
           <div className="section-flex-image">
-            <div>
+            <div class="image-wrapper">
               <motion.div
                 initial={{ opacity: 0, scale: 0.8 }}
                 whileHover={{ scale: 1.01 }}
@@ -30,7 +33,7 @@ function ImageComponent() {
               >
                 <img src={image2} className="image2" alt="Image 2" />
               </motion.div>
-  {/*              <p>Text test</p>*/}
+          {/*<p className="image-text">Text test</p>*/}
             </div>
             <div>
               <motion.div
@@ -41,8 +44,7 @@ function ImageComponent() {
                 <img src={image3} className="image3" alt="Image 3" />
               </motion.div>
              {/*<p className="testyp">Training
-             myblist Myblist
-  </p>*/}
+             myblist Myblist  </p>*/}
             </div>
           </div>
         </div>
