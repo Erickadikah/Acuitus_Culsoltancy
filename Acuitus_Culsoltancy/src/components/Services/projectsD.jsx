@@ -3,6 +3,8 @@ import "../../assets/styles/services/projectsD.scss";
 import Navbar from "../../components/landingPage/nav";
 import Form from "../../components/landingPage/form";
 import { motion } from "framer-motion";
+import fifthImage from '../../assets/images/landingPage/ftraning.jpg'
+import ImageComponent from "./imagesRender";
 
 const ProjectsD = () => {
   return (
@@ -131,7 +133,8 @@ const ProjectsD = () => {
             of the market landscape.
           </p>
         </motion.div>
-      </div>
+        </div>
+        <ImageComponent />
       <Form />
     </>
   );
