@@ -24,6 +24,16 @@ const ProjectsD = () => {
         </div>
       </div>
       <div class="project-body">
+      <h1 className="text-center">
+        <span class="project-span">Our</span> Projects
+      </h1>
+      <p>
+        Acuitus Consultancy has been involved in various projects, including
+        training and mentorship programs, group activations, comparative
+        <br />
+        the following are some of the projects we have undertaken:
+        join us and work together!
+      </p>
         <motion.div 
         initial={{ y: -10, opacity: 0}}
         animate={{ y : 0, opacity: 1}}

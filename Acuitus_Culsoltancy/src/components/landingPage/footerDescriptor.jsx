@@ -1,5 +1,5 @@
 import React from "react";
-import { FaFacebook, FaTwitter, FaInstagram } from "react-icons/fa";
+import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 export const footerItems = [
   {
@@ -70,6 +70,7 @@ export const footerItems = [
       <FaFacebook fontSize={"18px"} />,
       <FaTwitter fontSize={"18px"} />,
       <FaInstagram fontSize={"18px"} />,
+      <FaLinkedin fontSize={"18px"} />,
     ],
   },
 ];
