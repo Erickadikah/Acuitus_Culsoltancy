@@ -1,5 +1,6 @@
 import React from "react";
 import "../../assets/styles/landingPage/missions.scss";
+import vision from '../../assets/images/landingPage/vision.jpg'
 
 const Missions = () => {
   return (
