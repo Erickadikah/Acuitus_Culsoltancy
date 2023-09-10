@@ -9,6 +9,7 @@ import AboutFooter from "./aboutFooter";
 import "../../assets/styles/landingPage/contactUs.scss";
 import Contactform from "./contactForm";
 import Form from "./form";
+import Foot from "./foot";
 const ContactUs = () => {
   return (
     <div>
@@ -69,6 +70,7 @@ const ContactUs = () => {
       </div>
       <Form />
       <AboutFooter />
+      <Foot />
     </div>
   );
 };

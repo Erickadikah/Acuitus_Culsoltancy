@@ -13,6 +13,7 @@ import Form from "./form";
 import Contactform from "./contactForm";
 import Lottie from "lottie-web";
 import animationData from "../../assets/animation/servicesanim.json";
+import Foot from "./foot";
 
 const Services = () => {
   const container = useRef(null);
@@ -280,6 +281,7 @@ const Services = () => {
         <Contactform />
       </div>
       <AboutFooter />
+       <Foot />
     </>
   );
 };
