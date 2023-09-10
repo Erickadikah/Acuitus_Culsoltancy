@@ -44,18 +44,18 @@ const useStyles = createStyles((theme) => ({
     backgroundSize: 'cover',
     backgroundPosition: 'center',
     backgroundRepeat: 'no-repeat',
-    height: rem(768), // Set an initial height
+    height: rem(840), // Set an initial height
 
     [theme.fn.smallerThan('sm')]: {
       width: '100vw', // Full width of the viewport
-      height: '99vh', // Full height of the viewport
+      height: '100vh', // Full height of the viewport
       backgroundSize: 'cover',
-      minHeight: rem(540), // Set a minimum height for small screens
+      minHeight: rem(400), // Set a minimum height for small screens
     },
   },
 
   container: {
-    height: rem(500),
+    height: rem(700),
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'flex-end',
@@ -162,6 +162,7 @@ export default function Hero() {
             {currentImageData.buttonLabel}
           </Button>
         </Link>
+        {/* Navigation icons with click handlers */}
         <div className={classes.control}>
           <span onClick={prevImage} style={{ cursor: 'pointer', marginRight: '10px' }}><FcPrevious size={32} /></span>
           <span onClick={nextImage} style={{ cursor: 'pointer' }}><FcNext size={32} /></span>
