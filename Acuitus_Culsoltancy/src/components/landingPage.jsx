@@ -83,7 +83,7 @@ function LandingPage() {
       <div className="our-info">
       <ContactUs categories={categories}/>
       </div>
-      <Partner />
+      {/*<Partner />*/}
       <PageFooter />
       <Foot />
     </div>
