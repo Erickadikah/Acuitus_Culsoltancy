@@ -65,7 +65,7 @@ export default function Branding() {
           </div>
           <ul className="myblist">
             <li className="my-li">Strategic Brand Assessment</li>
-            <p className="my-p">
+            <p className="">
               Our branding experts initiate the process by conducting a thorough
               assessment of your current brand identity. We analyze your
               messaging, visuals, positioning, and market perception. This
@@ -73,7 +73,7 @@ export default function Branding() {
               transformation journey.
             </p>
             <li className="my-li">Defining Brand Values</li>
-            <p className="my-p">
+            <p className="">
               A powerful brand is built on authenticity and consistency. We
               collaborate closely with you to articulate your brand's values,
               mission, and vision. This process not only reinforces internal
@@ -81,7 +81,7 @@ export default function Branding() {
               and compelling narrative to the outside world.
             </p>
             <li className="my-li">Visual Identity Refinement</li>
-            <p className="my-p">
+            <p className="">
               The visual components of your brand are your visual ambassadors.
               From logo design to color palettes and typography, we refine and
               enhance these elements to align with your brand's personality and
@@ -93,7 +93,7 @@ export default function Branding() {
               connections and loyalty.
             </p>
             <li className="my-li">Multichannel Brand Consistency</li>
-            <p className="my-p">
+            <p className="">
               A consistent brand presence across all touchpoints is essential
               for brand recognition. We ensure that your brand identity is
               seamlessly integrated into every aspect of your organization, from
@@ -101,21 +101,21 @@ export default function Branding() {
               customer interactions.
             </p>
             <li className="my-li">Engaging Brand Experiences</li>
-            <p className="my-p">
+            <p className="">
               We create strategies that drive meaningful engagement and
               interaction with your audience. These strategies range from
               experiential marketing initiatives to creating memorable brand
               moments that leave a lasting impact.
             </p>
             <li className="my-li">Brand Evolution</li>
-            <p className="my-p">
+            <p className="">
               As your organization evolves, so should your brand. We offer
               ongoing support to adapt your brand identity to changing market
               dynamics, ensuring that your brand remains relevant, innovative,
               and captivating.
             </p>
           </ul>
-          <p className="my-p">
+          <p className="">
             At Acuitus Duo, we're not just crafting logos – we're building brand
             legacies. Our branding services are a fusion of creativity,
             strategy, and innovation, aimed at shaping a brand identity that

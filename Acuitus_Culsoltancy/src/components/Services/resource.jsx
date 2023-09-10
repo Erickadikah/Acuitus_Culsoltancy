@@ -88,7 +88,7 @@ export default function Resource() {
           </h1>
           <ul className="myblist">
             <li className="my-li">Compelling Narratives</li>
-            <p className="my-p">
+            <p className="">
               In the age of information overload, storytelling is a powerful
               tool. We help you weave compelling narratives that captivate your
               audience and establish a meaningful connection. Our creative team
@@ -97,7 +97,7 @@ export default function Resource() {
               resonates with authenticity and emotion.
             </p>
             <li className="my-li">Strategic Assessment</li>
-            <p className="my-p">
+            <p className="">
               Our resource mobilization experts begin by conducting a
               comprehensive assessment of your organization's needs, objectives,
               and growth plans. This strategic evaluation forms the foundation
@@ -105,7 +105,7 @@ export default function Resource() {
               with your vision.
             </p>
             <li className="my-li">Partnership Cultivation</li>
-            <p className="my-p">
+            <p className="">
               Leveraging our extensive network, we identify and cultivate
               partnerships with organizations, institutions, and individuals who
               share a vested interest in your success. These partnerships extend
@@ -114,7 +114,7 @@ export default function Resource() {
               impact.
             </p>
             <li className="my-li">Investor Engagement:</li>
-            <p className="my-p">
+            <p className="">
               Our team engages with potential investors who are aligned with
               your mission and values. We craft compelling pitches and
               presentations that effectively communicate the potential and value
@@ -123,7 +123,7 @@ export default function Resource() {
               creating a network of advocates for your cause.
             </p>
             <li className="my-li">Opportunity Identification</li>
-            <p className="my-p">
+            <p className="">
               Resource mobilization isn't just about funds; it's about
               leveraging opportunities that contribute to your growth. We
               proactively identify grants, competitions, and programs that
@@ -131,7 +131,7 @@ export default function Resource() {
               resources.
             </p>
           </ul>
-          <p className="my-p">
+          <p className="">
             By entrusting Acuitus Duo with your resource mobilization needs,
             you're tapping into a wealth of strategic insight, an expansive
             network, and a commitment to your organization's growth. Our

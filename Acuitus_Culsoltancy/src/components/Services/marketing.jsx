@@ -85,18 +85,18 @@ export default function Marketing() {
               fontWeight: "bold",
             }}
           >
-            Here are some examples of Marketing areas that we focus on:
+          Marketing areas that we focus on:
           </h1>
           <ul className="myblist">
             <li className="my-li">Compelling Narratives:</li>
-            <p className="my-p">
+            <p className="">
               We specialize in creating buzz and excitement around new products.
               From dynamic launch events to interactive demonstrations, we
               ensure that your product grabs the attention it deserves and
               resonates with your target audience.
             </p>
             <li className="my-li">Compelling Narratives</li>
-            <p className="my-p">
+            <p className="">
               In the age of information overload, storytelling is a powerful
               tool. We help you weave compelling narratives that captivate your
               audience and establish a meaningful connection. Our creative team
@@ -105,7 +105,7 @@ export default function Marketing() {
               resonates with authenticity and emotion.
             </p>
             <li className="my-li">Multichannel Approach</li>
-            <p className="my-p">
+            <p className="">
               The modern consumer engages with brands through various
               touchpoints. Our marketing strategies encompass a multichannel
               approach, leveraging platforms such as social media, digital
@@ -114,7 +114,7 @@ export default function Marketing() {
               enhancing visibility and engagement.
             </p>
             <li className="my-li">Data-Driven Insights</li>
-            <p className="my-p">
+            <p className="">
               Data forms the foundation of effective marketing strategies. We
               employ advanced analytics and tracking tools to gather valuable
               insights about campaign performance. This data-driven approach
@@ -123,7 +123,7 @@ export default function Marketing() {
               market dynamics.
             </p>
             <li className="my-li">Measurable Impact</li>
-            <p className="my-p">
+            <p className="">
               Our commitment to results is unwavering. We establish key
               performance indicators (KPIs) to measure the impact of each
               marketing campaign. Whether it's brand awareness, lead generation,
@@ -131,7 +131,7 @@ export default function Marketing() {
               demonstrate the effectiveness of our strategies.
             </p>
           </ul>
-          <p className="my-p">
+          <p className="">
             At Acuitus Duo, marketing isn't just about promoting your brand –
             it's about creating meaningful connections, driving engagement, and
             fostering loyalty. Our tailored strategies are designed to propel
