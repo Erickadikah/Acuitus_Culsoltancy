@@ -90,49 +90,49 @@ export default function Activations() {
           </h1>
           <ul className="myblist">
             <li className="my-li">Product Launch Activations</li>
-            <p className="my-p">
+            <p className="">
               We specialize in creating buzz and excitement around new products.
               From dynamic launch events to interactive demonstrations, we
               ensure that your product grabs the attention it deserves and
               resonates with your target audience.
             </p>
             <li className="my-li">Brand Experience Centers</li>
-            <p className="my-p">
+            <p className="">
               Imagine a space that brings your brand to life – a physical or
               virtual environment where customers can immerse themselves in your
               brand's story, values, and offerings. We design and execute brand
               experience centers that leave a lasting impact.
             </p>
             <li className="my-li">Influencer Collaborations</li>
-            <p className="my-p">
+            <p className="">
               Leveraging the power of influencers can amplify your brand's
               reach. We collaborate with influencers who align with your values,
               creating memorable activations that showcase your products or
               services to their engaged audiences.
             </p>
             <li className="my-li">Community Engagement Initiatives</li>
-            <p className="my-p">
+            <p className="">
               Engaging with the community can establish strong connections and
               build loyalty. We design activations that foster meaningful
               relationships with your local audience through events, workshops,
               and initiatives that give back.
             </p>
             <li className="my-li">Digital Experiences</li>
-            <p className="my-p">
+            <p className="">
               The virtual realm offers endless possibilities for activations.
               Whether it's a virtual launch, webinar, or immersive online
               experience, we leverage digital platforms to create engaging moments
               that transcend physical boundaries.
             </p>
             <li className="my-li">Measurement and Analysis</li>
-            <p className="my-p">
+            <p className="">
               Our Activation service doesn't end with the event itself. We analyze
               the impact and effectiveness of the experience, measuring key
               performance indicators to gauge success and refine strategies for
               the future.
             </p>
           </ul>
-          <p className="my-p">
+          <p className="">
             Whether it's launching a new product, unveiling a brand, or sparking
             community engagement, our Activation service is designed to create
             moments that transcend the ordinary. With a blend of strategy,

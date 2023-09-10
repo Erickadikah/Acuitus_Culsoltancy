@@ -34,9 +34,12 @@
 .activation-content {
   justify-content: center;
   align-items: center;
-  margin-top: 5rem;
-
-}
+  margin-top: 10rem;
+  @media screen and (max-width: 768px) {
+    margin-top: 9rem;
+  }
+    
+  }
 
 .carousel-card {
     width: 100%;
