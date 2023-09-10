@@ -50,7 +50,7 @@ const useStyles = createStyles((theme) => ({
       width: '100vw', // Full width of the viewport
       height: '99vh', // Full height of the viewport
       backgroundSize: 'cover',
-      minHeight: rem(540), // Set a minimum height for small screens
+      minHeight: rem(740), // Set a minimum height for small screens
     },
   },
 
