@@ -105,12 +105,7 @@ export default function NewsLetterSection() {
             </span>
           </h1>
           <br />
-          <p className=" text-white news-letter" style={{
-            fontSize: "16px",
-            color: 'white',
-            justifyContent: 'center',
-            alignItems: 'center',
-          }}>
+          <p className=" text-white">
             We pride ourselves in providing training and coaching that aims to
             improve food security while providing sustainable livelihood options
             for farmers especially the women and the youth in agribusiness. We,
@@ -122,9 +117,7 @@ export default function NewsLetterSection() {
             the VSLA model. 
           </p>
           <br />
-          <p className="text-white" style={{
-            fontSize: "16px",
-          }}>
+          <p className="text-white">
             This has helped to establish community-based
             financing thus promoting sustainable rural financial models and
             financial literacy, especially for rural farmers.

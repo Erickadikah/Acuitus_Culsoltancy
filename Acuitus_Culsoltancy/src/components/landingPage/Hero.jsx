@@ -44,11 +44,11 @@ const useStyles = createStyles((theme) => ({
     backgroundSize: 'cover',
     backgroundPosition: 'center',
     backgroundRepeat: 'no-repeat',
-    height: rem(840), // Set an initial height
+    height: rem(768), // Set an initial height
 
     [theme.fn.smallerThan('sm')]: {
       width: '100vw', // Full width of the viewport
-      height: '100vh', // Full height of the viewport
+      height: '91vh', // Full height of the viewport
       backgroundSize: 'cover',
       minHeight: rem(540), // Set a minimum height for small screens
     },
