@@ -2,12 +2,12 @@ import React from "react";
 import { HiOutlineMenu } from "react-icons/hi";
 import "bootstrap/dist/css/bootstrap.css";
 import logo from "../../assets/images/landingPage/logo.png";
-// fixed-top
+
 export default function LandingNavBar() {
   return (
     <header>
       <nav
-        className="navbar navbar-expand-lg navbar-dark bg-white"
+        className="navbar navbar-expand-lg navbar-dark bg-white fixed-top"
         style={{
           paddingLeft: "10px",
           paddingTop: "10px",
