@@ -119,7 +119,6 @@ position: absolute;
 
   .explainer {
     font-size: 10px;
-    // white-space: pre-line;
   }
 }
 
@@ -136,3 +135,11 @@ position: absolute;
   width: 10rem;
   height: 10rem;
 }
+
+.exp {
+  font-size: 1.2rem;
+  @media screen and (max-width: 1000px) {
+    font-size: 1rem;
+  }
+    
+  }
