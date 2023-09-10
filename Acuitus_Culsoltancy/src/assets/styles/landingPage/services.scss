@@ -196,10 +196,10 @@ color: white;
   flex-direction: column; /* Stack elements vertically */
   align-items: center; /* Align items to the start (left) of the container */
   background-color: rgb(1,68,81);
-  height: 75vh;
+  height: 80vh;
   justify-content: center;
-  @media screen and (max-width: 768px) {
-    height: auto;
+  @media screen and (max-width: 1000px) {
+    height: 100%;
   }
 }
 

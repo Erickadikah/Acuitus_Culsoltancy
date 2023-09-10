@@ -5,6 +5,7 @@ import Navbar from "../../components/landingPage/nav";
 import "../../assets/styles/services/research.scss";
 import AboutFooter from "../../components/landingPage/aboutFooter";
 import ImageComponent from "./imagesRender";
+import Foot from "../../components/landingPage/foot"
 
 export default function Research() {
   const container = useRef(null);
@@ -84,7 +85,7 @@ export default function Research() {
           </h1>
           <ul className="myblist">
             <li className="my-li">Product Research</li>
-            <p className="my-p">
+            <p className="">
               In the realm of product research, we delve into understanding the
               specific offerings your organization brings to the market. This
               involves analyzing the features, benefits, and unique selling
@@ -95,7 +96,7 @@ export default function Research() {
               your industry.
             </p>
             <li className="my-li">Market Research</li>
-            <p className="my-p">
+            <p className="">
               Market research involves a deep exploration of the market
               landscape in which your organization operates. We gather data and
               insights about your industry, competitors, trends, customer
@@ -106,7 +107,7 @@ export default function Research() {
               market's current and future conditions
             </p>
             <li className="my-li">Needs Assessment</li>
-            <p className="my-p">
+            <p className="">
               Needs assessment focuses on identifying the specific requirements
               and gaps within your target audience or community. By engaging
               with stakeholders and conducting surveys or interviews, we gain
@@ -118,7 +119,7 @@ export default function Research() {
               impact of your initiatives.
             </p>
             <li className="my-li">Monitoring and Evaluation</li>
-            <p className="my-p">
+            <p className="">
               Our monitoring and evaluation services are designed to track the
               progress and effectiveness of your projects or programs over time.
               We establish key performance indicators (KPIs) and benchmarks to
@@ -130,7 +131,7 @@ export default function Research() {
               enhancement..
             </p>
           </ul>
-          <p className="my-p">
+          <p className="">
             At Acuitus Duo Company, our research services serve as a cornerstone
             for informed decision-making, strategic planning, and sustainable
             growth. By offering expertise in product research, market research,
@@ -140,6 +141,7 @@ export default function Research() {
         </div>
         {/*<ImageComponent />*/}
         <AboutFooter />
+        <Foot />
       </div>
     </>
   );

@@ -43,7 +43,7 @@ const ProjectsD = () => {
             <span class="project-span">1.</span>Training, mentorship program to
             VSLAS and FSCs
           </h3>
-          <p class="explainer">
+          <p class="text-white">
             Acuitus consultancy offered training and mentorship to more than
             4,000 Village Savings and Loan Associations (VSLAs) and over 1,000
             Farmer Service Centers (FSCs) in areas such as financial literacy,
@@ -69,7 +69,7 @@ const ProjectsD = () => {
             <span class="project-span">2.</span>Group (Chama) Activations in
             Kenya’s local communities
           </h3>
-          <p class="explainer">
+          <p class="text-white">
             Partnering with Colgate, Acuitus engaged with local communities,
             providing training on oral health practices and the unique qualities
             of Colgate products. This initiative aimed to create brand
@@ -89,7 +89,7 @@ const ProjectsD = () => {
             benefits of Value Added Training in Village Savings and Loans
             Associations (VSLAs)
           </h3>
-          <p class="explainer">
+          <p class="text-white">
             The study targeted VSLA groups in 10 Kenyan counties and compared
             VSLAs that received value-added training with those that were solely
             trained on traditional VSLA methods. It explored various dimensions
@@ -111,7 +111,7 @@ const ProjectsD = () => {
             <span class="project-span">4.</span>Baseline Survey (Need
             assessment) on Newly established groups.
           </h3>
-          <p class="explainer">
+          <p class="text-white">
             The assessment comprehensively examined several key aspects within
             the VSLAs. The approach involved examining multiple key aspects
             within the VSLAs (Village Savings and Loan Associations) to gather
@@ -130,7 +130,7 @@ const ProjectsD = () => {
           <h3 class="projects-head">
             <span class="project-span">5.</span>Market research/Study for ARIFU
           </h3>
-          <p class="explainer">
+          <p class="text-white">
             Acuitus Consultancy undertook a comprehensive market research
             initiative on behalf of ARIFU to gain valuable insights into the
             target market and inform strategic decision-making. Our approach

@@ -23,7 +23,7 @@ const About = () => {
           </p>
         </div>
         <div className="logo-about">
-          <div className="cont">
+          <div className="cont-t">
             <h6
               className="text-center"
               style={{

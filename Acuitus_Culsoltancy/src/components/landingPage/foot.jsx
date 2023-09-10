@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 const FooterContainer = styled.div`
-  height: 3rem; // Replace with your desired height value
+  height: 5rem; // Replace with your desired height value
   background-color: rgb(52, 52, 52);
   display: flex;
   gap: 10px;
@@ -57,8 +57,8 @@ const Foot = () => {
         <p>Copyright © 2023 Acuitus-duo Consultancy</p>
       </FooterDescription>
       <Separator />
-      <MyLink to="https://my-portfolio-sand-ten-81.vercel.app/">
-        <FooterLink>
+      <MyLink>
+        <FooterLink to="https://my-portfolio-sand-ten-81.vercel.app/">
           <p>Developed BY: Erick Adikah</p>
         </FooterLink>
       </MyLink>

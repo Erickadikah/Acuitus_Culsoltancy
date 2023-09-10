@@ -50,8 +50,8 @@ export const footerItems = [
   },
 
   {
-    title: "Resources",
-    children: ["Our learning", "Help Center Support", "FAQs"],
+    title: "Contact Us",
+    children: ["HOURS: Mon-Fri 09:00-17:00", "EMAIL: ACUITUSDUO@GMAIL.COM", "PHONE: +254 708038818, +254 721141938", "LOCATION: Westlands, Nairobi"],
   },
 
   {
