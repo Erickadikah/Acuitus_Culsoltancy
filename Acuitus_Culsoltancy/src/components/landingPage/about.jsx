@@ -59,7 +59,7 @@ const About = () => {
               strategic research, impactful marketing, or resource mobilization,
               our mission is to empower you to reach new heights. Join us as we
               embark on a dynamic journey of discovery, progress, and
-              excellence. Our Office is based in Westlands, Nairobi, Kenya.
+              excellence. Our Office is based in Westlands Nairobi, Kenya.
             </p>
             <div className="contained">
               <h1

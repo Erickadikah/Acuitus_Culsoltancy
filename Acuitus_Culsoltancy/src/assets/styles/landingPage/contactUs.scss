@@ -14,8 +14,9 @@
 }
 
 .holder {
-    width: 100vw;
-    height: 100%;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    box-sizing: border-box;
 }
 
 .form-c {
@@ -47,6 +48,9 @@
   }
 
   .contact-info-item {
+    border: 1px solid rgb(0, 208, 132);
+    padding: 3rem;
+    border-radius: 5px;
     text-align: center;
     color: white;
     font-size: 18px;
@@ -58,6 +62,17 @@
     }
   }
 
+// .strong {
+//   font-size: 15px;
+//   text-align: center;
+// }
+.contact-item-holder {
+  gap: 2rem;
+  @media screen and (max-width: 1000px) {
+    gap: 2rem;
+    
+  }
+}
   .icon {
     font-size: 50px;
     color: rgb(0, 208, 132);
@@ -79,7 +94,7 @@
   }
 
   strong {
-    font-size: 18px;
+    font-size: 15px;
     color: rgb(0, 208, 132);
   }
 
