@@ -66,7 +66,7 @@ const useStyles = createStyles((theme) => ({
 
     [theme.fn.smallerThan('sm')]: {
       height: rem(500),
-      // paddingBottom: theme.spacing.xl, // Adjust spacing for small screens
+      paddingBottom: theme.spacing.xl, // Adjust spacing for small screens
     },
   },
 
