@@ -7,6 +7,7 @@ import AboutFooter from "../../components/landingPage/aboutFooter";
 // import ImageComponent from "./imagesRender";
 import Carouselc from "../../components/landingPage/comp/capacity-c";
 import Form from "../../components/landingPage/form"
+import Foot from "../../components/landingPage/foot"
 
 export default function Capacity() {
   const container = useRef(null);
@@ -72,26 +73,21 @@ export default function Capacity() {
               believe in equipping you with the knowledge and skills needed to
               navigate complex challenges and seize new opportunities.
             </p>
+            <p className="intro-text">
+              We have a team of highly qualified and experienced professionals
+              with a proven track record in capacity building. We have a
+              comprehensive approach to capacity building that includes
+              assessment, training, and mentorship. We also provide financial and
+              market linkages, facilitating connections between groups and banks
+            </p>
           </div>
           </div>
           <div className="capacity-c">
-          <p className="intro-text"
-          style={{
-            marginBottom: "2rem",
-          }}
-          >
-            We have a team of highly qualified and experienced professionals
-            with a proven track record in capacity building. We have a
-            comprehensive approach to capacity building that includes
-            assessment, training, and mentorship. We also provide financial and
-            market linkages, facilitating connections between groups and banks
-          </p>
           <Carouselc />
           </div>
-          {/*<ImageComponent />*/}
-          {/*<div className="container" ref={container} style={{ width: "300px", height: "300px" }}></div>*/}
           <Form />
         <AboutFooter />
+        <Foot />
       </div>
     </>
   );

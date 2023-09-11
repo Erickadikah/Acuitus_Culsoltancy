@@ -1,7 +1,7 @@
 import React from "react";
 import "../../assets/styles/services/imagecomp.scss";
 import image1 from "../../assets/images/landingPage/trainee.jpeg";
-import image2 from "../../assets/images/landingPage/event.jpg";
+import image2 from "../../assets/images/landingPage/framtraining.jpg";
 import image3 from "../../assets/images/landingPage/chamaaT.jpeg";
 import image4 from "../../assets/images/landingPage/chamaactv.jpeg";
 import { motion } from 'framer-motion';
