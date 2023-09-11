@@ -5,6 +5,7 @@ import Navbar from "../../components/landingPage/nav";
 import "../../assets/styles/services/research.scss";
 import AboutFooter from "../../components/landingPage/aboutFooter";
 import ImageComponent from "./imagesRender";
+import Foot from "../../components/landingPage/foot"
 
 export default function Marketing() {
   const container = useRef(null);
@@ -143,6 +144,7 @@ export default function Marketing() {
         </div>
         {/*<ImageComponent />*/}
         <AboutFooter />
+      <Foot />
       </div>
     </>
   );

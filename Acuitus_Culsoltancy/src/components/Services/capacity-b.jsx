@@ -7,6 +7,7 @@ import AboutFooter from "../../components/landingPage/aboutFooter";
 // import ImageComponent from "./imagesRender";
 import Carouselc from "../../components/landingPage/comp/capacity-c";
 import Form from "../../components/landingPage/form"
+import Foot from "../../components/landingPage/foot"
 
 export default function Capacity() {
   const container = useRef(null);
@@ -86,6 +87,7 @@ export default function Capacity() {
           </div>
           <Form />
         <AboutFooter />
+        <Foot />
       </div>
     </>
   );

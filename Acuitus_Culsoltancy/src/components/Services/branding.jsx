@@ -6,6 +6,7 @@ import "../../assets/styles/services/branding.scss";
 import AboutFooter from "../../components/landingPage/aboutFooter";
 import ImageComponent from "./imagesRender";
 import Carouselb from "../../components/landingPage/comp/branding-c";
+import Foot from "../../components/landingPage/foot"
 
 export default function Branding() {
   const container = useRef(null);
@@ -128,6 +129,7 @@ export default function Branding() {
         <Carouselb />
         </div>
         <AboutFooter />
+        <Foot />
       </div>
     </>
   );
