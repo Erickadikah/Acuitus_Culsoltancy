@@ -12,7 +12,7 @@ import Form from "./form";
 import Foot from "./foot";
 const ContactUs = () => {
   return (
-    <div>
+    <div className="holder">
       <Navbar />
       <div className="contact-us">
         <h1
@@ -44,6 +44,7 @@ const ContactUs = () => {
               <strong>+254 721141938</strong>
             </p>
           </div>
+          <div className="contact-item-holder">
           <div className="contact-info-item">
             <MdOutlineMailOutline className="icon" />
             <p className="heading">
@@ -55,9 +56,10 @@ const ContactUs = () => {
               style={{ textDecoration: "none" }}
             >
               <p style={{ marginTop: "10px", color: "rgb(0, 208, 132)" }}>
-                <strong>ACUITUSDUO@GMAIL.COM</strong>
+                <strong className="strong">ACUITUSDUO@GMAIL.COM</strong>
               </p>
             </a>
+          </div>
           </div>
           <div className="contact-info-item">
             <FaMapMarkerAlt className="icon" />
