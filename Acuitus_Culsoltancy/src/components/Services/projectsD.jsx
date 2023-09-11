@@ -5,6 +5,7 @@ import Form from "../../components/landingPage/form";
 import { motion } from "framer-motion";
 import fifthImage from '../../assets/images/landingPage/ftraning.jpg'
 import ImageComponent from "./imagesRender";
+import Foot from "../../components/landingPage/foot"
 
 const ProjectsD = () => {
   return (
@@ -29,10 +30,10 @@ const ProjectsD = () => {
       </h1>
       <p className="exp">
         Acuitus Consultancy has been involved in various projects, including
-        training and mentorship programs, group activations, comparative
+        training and mentorship programs, group activations and comparative studies.
         <br />
         the following are some of the projects we have undertaken:
-        join us and work together!.
+        join us and lets work together!.
       </p>
         <motion.div 
         initial={{ y: -10, opacity: 0}}
@@ -146,6 +147,7 @@ const ProjectsD = () => {
         </div>
         <ImageComponent />
       <Form />
+      <Foot />
     </>
   );
 };
