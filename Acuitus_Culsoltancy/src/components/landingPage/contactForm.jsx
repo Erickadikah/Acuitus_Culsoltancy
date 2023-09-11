@@ -26,7 +26,7 @@ export default function Contactform() {
     e.preventDefault();
 
     try {
-      const response = await fetch('http://localhost:3000/message', {
+      const response = await fetch('http://localhost:3000/message','https://acuitus-api.onrender.com/message', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
