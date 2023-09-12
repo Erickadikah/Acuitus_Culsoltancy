@@ -14,7 +14,7 @@ function ImageComponent() {
         <p className="my-g">
         Be part of this amazing community and get to know more about us
         </p>
-    <Link to='contactUs'>
+    <Link to='/contactUs'>
         <button className="btn-s"
         style={{
           borderRadius: '25px',

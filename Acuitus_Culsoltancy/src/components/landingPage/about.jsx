@@ -25,15 +25,6 @@ const About = () => {
         </div>
         <div className="logo-about">
           <div className="cont-t">
-            <h6
-              className="text-center"
-              style={{
-                // marginBottom: "1rem",
-                fontSize: "1rem",
-              }}
-            >
-              OUR SOLID BACKGROUND
-            </h6>
             <h1 className="header-text heading">
               Get to know about our{" "}
               <span className="highlight">
