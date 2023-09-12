@@ -145,17 +145,20 @@ big-g-h {
   }
     
 }
-
-image-text {
-  position: absolute; /* Position the text absolutely within the wrapper */
-  top: 0; /* Place the text at the top of the wrapper */
-  left: 0; /* Place the text at the left side of the wrapper */
-  background: rgba(154, 103, 103, 0.8); /* Add a semi-transparent background for readability */
-  padding: 10px; /* Add padding to the text for spacing */
-  margin: 0;
-  height: 1rem;
-  width: 2rem;
+.image-container {
+  position: relative;
 }
+
+.image-text {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 5px; 
+  border-radius: 5px;
+}
+
 
 .testyp {
   position: absolute; /* Set the <p> tag to absolute positioning */

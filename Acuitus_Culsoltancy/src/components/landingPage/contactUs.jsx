@@ -52,7 +52,7 @@ const ContactUs = () => {
             </p>
             <p>We reply to emails within the hour.</p>
             <a
-              href="mailto:ACUITUSDUO@GMAIL.COM"
+              href="mailto:acuitusduo@gmail.com"
               style={{ textDecoration: "none" }}
             >
               <p style={{ marginTop: "10px", color: "rgb(0, 208, 132)" }}>

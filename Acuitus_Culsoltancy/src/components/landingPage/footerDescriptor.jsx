@@ -51,7 +51,7 @@ export const footerItems = [
 
   {
     title: "Contact Us",
-    children: ["HOURS: Mon-Fri 09:00-17:00", "EMAIL: ACUITUSDUO@GMAIL.COM", "PHONE: +254 708038818, +254 721141938", "LOCATION: Westlands, Nairobi"],
+    children: ["HOURS: Mon-Fri 09:00-17:00", "EMAIL: acuitusduo@gmail.com", "PHONE: +254 708038818, +254 721141938", "LOCATION: Westlands, Nairobi"],
   },
 
   {
@@ -65,12 +65,20 @@ export const footerItems = [
   },
 
   {
-    title: "Social Media Links",
-    children: [
-      <FaFacebook fontSize={"18px"} />,
-      <FaTwitter fontSize={"18px"} />,
-      <FaInstagram fontSize={"18px"} />,
-      <FaLinkedin fontSize={"18px"} />,
-    ],
-  },
+  title: "Social Media Links",
+  children: [
+    <a href="https://www.facebook.com/profile.php?id=61550987138556&is_tour_dismissed=true">
+      <FaFacebook fontSize={"18px"} />
+    </a>,
+    <a href="https://twitter.com/AcuitusC">
+      <FaTwitter fontSize={"18px"} />
+    </a>,
+    <a href="https://www.instagram.com/acuitusduo/">
+      <FaInstagram fontSize={"18px"} />
+    </a>,
+    <a href="https://www.linkedin.com/your-linkedin-page">
+      <FaLinkedin fontSize={"18px"} />
+    </a>,
+  ],
+},
 ];
