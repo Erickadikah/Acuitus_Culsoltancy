@@ -32,6 +32,8 @@ if (!window.location.hostname || window.location.hostname === 'localhost') {
   apiUrl = 'https://acuitus-api.onrender.com/message';
 }
 
+console.log('Selected apiUrl:', apiUrl);
+
 try {
   const response = await fetch(apiUrl, {
     method: 'POST',
