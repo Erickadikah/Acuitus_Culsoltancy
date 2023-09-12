@@ -89,13 +89,6 @@ export default function Marketing() {
           Marketing areas that we focus on:
           </h1>
           <ul className="myblist">
-            <li className="my-li">Compelling Narratives:</li>
-            <p className="">
-              We specialize in creating buzz and excitement around new products.
-              From dynamic launch events to interactive demonstrations, we
-              ensure that your product grabs the attention it deserves and
-              resonates with your target audience.
-            </p>
             <li className="my-li">Compelling Narratives</li>
             <p className="">
               In the age of information overload, storytelling is a powerful
