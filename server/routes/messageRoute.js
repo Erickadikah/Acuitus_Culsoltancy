@@ -17,7 +17,7 @@ messageRoutes.post('/message', async (req, res) => {
 
     const sendResult = await postmarkClient.sendEmail({
       From: 'info@acuitus-duo.co.ke',
-      To: 'erickadikah2030@gmail.com',
+      To: 'acuitusduo@gmail.com',
       Subject: 'Request',
       TextBody: `You have received a new message from ${message.name} (${message.email}).\n\nSubject: ${message.subject}\n\nMessage: ${message.message}`,
     });
