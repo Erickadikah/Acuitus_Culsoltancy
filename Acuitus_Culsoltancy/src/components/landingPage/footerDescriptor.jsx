@@ -21,8 +21,8 @@ export const footerItems = [
     ],
   },
   {
-    title: "Products",
-    children: ["Revenue Calculator", "Book Keeper"],
+    title: "Partners",
+    children: ["Intelli Wealth", "Colgate", "Arifu", "World vision", "BigBadWolf Books", "Relief web", "Habitat", "World Food Program"],
   },
 
   {

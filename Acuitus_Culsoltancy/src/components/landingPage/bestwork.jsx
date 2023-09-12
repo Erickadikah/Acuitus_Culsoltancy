@@ -141,12 +141,12 @@ export default function Bestwork() {
       </Group>
 
       <Title order={2} className={classes.title} ta="center" mt="sm">
-        Best known for!
+        Some of our best work
       </Title>
 
       <Text c="dimmed" className={classes.description} ta="center" mt="md">
         We are a team of highly skilled professionals with a passion for creating
-        innovative training and solutions for you  and your business.
+        innovative training and solutions for you  and your business and this is some of our success stories.
       </Text>
 
       <SimpleGrid cols={3} spacing="xl" mt={50} breakpoints={[{ maxWidth: 'md', cols: 1 }]}>

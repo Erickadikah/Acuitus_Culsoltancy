@@ -24,6 +24,7 @@ const ProjectsD = () => {
           </div>
         </div>
       </div>
+      <ImageComponent />
       <div class="project-body">
       <h1 className="text-center">
         <span class="project-span">Our</span> Projects
@@ -145,7 +146,6 @@ const ProjectsD = () => {
           </p>
         </motion.div>
         </div>
-        <ImageComponent />
       <Form />
       <Foot />
     </>

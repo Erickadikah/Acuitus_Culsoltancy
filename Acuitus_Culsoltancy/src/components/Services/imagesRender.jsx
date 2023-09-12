@@ -11,7 +11,6 @@ function ImageComponent() {
   return (
 <div className="big-g">
       <div className="texth">
-        <h1 className="big-g-h text-center heading">Popular Work</h1>
         <p className="my-g">
         Be part of this amazing community and get to know more about us
         </p>
@@ -30,7 +29,7 @@ function ImageComponent() {
             whileHover={{ scale: 1.01 }}
             animate={{ opacity: 1, scale: 1 }}
           >
-            <img src={image1} className="image1" alt="Image 1" />
+            <img src={image1} className="image1" alt="Training" />
           </motion.div>
           <div className="section-flex-image">
             <div class="image-wrapper">
@@ -40,8 +39,8 @@ function ImageComponent() {
                 animate={{ opacity: 1, scale: 1 }}
               >
                 <img src={image2} className="image2" alt="Image 2" />
-              </motion.div>
-          {/*<p className="image-text">Text test</p>*/}
+                </motion.div>
+            {/*<p className="image-text">Training</p>*/}
             </div>
             <div>
               <motion.div

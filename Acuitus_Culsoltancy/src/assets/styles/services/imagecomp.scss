@@ -43,6 +43,7 @@ big-g-h {
   align-items: center;
   flex-wrap: wrap;
   width: 70%;
+  height: 80vh;
   margin: 0 auto;
   padding-top: 4rem;
   @media screen and (max-width: 968px) {
@@ -51,7 +52,6 @@ big-g-h {
     gap: 1rem;
     margin: 0 auto;
     padding: 2rem;
-    // padding: 3rem;
     
   }
 }
@@ -60,7 +60,7 @@ big-g-h {
   height: 30rem;
   width: 50rem;
   object-fit: cover;
-  @media screen and (max-width: 968px) {
+  @media screen and (max-width: 1000px) {
     height: 10rem;
     width: 22rem;
     
@@ -100,7 +100,8 @@ big-g-h {
   width: 30rem;
   object-fit: cover;
 //   margin-bottom: 2rem;
-  @media screen and (max-width: 968px) {
+  @media screen and (max-width: 1000px) {
+    display: flex;
     height: 10rem;
     width: 22.1rem;
     
@@ -148,9 +149,11 @@ image-text {
   position: absolute; /* Position the text absolutely within the wrapper */
   top: 0; /* Place the text at the top of the wrapper */
   left: 0; /* Place the text at the left side of the wrapper */
-  background-color: rgba(255, 255, 255, 0.8); /* Add a semi-transparent background for readability */
+  background: rgba(154, 103, 103, 0.8); /* Add a semi-transparent background for readability */
   padding: 10px; /* Add padding to the text for spacing */
   margin: 0;
+  height: 1rem;
+  width: 2rem;
 }
 
 .testyp {
@@ -165,6 +168,7 @@ image-text {
 
 .my-g {
   font-size: 2rem;
+  // border-bottom: 1px solid #ddd
   @media screen and (max-width: 968px) {
     font-size: 1rem;
   }
