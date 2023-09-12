@@ -33,7 +33,8 @@ const imagesData = [
   {
     image: secondImage,
     title: 'Research',
-    description: 'We  provide insights that help you make informed decisions.',
+    description: 'We  provide insights that help you make informed decisions.\
+    Get deeper understanding of your industry, enabling you to stay ahead of the curve and respond effectively to changing landscapes',
     buttonLabel: 'Our Services',
     linkTo: '/services',
   }

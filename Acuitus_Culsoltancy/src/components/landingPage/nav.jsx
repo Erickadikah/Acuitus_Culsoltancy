@@ -67,7 +67,7 @@ export default function LandingNavBar() {
                 className="nav-link"
                 rel="noopener"
                 href="/"
-                style={{ color: "black", fontSize: "16px" }}
+                style={{ color: "black", fontSize: "14px" }}
               >
                 Home
               </a>
@@ -82,7 +82,7 @@ export default function LandingNavBar() {
                 data-toggle="dropdown"
                 aria-haspopup="true"
                 aria-expanded="false"
-                style={{ color: "black", fontSize: "16px" }}
+                style={{ color: "black", fontSize: "14px" }}
               >
                 About Us
               </a>
@@ -100,7 +100,7 @@ export default function LandingNavBar() {
                 className="nav-link"
                 rel="noopener"
                 href="/services"
-                style={{ color: "black", fontSize: "16px" }}
+                style={{ color: "black", fontSize: "14px" }}
               >
                 Our Services
               </a>
@@ -110,7 +110,7 @@ export default function LandingNavBar() {
                 className="nav-link"
                 rel="noopener"
                 href="/contactUs"
-                style={{ color: "black", fontSize: "16px" }}
+                style={{ color: "black", fontSize: "14px" }}
               >
                 Contact Us
               </a>
@@ -120,7 +120,7 @@ export default function LandingNavBar() {
                 className="nav-link"
                 rel="noopener"
                 href="/contactUs"
-                style={{ color: "black", fontSize: "16px" }}
+                style={{ color: "black", fontSize: "14px" }}
               >
                 Blogs
               </a>
@@ -140,7 +140,7 @@ export default function LandingNavBar() {
                 >
                   <a
                     rel="noopener"
-                    href="mailto:your.email@example.com"
+                    href="mailto:ACUITUSDUO@GMAIL.COM"
                     className="text-decoration-none text-light"
                   >
                     Talk to Us

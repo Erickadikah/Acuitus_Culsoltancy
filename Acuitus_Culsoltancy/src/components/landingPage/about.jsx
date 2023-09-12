@@ -6,6 +6,7 @@ import Missions from "./missions";
 import AboutFooter from "./aboutFooter";
 import Navbar from "./nav";
 import Partner from "./partner";
+import Foot from "./foot"
 
 const About = () => {
   return (
@@ -112,6 +113,7 @@ const About = () => {
         <Missions />
         <Partner />
         <AboutFooter />
+        <Foot />
       </div>
     </>
   );

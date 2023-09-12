@@ -4,7 +4,6 @@ import heroImage4 from "../../assets/images/landingPage/geet.jpg";
 import heroImag3 from "../../assets/images/landingPage/search .jpg";
 import heroImage2 from "../../assets/images/landingPage/d.jpg";
 import { motion, AnimatePresence } from "framer-motion";
-import { Link } from "react-router-dom";
 
 
 export default function Business() {
