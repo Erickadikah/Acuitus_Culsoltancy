@@ -25,26 +25,33 @@ export default function Contactform() {
   onSubmit={async (e) => {
     e.preventDefault();
 
-    try {
-      const response = await fetch('http://localhost:3000/message','https://acuitus-api.onrender.com/message', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(form.values),
-      });
+let apiUrl = 'http://localhost:3000/message';
 
-      if (response.ok) {
-        setSubmissionStatus('success');
-        form.reset();
-      } else {
-        setSubmissionStatus('error');
-      }
-    } catch (error) {
-      setSubmissionStatus('error');
-    }
-  }}
->
+// Checking if the localhost server is available, and if not, use the remote URL.
+if (!window.location.hostname || window.location.hostname === 'localhost') {
+  apiUrl = 'https://acuitus-api.onrender.com/message';
+}
+
+try {
+  const response = await fetch(apiUrl, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(form.values),
+  });
+
+  if (response.ok) {
+    setSubmissionStatus('success');
+    form.reset();
+  } else {
+    setSubmissionStatus('error');
+  }
+} catch (error) {
+  setSubmissionStatus('error');
+}
+  }}>
+
 {submissionStatus === 'success' ? (
     <div style={{ color: 'green' }}>Message sent successfully!</div>
   ) : submissionStatus === 'error' ? (
