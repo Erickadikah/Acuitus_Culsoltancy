@@ -25,11 +25,15 @@ export default function Contactform() {
   onSubmit={async (e) => {
     e.preventDefault();
 
-let apiUrl = 'http://localhost:3000/message';
+let apiUrl = 'https://acuitus-api.onrender.com/message';
 
 // Checking if the localhost server is available, and if not, use the remote URL.
-if (!window.location.hostname || window.location.hostname === 'localhost') {
-  apiUrl = 'https://acuitus-api.onrender.com/message';
+// if (!window.location.hostname || window.location.hostname === 'localhost') {
+//   apiUrl = 'https://acuitus-api.onrender.com/message';
+// }
+if (window.location.hostname === 'localhost') {
+  // The local server is running, so set apiUrl to the local URL
+  apiUrl = 'http://localhost:3000/message';
 }
 
 console.log('Selected apiUrl:', apiUrl);
