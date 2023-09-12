@@ -14,9 +14,9 @@ export default function NewsLetterSection() {
     // Start counting up to the target numbers over a period of time
     const targetNumbers = {
       workHours: 700,
-      greatReviews: 1080,
-      projectsDone: 340,
-      awardsWon: 400,
+      greatReviews: 50,
+      projectsDone: 20,
+      awardsWon: 5,
     };
   
   const stepDuration = 10; // Time in milliseconds for each step

@@ -146,7 +146,7 @@ export default function Bestwork() {
 
       <Text c="dimmed" className={classes.description} ta="center" mt="md">
         We are a team of highly skilled professionals with a passion for creating
-        innovative training and solutions for you  and your business and this is some of our success stories.
+        innovative training and solutions for you  and your business and this are some of our success stories.
       </Text>
 
       <SimpleGrid cols={3} spacing="xl" mt={50} breakpoints={[{ maxWidth: 'md', cols: 1 }]}>
