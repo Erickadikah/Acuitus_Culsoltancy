@@ -33,7 +33,7 @@ let apiUrl = 'https://acuitus-api.onrender.com/message';
 // }
 if (window.location.hostname === 'localhost') {
   // The local server is running, so set apiUrl to the local URL
-  apiUrl = 'http://localhost:3000/message';
+  apiUrl = 'https://acuitus-api.onrender.com/message';
 }
 
 console.log('Selected apiUrl:', apiUrl);
