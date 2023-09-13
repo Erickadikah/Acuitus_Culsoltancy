@@ -56,7 +56,7 @@ const ContactUs = () => {
               style={{ textDecoration: "none" }}
             >
               <p style={{ marginTop: "10px", color: "rgb(0, 208, 132)" }}>
-                <strong className="strong">ACUITUSDUO@GMAIL.COM</strong>
+                <strong className="strong">acuitusduo@gmail.com</strong>
               </p>
             </a>
           </div>
