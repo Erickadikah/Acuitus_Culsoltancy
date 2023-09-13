@@ -69,7 +69,7 @@ function ImageComponent() {
           >
             <div className="image-container">
               <img src={image4} className="image4" alt="Image 4" />
-              <p className="image-text">Bee keeping trainig at kinda kwer in west Alego ward, Siaya county</p>
+              <p className="image-text">Bee keeping training at kinda kwer in west Alego ward, Siaya county</p>
             </div>
           </motion.div>
         </div>

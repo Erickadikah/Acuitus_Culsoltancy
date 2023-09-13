@@ -128,8 +128,7 @@ export default function LandingNavBar() {
             <li className="nav-item">
               <div
                 className="btn-group"
-                style={{ position: "fixed", right: "30px" }}
-              >
+                style={{ position: "fixed", right: "30px" }}>
                 <button
                   className="btn btn-primary btn-sm"
                   style={{
