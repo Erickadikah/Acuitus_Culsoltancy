@@ -140,9 +140,8 @@ export default function LandingNavBar() {
                 >
                   <a
                     rel="noopener"
-                    href="mailto:ACUITUSDUO@GMAIL.COM"
-                    className="text-decoration-none text-light"
-                  >
+                    href="mailto:acuitusduo@gmail.com"
+                    className="text-decoration-none text-light">
                     Talk to Us
                   </a>
                 </button>
