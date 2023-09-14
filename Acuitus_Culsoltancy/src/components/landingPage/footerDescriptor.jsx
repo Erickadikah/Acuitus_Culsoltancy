@@ -76,7 +76,7 @@ export const footerItems = [
       <a href="https://www.instagram.com/acuitusduo/">
         <FaInstagram fontSize={"18px"} />
       </a>,
-      <a href="https://www.linkedin.com/your-linkedin-page"> {/* Replace with your actual LinkedIn URL */}
+      <a href="https://www.linkedin.com/company/acuitus-consultancy"> {/* Replace with your actual LinkedIn URL */}
         <FaLinkedin fontSize={"18px"} />
       </a>,
     ],
