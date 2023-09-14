@@ -12,6 +12,7 @@ import Resource from "../components/Services/resource"
 import Activations from '../components/Services/activation-c';
 import Capacity from '../components/Services/capacity-b';
 import ProjectsD from "../components/Services/projectsD"
+import BlogPage from '../components/landingPage/bogs';
 
 
 const FirmPages = () => {
@@ -29,6 +30,7 @@ const FirmPages = () => {
     <Route path='/resource-mobilization' element={<Resource />} />
     <Route path='/capacity-building' element={<Capacity />} />
     <Route path='/projects' element={<ProjectsD />} />
+    <Route path='/blog' element={<BlogPage />} />
     </Routes>
     </BrowserRouter>
 

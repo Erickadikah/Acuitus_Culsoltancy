@@ -39,6 +39,16 @@ export default function LandingNavBar() {
           >
             Acuitus Consultancy
           </h6>
+          {/*<p>
+            <span>
+              <small
+                className="text-muted"
+                style={{ fontSize: "9px", marginBottom: "5px" }}
+              >
+                <i>GROW your business TODAY</i>
+              </small>
+            </span>
+          </p>*/}
         </a>
         <button
           className="navbar-toggler"
@@ -119,7 +129,7 @@ export default function LandingNavBar() {
               <a
                 className="nav-link"
                 rel="noopener"
-                href="/contactUs"
+                href="/blog"
                 style={{ color: "black", fontSize: "14px" }}
               >
                 Blogs
