@@ -22,7 +22,7 @@ export const footerItems = [
   },
   {
     title: "Partners",
-    children: ["Intelli Wealth", "Colgate", "Arifu", "World vision", "BigBadWolf Books", "Relief web", "Habitat", "World Food Program"],
+    children: ["Intelli Wealth", "Colgate", "Arifu", "World Vision", "BigBadWolf Books", "Relief Web", "Habitat", "World Food Program"],
   },
 
   {
@@ -31,9 +31,9 @@ export const footerItems = [
       "About",
       "Pricing",
       "Our Team",
-      "Careeers",
+      "Careers", // Fixed typo here
       "Join Us",
-      "Our Commmunity",
+      "Our Community",
     ],
   },
 
@@ -41,7 +41,7 @@ export const footerItems = [
     title: "Industries",
     children: [
       "Research",
-      "Busisness",
+      "Business", // Fixed typo here
       "Education",
       "Agriculture",
       "Entertainment",
@@ -57,7 +57,7 @@ export const footerItems = [
   {
     title: "Legal",
     children: [
-      "Terms of Services",
+      "Terms of Service", // Changed to "Terms of Service" for consistency
       "Privacy Notice",
       "Cookie Policy",
       "Privacy Center",
@@ -65,20 +65,20 @@ export const footerItems = [
   },
 
   {
-  title: "Social Media Links",
-  children: [
-    <a href="https://www.facebook.com/profile.php?id=61550987138556&is_tour_dismissed=true">
-      <FaFacebook fontSize={"18px"} />
-    </a>,
-    <a href="https://twitter.com/AcuitusC">
-      <FaTwitter fontSize={"18px"} />
-    </a>,
-    <a href="https://www.instagram.com/acuitusduo/">
-      <FaInstagram fontSize={"18px"} />
-    </a>,
-    <a href="https://www.linkedin.com/your-linkedin-page">
-      <FaLinkedin fontSize={"18px"} />
-    </a>,
-  ],
-},
+    title: "Social Media Links",
+    children: [
+      <a href="https://www.facebook.com/profile.php?id=61550987138556&is_tour_dismissed=true">
+        <FaFacebook fontSize={"18px"} />
+      </a>,
+      <a href="https://twitter.com/AcuitusC">
+        <FaTwitter fontSize={"18px"} />
+      </a>,
+      <a href="https://www.instagram.com/acuitusduo/">
+        <FaInstagram fontSize={"18px"} />
+      </a>,
+      <a href="https://www.linkedin.com/your-linkedin-page"> {/* Replace with your actual LinkedIn URL */}
+        <FaLinkedin fontSize={"18px"} />
+      </a>,
+    ],
+  },
 ];
