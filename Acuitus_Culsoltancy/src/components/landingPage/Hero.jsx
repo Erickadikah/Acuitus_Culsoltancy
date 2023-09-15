@@ -46,6 +46,7 @@ const useStyles = createStyles((theme) => ({
     backgroundPosition: 'center',
     backgroundRepeat: 'no-repeat',
     height: rem(840), // Set an initial height
+    transition: 'background-image 0.5s ease-in-out',
 
     [theme.fn.smallerThan('sm')]: {
       width: '100vw', // Full width of the viewport
@@ -67,7 +68,8 @@ const useStyles = createStyles((theme) => ({
 
     [theme.fn.smallerThan('sm')]: {
       height: rem(500),
-      paddingBottom: theme.spacing.xl, // Adjust spacing for small screens
+      paddingBottom: theme.spacing.xl,
+
     },
   },
 
@@ -137,7 +139,8 @@ export default function Hero() {
   };
 
   return (
-    <div className={classes.masaaiImage} style={{ backgroundImage: `url(${currentImageData.image})` }}>
+    <div className={classes.masaaiImage} style={{ backgroundImage: `url(${currentImageData.image})` 
+  }}>
       <Overlay
         gradient="linear-gradient(180deg, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, .65) 40%)"
         opacity={1}
