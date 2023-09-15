@@ -1,7 +1,7 @@
 import React from "react";
 import { HiOutlineMenu } from "react-icons/hi";
 import "bootstrap/dist/css/bootstrap.css";
-import logo from "../../assets/images/landingPage/logo.png";
+import logo from "../../assets/images/landingPage/logo-no-background.svg";
 
 export default function LandingNavBar() {
   return (
@@ -23,11 +23,11 @@ export default function LandingNavBar() {
           <img
             src={logo}
             alt="Acuitus Consultancy Logo"
-            width="38"
-            height="38"
+            width="250"
+            height="50"
             class="d-inline-block align-top"
           />
-          <h6
+          {/*<h6
             className="heading"
             style={{
               fontWeight: "900",
@@ -38,7 +38,7 @@ export default function LandingNavBar() {
             }}
           >
             Acuitus Consultancy
-          </h6>
+          </h6>*/}
           {/*<p>
             <span>
               <small
