@@ -1,7 +1,7 @@
 import React from "react";
 import { HiOutlineMenu } from "react-icons/hi";
 import "bootstrap/dist/css/bootstrap.css";
-import logo from "../../assets/images/landingPage/logo100.svg";
+import logo from "../../assets/images/landingPage/rename.svg";
 
 export default function LandingNavBar() {
   return (

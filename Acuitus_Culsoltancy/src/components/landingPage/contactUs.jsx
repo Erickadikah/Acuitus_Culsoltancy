@@ -58,6 +58,9 @@ const ContactUs = () => {
               <p style={{ marginTop: "10px", color: "rgb(0, 208, 132)" }}>
                 <strong className="strong">acuitusduo@gmail.com</strong>
               </p>
+              <p>
+              <strong className="strong">info@acuitus-duo.co.ke</strong>
+              </p>
             </a>
           </div>
           </div>
