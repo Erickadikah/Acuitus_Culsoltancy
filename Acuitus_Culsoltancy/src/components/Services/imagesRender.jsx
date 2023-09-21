@@ -62,7 +62,7 @@ function ImageComponent() {
           </div>
         </div>
         <div className="section-2_image">
-          <motion.div
+          {/*<motion.div
             initial={{ opacity: 0.8, scale: 1 }}
             whileHover={{ scale: 1.02 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -71,7 +71,7 @@ function ImageComponent() {
               <img src={image4} className="image4" alt="Image 4" />
               <p className="image-text">Bee keeping training at kinda kwer in west Alego ward, Siaya county</p>
             </div>
-          </motion.div>
+          </motion.div>*/}
         </div>
       </div>
     </div>

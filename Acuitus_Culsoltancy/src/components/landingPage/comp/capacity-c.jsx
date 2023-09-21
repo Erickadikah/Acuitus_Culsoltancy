@@ -5,6 +5,7 @@ import farming from "../../../assets/images/landingPage/framtraining.jpg"
 import healthp from  "../../../assets/images/landingPage/healthp.jpeg"
 import chamaaT from "../../../assets/images/landingPage/chamaaT.jpeg"
 import farming2 from "../../../assets/images/landingPage/trainee.jpeg"
+import beeekeeping from "../../../assets/images/landingPage/beehive.jpeg"
 import { Link } from 'react-router-dom';
 import bee from "../../../assets/images/landingPage/beehive.jpeg"
 
@@ -86,10 +87,9 @@ const data = [
     category: 'Training',
   },
   {
-    image: bee,
-    title: 'Beef Farming training',
-    category: 'Agriculture',
-  },
+    image: beeekeeping,
+    title: 'Our bee keeping training at kinda kwer in west Alego ward, Siaya county'
+  }
 ];
 
 export default function Carouselc() {

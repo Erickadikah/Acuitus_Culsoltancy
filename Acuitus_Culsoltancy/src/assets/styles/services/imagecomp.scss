@@ -102,7 +102,7 @@ big-g-h {
   object-fit: cover;
 //   margin-bottom: 2rem;
   @media screen and (max-width: 1000px) {
-    display: flex;
+    // display: none;
     height: 10rem;
     width: 22.1rem;
     
@@ -147,6 +147,7 @@ big-g-h {
 }
 .image-container {
   position: relative;
+  
 }
 
 .image-text {
