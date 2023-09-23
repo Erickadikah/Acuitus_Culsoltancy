@@ -7,7 +7,7 @@ export default function LandingNavBar() {
   return (
     <header>
       <nav
-        className="navbar navbar-expand-lg navbar-dark fixed-top"
+        className="navbar navbar-expand-lg navbar-dark fixed-top shadow-lg"
         style={{
           paddingLeft: "10px",
           paddingTop: "10px",
