@@ -55,7 +55,7 @@ export default function BlogPage() {
       <SimpleGrid spacing={80} cols={2} breakpoints={[{ maxWidth: 'sm', cols: 1, spacing: 40 }]}>
         <Image src={image.src} className={classes.mobileImage} />
         <div>
-          <Title className={classes.title}>No new Blogs at the moment under Constraction..</Title>
+          <Title className={classes.title}>No new Blogs at the moment under Construction..</Title>
           <Text color="dimmed" size="lg">
             Page you are trying to open does not exist, or the
             page has been moved to another URL. If you think this is an error contact support.
