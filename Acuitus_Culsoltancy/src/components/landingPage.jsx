@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { motion, useAnimation } from "framer-motion";
 import Navbar from "../components/landingPage/nav";
 import Hero from "./landingPage/Hero";
@@ -12,6 +12,8 @@ import ContactUs from "./contact-us"
 import Partner from "./landingPage/partner"
 import Foot from "./landingPage/foot"
 import Form from "./landingPage/form"
+import FloatingChatButton from "../components/landingPage/floatingChatIcon"
+import Request from "../components/landingPage/request"
 
 const categories = [
   { image: 'https://images.pexels.com/photos/6483582/pexels-photo-6483582.jpeg?auto=compress&cs=tinysrgb&w=1600', label: 'Customer Support' },
@@ -24,6 +26,12 @@ function LandingPage() {
   const heroAnimationControls = useAnimation();
   const businessAnimationControls = useAnimation();
   const bestworkAnimationControls = useAnimation();
+  const [showRequest, setShowRequest] = React.useState(false);
+  function handleChatButtonClick() {
+    console.log("Button clicked");
+  setShowRequest(!showRequest); // Toggle the state
+}
+    console.log("showRequest:", showRequest);
 
   useEffect(() => {
     const handleScroll = async () => {
@@ -86,6 +94,8 @@ function LandingPage() {
       </div>
       {/*<Partner />*/}
       <Form />
+      {showRequest && <Request closeForm={handleChatButtonClick} />}
+      <FloatingChatButton handleChatButtonClick={handleChatButtonClick} />
       <PageFooter />
       <Foot />
     </div>
