@@ -13,7 +13,7 @@ import Activations from '../components/Services/activation-c';
 import Capacity from '../components/Services/capacity-b';
 import ProjectsD from "../components/Services/projectsD"
 import BlogPage from '../components/landingPage/bogs';
-
+import Request from '../components/landingPage/request'
 
 const FirmPages = () => {
   return (
@@ -31,6 +31,7 @@ const FirmPages = () => {
     <Route path='/capacity-building' element={<Capacity />} />
     <Route path='/projects' element={<ProjectsD />} />
     <Route path='/blog' element={<BlogPage />} />
+    <Route path='/request' element={<Request />} />
     </Routes>
     </BrowserRouter>
 
