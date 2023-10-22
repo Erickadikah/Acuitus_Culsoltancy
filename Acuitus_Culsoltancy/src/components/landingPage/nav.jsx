@@ -28,28 +28,6 @@ export default function LandingNavBar() {
             height="55"
             class="d-inline-block align-top"
           />
-          {/*<h6
-            className="heading"
-            style={{
-              fontWeight: "900",
-              fontSize: "18px",
-              marginTop: "10px",
-              marginLeft: "10px",
-              color: `rgb(0,208,132)`,
-            }}
-          >
-            Acuitus Consultancy
-          </h6>*/}
-          {/*<p>
-            <span>
-              <small
-                className="text-muted"
-                style={{ fontSize: "9px", marginBottom: "5px" }}
-              >
-                <i>GROW your business TODAY</i>
-              </small>
-            </span>
-          </p>*/}
         </a>
         <button
           className="navbar-toggler"
