@@ -45,9 +45,9 @@ At Acuitos Duo Consultancy Firm, we are dedicated to empowering organizations wi
 
 # Screenshots
 
-![image](https://user-images.githubusercontent.com/77038690/136676439-9b9b9b0b-9b0b-4b9f-8b9a-9b9b9b0b9b0b.png)
-![image](https://user-images.githubusercontent.com/77038690/136676451-9b9b9b0b-9b0b-4b9f-8b9a-9b9b9b0b9b0b.png)
-![image](https://user-images.githubusercontent.com/77038690/136676457-9b9b9b0b-9b0b-4b9f-8b9a-9b9b9b0b9b0b.png)
+![image](https://res.cloudinary.com/dia49kn8r/image/upload/v1701479754/Screenshot_from_2023-12-02_04-14-47_tpyfbp.png)
+![image](https://res.cloudinary.com/dia49kn8r/image/upload/v1701479884/Screenshot_from_2023-12-02_04-17-36_lak4do.png)
+
 
 # Features
 
