@@ -91,7 +91,7 @@ At Acuitos Duo Consultancy Firm, we are dedicated to empowering organizations wi
 # Authors
 
 - [Acuitus Duo](https://acuitus-duo.co.ke)
-- Erick Adikah
+- [Erick Adikah](https://my-portfolio-sand-ten-81.vercel.app/)
 
 # Project Status
 
