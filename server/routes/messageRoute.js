@@ -2,7 +2,8 @@ const express = require('express');
 const messageRoutes = express.Router();
 const Message = require('../models/request');
 const postmark = require('postmark');
-const postmarkClient = new postmark.ServerClient('fa4bc8e5-7cb4-4f92-8268-344c0ec44243');
+require('dotenv').config();
+const postmarkClient = new postmark.ServerClient(process.env.POSTMARK_API_KEY);
 
 messageRoutes.post('/message', async (req, res) => {
   console.log('Received POST request');
