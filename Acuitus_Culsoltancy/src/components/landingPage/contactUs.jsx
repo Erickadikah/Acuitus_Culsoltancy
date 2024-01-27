@@ -38,13 +38,13 @@ const ContactUs = () => {
             </p>
             <p>We'll call you back as soon as possible.</p>
             <p>
-              <strong>+254 708038818</strong>
+              <strong> 0115188498</strong>
             </p>
             <p>
-              <strong>+254 721141938</strong>
+              <strong> 0115188498</strong>
             </p>
           </div>
-          <div className="contact-item-holder">
+          <div className="contact-item-h">
           <div className="contact-info-item">
             <MdOutlineMailOutline className="icon" />
             <p className="heading">

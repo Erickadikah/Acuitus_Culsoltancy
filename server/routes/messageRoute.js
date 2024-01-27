@@ -2,7 +2,8 @@ const express = require('express');
 const messageRoutes = express.Router();
 const Message = require('../models/request');
 const postmark = require('postmark');
-const postmarkClient = new postmark.ServerClient('fa4bc8e5-7cb4-4f92-8268-344c0ec44243');
+require('dotenv').config();
+const postmarkClient = new postmark.ServerClient(process.env.POSTMARK_API_KEY);
 
 messageRoutes.post('/message', async (req, res) => {
   console.log('Received POST request');
@@ -16,8 +17,8 @@ messageRoutes.post('/message', async (req, res) => {
     await message.save();
 
     const sendResult = await postmarkClient.sendEmail({
-      From: 'info@acuitus-duo.co.ke',
-      To: 'acuitusduo@gmail.com',
+      From: process.env.POSTMARK_SENDER_ADDRESS,
+      To: process.env.POSTMARK_RECEIVER_ADDRESS,
       Subject: 'Request',
       TextBody: `You have received a new message from ${message.name} (${message.email}).\n\nSubject: ${message.subject}\n\nMessage: ${message.message}`,
     });

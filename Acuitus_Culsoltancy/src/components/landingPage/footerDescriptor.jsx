@@ -51,7 +51,7 @@ export const footerItems = [
 
   {
     title: "Contact Us",
-    children: ["HOURS: Mon-Fri 09:00-17:00", "EMAIL: acuitusduo@gmail.com", "PHONE: +254 708038818, +254 721141938", "LOCATION: Westlands, Nairobi"],
+    children: ["HOURS: Mon-Fri 09:00-17:00", "EMAIL: acuitusduo@gmail.com", "PHONE: 0115188498", "LOCATION: Westlands, Nairobi"],
   },
 
   {
