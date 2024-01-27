@@ -40,19 +40,20 @@ const imagesData = [
   }
 ];
 
+// ... existing imports ...
+
 const useStyles = createStyles((theme) => ({
   masaaiImage: {
     backgroundSize: 'cover',
     backgroundPosition: 'center',
     backgroundRepeat: 'no-repeat',
-    height: rem(920), // Set an initial height
+    height: rem(920),
     transition: 'background-image 0.5s ease-in-out',
 
     [theme.fn.smallerThan('sm')]: {
-      width: '100vw', // Full width of the viewport
-      height: '100vh', // Full height of the viewport
-      backgroundSize: 'cover',
-      minHeight: rem(400), // Set a minimum height for small screens
+      width: '100vw',
+      height: '100vh',
+      minHeight: rem(400),
     },
   },
 
@@ -67,9 +68,8 @@ const useStyles = createStyles((theme) => ({
     position: 'relative',
 
     [theme.fn.smallerThan('sm')]: {
-      height: rem(500),
+      height: 'auto', // Auto height for smaller screens
       paddingBottom: theme.spacing.xl,
-
     },
   },
 
@@ -79,37 +79,32 @@ const useStyles = createStyles((theme) => ({
     fontWeight: 900,
     lineHeight: 1.1,
 
-     [theme.fn.smallerThan('sm')]: {
-      fontSize: rem(26), // Adjust font size for smaller screens
+    [theme.fn.smallerThan('sm')]: {
+      fontSize: rem(26),
     },
   },
 
-
   description: {
     color: theme.white,
-    maxWidth: 600,
+    maxWidth: '100%', // Adjust the maximum width for smaller screens
 
     [theme.fn.smallerThan('sm')]: {
-      fontSize: theme.fontSizes.sm, // Adjust font size for smaller screens
+      fontSize: theme.fontSizes.sm,
     },
   },
 
   customButton: {
-    backgroundColor: 'red',
+    backgroundColor: 'rgb(0, 208, 132)',
     color: 'white',
     marginTop: `calc(${theme.spacing.xl} * 1.5)`,
     fontSize: rem(15),
     fontWeight: 600,
-    width: 150,
+    width: '100%', // Make the button full-width
   },
 
   control: {
     marginTop: `calc(${theme.spacing.xl} * 1.5)`,
     width: '100%',
-
-    [theme.fn.smallerThan('sm')]: {
-      width: '100%',
-    },
   },
 }));
 
@@ -119,11 +114,11 @@ export default function Hero() {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentIndex((currentIndex + 1) % imagesData.length); // Cycle through images
-    }, 15000); // Change image every 15 seconds
+      setCurrentIndex((currentIndex + 1) % imagesData.length);
+    }, 15000);
 
     return () => {
-      clearInterval(interval); // Clear the interval when component unmounts
+      clearInterval(interval);
     };
   }, [currentIndex]);
 
@@ -133,40 +128,23 @@ export default function Hero() {
     setCurrentIndex((currentIndex + 1) % imagesData.length);
   };
 
-   // Function to move to the previous image
   const prevImage = () => {
     setCurrentIndex((currentIndex - 1 + imagesData.length) % imagesData.length);
   };
 
   return (
-    <div className={classes.masaaiImage} style={{ backgroundImage: `url(${currentImageData.image})` 
-  }}>
-      <Overlay
-        gradient="linear-gradient(180deg, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, .65) 40%)"
-        opacity={1}
-        zIndex={0}
-  />
+    <div className={classes.masaaiImage} style={{ backgroundImage: `url(${currentImageData.image})` }}>
+      <Overlay gradient="linear-gradient(180deg, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, .65) 40%)" opacity={1} zIndex={0} />
       <Container className={classes.container}>
         <Title className={classes.title}>{currentImageData.title}</Title>
-        <Text
-          className={classes.description}
-          size="xl"
-          mt="xl"
-          color="rgb(0, 208, 132)" //text color here
-        >
+        <Text className={classes.description} size="xl" mt="xl" color="rgb(0, 208, 132)">
           {currentImageData.description}
         </Text>
-
         <Link to={currentImageData.linkTo}>
-          <Button
-            size="lg"
-            className={classes.customButton}
-            style={{ backgroundColor: 'rgb(0, 208, 132)', color: 'white' }}
-          >
+          <Button size="lg" className={classes.customButton}>
             {currentImageData.buttonLabel}
           </Button>
         </Link>
-        {/* Navigation icons with click handlers */}
         <div className={classes.control}>
           <span onClick={prevImage} style={{ cursor: 'pointer', marginRight: '10px' }}><FcPrevious size={32} /></span>
           <span onClick={nextImage} style={{ cursor: 'pointer' }}><FcNext size={32} /></span>
