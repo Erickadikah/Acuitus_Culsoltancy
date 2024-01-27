@@ -45,7 +45,7 @@ const useStyles = createStyles((theme) => ({
     backgroundSize: 'cover',
     backgroundPosition: 'center',
     backgroundRepeat: 'no-repeat',
-    height: rem(840), // Set an initial height
+    height: rem(920), // Set an initial height
     transition: 'background-image 0.5s ease-in-out',
 
     [theme.fn.smallerThan('sm')]: {
@@ -57,7 +57,7 @@ const useStyles = createStyles((theme) => ({
   },
 
   container: {
-    height: rem(700),
+    height: rem(800),
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'flex-end',
