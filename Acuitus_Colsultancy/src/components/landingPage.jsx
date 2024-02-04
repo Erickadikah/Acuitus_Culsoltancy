@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { motion, useAnimation } from "framer-motion";
-import Navbar from "../components/landingPage/nav";
+import Navbar from "./landingPage/nav";
 import Hero from "./landingPage/Hero";
 import "bootstrap/dist/css/bootstrap.css"
 import "../assets/styles/landingPage/landing.scss";
@@ -12,8 +12,8 @@ import ContactUs from "./contact-us"
 import Partner from "./landingPage/partner"
 import Foot from "./landingPage/foot"
 import Form from "./landingPage/form"
-import FloatingChatButton from "../components/landingPage/floatingChatIcon"
-import Request from "../components/landingPage/request"
+import FloatingChatButton from "./landingPage/floatingChatIcon"
+import Request from "./landingPage/request"
 
 const categories = [
   { image: 'https://images.pexels.com/photos/6483582/pexels-photo-6483582.jpeg?auto=compress&cs=tinysrgb&w=1600', label: 'Customer Support' },
